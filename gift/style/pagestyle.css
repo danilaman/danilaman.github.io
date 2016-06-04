@@ -394,6 +394,7 @@ body
 	width: 1170px;
 	height: 160px;
 	margin: auto;
+	margin-top: -4px;
 	padding-top: 20px;
 	background: blue;
 	position: relative;
