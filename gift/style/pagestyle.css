@@ -70,13 +70,14 @@ body
 	position: relative;
 	padding: 0px;
 	margin-top: 15px;
-
+	border: 2px solid #efefef;
+	background: #074470;
 }
 
 #menu_uni
 {
 	padding: 0px;
-	margin: 0px 0px 0px 10px;
+	margin: 0px;
 }
 
 .menu_item
@@ -84,10 +85,10 @@ body
 	display: inline-block;
 	width: 120px;
 	height: 45px;
-	margin: 0px 1px;
+	margin: 0px;
 	text-align: center;
 	line-height: 45px;
-	color: #294874;
+	color: #fff;
 	font-family: HelveticaNeueCyr;
 	font-size: 15px;
 	font-weight: 500;
@@ -108,9 +109,9 @@ body
 
 .nav_link :hover
 {
-	color: #6c9dd4;
+	color: #074470;
 	background: #fbfbfb;
-	transition: 0.6s;
+	transition: 0.3s;
 }
 
 #menu_uni :last-child
