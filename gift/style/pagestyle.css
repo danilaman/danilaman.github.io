@@ -456,3 +456,9 @@ body
 	height: 50px;
 	background: #ebf5ff;
 }
+
+.zero
+{
+	width: 0px;
+	height: 0px;
+}
