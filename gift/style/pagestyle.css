@@ -398,11 +398,11 @@ body
 	padding-top: 20px;
 	background: blue;
 	position: relative;
-	background-image: linear-gradient(180deg, #002f59 65%, #01467d 100%);
-	background-image: -moz-linear-gradient(top, #002f59 65%, #01467d 100%);
-	background-image: -webkit-linear-gradient(top, #002f59 65%, #01467d 100%);
-	background-image: -o-linear-gradient(top, #002f59 65%, #01467d 100%);
-	background-image: -ms-linear-gradient(top, #002f59 65%, #01467d 100%);
+	background-image: linear-gradient(180deg, #002f59 55%, #01467d 100%);
+	background-image: -moz-linear-gradient(top, #002f59 55%, #01467d 100%);
+	background-image: -webkit-linear-gradient(top, #002f59 55%, #01467d 100%);
+	background-image: -o-linear-gradient(top, #002f59 55%, #01467d 100%);
+	background-image: -ms-linear-gradient(top, #002f59 55%, #01467d 100%);
 }
 
 #nt-bottom-logo
