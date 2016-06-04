@@ -275,7 +275,7 @@ body
 	height: 16px;
 	width: auto;
 	margin: 20px auto;
-	padding: 7px;
+	padding: 9px;
 	color: #294874;
 	border: 2px solid #294874;
 	font-family: HelveticaNeueCyr;
@@ -284,7 +284,7 @@ body
 	text-align: center;
 	font-weight: 400;
 	letter-spacing: 1px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .more:hover
