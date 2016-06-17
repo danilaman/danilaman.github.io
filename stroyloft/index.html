@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<title>Стройлофт</title>
+</head>
+<body>
+
+	<div id="navbar">
+		<a href = "#"><img id="mainlogo" src = "images/logo.png"></a>
+		<ul id="navlist">
+			<li class="navmenu"><a href = "#">Все заказы</a></li>
+			<li class="navmenu"><a href = "#">Все исполнители</a></li>
+			<li class="navmenu"><a href = "#">Примеры работ</a></li>
+			<li class="navmenu"><a href = "#">Отзывы</a></li>
+			<li class="navmenu"><a href = "#">Войти/Регистрация</a></li>
+		</ul>
+	</div>
+
+	<div id="header">
+		<p class="whiteTopic">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
+		<div id="connectHeader">
+			<div id = "whatDo">Что требуется сделать?</div>
+			<div class="formspanel">
+				<span class = "formlab">Напишите ваш номер телефона:</span>
+				<input type = "text" name = "phoneNumber" class = "textField" placeholder = "В формате: +7(000)000-00-00">
+
+				<span class = "formlab">Заголовок заказа:</span>
+				<input type = "text" name = "orderTopic" class = "textField" placeholder = "Например, ремонт ванной, стяжка пола, укладка ламината и т.д.">
+
+				<span class = "formlab">Максимально подробно опишите ваш заказ:</span>
+				<textarea id = "orderDescription" class = "textField" placeholder = "Например, объём работ, материалы, когда нужно приступить/закончить работу, и т.п.
+"></textarea>
+			</div>
+
+				<a href = "#"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
+
+				<div id="sendapp">
+					<div id="freeapp">
+						<span class="freeTopic">Бесплатно!</span>
+						<p class="freeDesc">Отправка заявки бесплатна и ни к чему вас не обязывает</p>
+					</div>
+					<div id = "arc"></div>
+					<input type = "submit" value = "Оставить заявку" class = "yellowButton" id = "SendApp">
+				</div>
+		</div>
+	</div>
+
+	<div id="HowFast">
+		<p class = "blackTopic">Вы оставляете заявку - вас находят</p>
+		<hr class = "redLine" color = "#ffb837">
+		<p class="subBlackTopic">Среднее время ожидания отклика на заявку составляет 10-15 минут</p>
+		<div id="rowAdv">
+
+			<div class="advantage">
+				<img src = "images/emptyicon.png" class="roundIcon">
+				<p class="medTopic">Просто</p>
+				<hr class = "redLine" color = "#ffb837" style = "margin-top: 10px;">
+				<p class="advSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+				elit. Aenean euismod bibendum</p>
+			</div>
+
+			<div class="advantage" advantage = "mid">
+				<img src = "images/emptyicon.png" class="roundIcon">
+				<p class="medTopic">Быстро</p>
+				<hr class = "redLine" color = "#ffb837" style = "margin-top: 10px;">
+				<p class="advSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+				elit. Aenean euismod bibendum</p>
+			</div>
+
+			<div class="advantage">
+				<img src = "images/emptyicon.png" class="roundIcon">
+				<p class="medTopic">Удобно</p>
+				<hr class = "redLine" color = "#ffb837" style = "margin-top: 10px;">
+				<p class="advSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+				elit. Aenean euismod bibendum</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
