@@ -207,6 +207,8 @@ body
 	cursor: pointer;
 	transition: 0.3s;
 	letter-spacing: 1px;
+	margin: 40px auto;
+	display: block;
 }
 
 .whiteButton:hover
