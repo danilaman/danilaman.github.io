@@ -75,9 +75,8 @@ body
 
 .blackTopic
 {
-	margin: 0px auto;
 	text-align: center;
-	width: 800px;
+	width: 100%;
 	color: #414141;
 	font-family: RalewayRegular;
 	font-size: 28px;
@@ -98,6 +97,17 @@ body
 	font-family: RalewayRegular;
 	text-align: center;
 	font-size: 12px;
+}
+
+.subtextWhite
+{
+	color: #fff;
+	font-family: RalewayLight;
+	text-align: center;
+	font-size: 12px;
+	padding: 25px 0px 0px 25px;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 
 #connectHeader
@@ -195,6 +205,12 @@ body
 #HowWorks
 {
 	margin: 30px 0px;
+}
+
+#tryThis
+{
+	margin: 45px auto;
+	display: block;
 }
 
 #sendapp
@@ -391,4 +407,271 @@ body
 {
 	height: 0px;
 	width: 0px;
+}
+
+#trythis
+{
+	width: 100%;
+	height: 300px;
+	margin: 30px 0px;
+	background: url(../images/FastBg.png) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#reviews
+{
+	width: 100%;
+	height: 400px;
+}
+
+.oneReview
+{
+	height: 220px;
+	width: 250px;
+	padding: 15px;
+	display: inline-block;
+	outline: none;
+}
+
+.reviewsString
+{
+	height: 250px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.clientPhoto
+{
+	width: 45px;
+	height: 45px;
+	float: left;
+	border-radius: 50%;
+}
+
+.aboutClient
+{
+	width: 160px;
+	padding: 10px 30px 0px 0px;
+	height: 35px;
+	float:right;
+}
+
+.clientName
+{
+	font-family: RalewayRegular;
+	font-size: 16px;
+	color: #212121;
+}
+
+.clientsProf
+{
+	font-family: RalewayBold;
+	font-size: 12px;
+	color: #212121;
+	letter-spacing: 1px;
+}
+
+.rev
+{
+	color: #86878b;
+	font-family: OpenSans;
+	font-size: 14px;
+	padding: 10px;
+	background: #f4f4f4;
+	margin: 5px auto;
+}
+
+.vote
+{
+	width: 110px;
+	height: 30px;
+	float: left;
+	margin-top: 20px;
+}
+
+.bad
+{
+	color: #fff;
+	font-family: RalewayBold;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #f24841;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.good
+{
+	color: #fff;
+	font-family: RalewayBold;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #63c399;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	margin: 0px 4px;
+	display: inline-block;
+}
+
+.cool
+{
+	color: #fff;
+	font-family: RalewayBold;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ffb837;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.blueButton
+{
+	height: 30px;
+	text-decoration: none;
+	font-family: OpenSansSemibold;
+	background: none;
+	outline: none;
+	border: 2px solid #018cd7;
+	border-radius: 5px;
+	color: #018cd7;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 12px;
+	float:right;
+	margin-top: 20px;
+}
+
+.blueButton:hover
+{
+	background: #018cd7;
+	color: #fff;
+}
+
+.greenLink
+{
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	display: inline-block;
+	margin: 30px auto;
+	font-family: OpenSansSemibold;
+	color: #63c399;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.whiteLink
+{
+	text-decoration: none;
+	width: 100%;
+	display: inline-block;
+	margin: 30px auto;
+	font-family: OpenSans;
+	color: #fff;
+	font-size: 12px;
+	transition: 0.3s;
+	margin: 5px;
+}
+
+.greenLink:hover
+{
+	color: #71dbac;
+}
+
+#footer
+{
+	width: 100%;
+	height: 180px;
+	background: #71dbac;
+	display: block;
+	margin-top: 140px;
+	min-width: 1303px;
+}
+
+#footerLeft
+{
+	width: 280px;
+	height: 180px;
+	margin: 0px 10px 0px 80px;
+	float: left;
+}
+
+.whiteLogo
+{
+	width: 260px;
+	margin-top: 30px;
+}
+
+.copy
+{
+	color: #fff;
+	font-family: OpenSansSemibold;
+	font-size: 10px;
+	letter-spacing: 1px;
+	padding-left: 5px;
+	margin-top: 50px;
+}
+
+#footerSecond
+{
+	width: 150px;
+	height: 150px;
+	margin: 0px 10px 0px 80px;
+	display: inline-block;
+	padding-top: 30px;
+	float: left;
+}
+
+#footerThird
+{
+	width: 220px;
+	height: 150px;
+	margin: 0px 10px 0px 60px;
+	display: inline-block;
+	padding-top: 30px;
+	float: left;
+}
+
+#footerFourth
+{
+	width: 200px;
+	height: 150px;
+	margin: 0px 10px 0px 100px;
+	display: inline-block;
+	padding-top: 30px;
+	float: left;
+}
+
+#footerFourth a
+{
+	color: #fff;
+	margin: 0px 10px;
+}
+
+#dart
+{
+	width: 120px;
+	height: 45px;
+	background: red;
+	background: url(../images/dart.png) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+#dart:hover
+{
+	background: url(../images/DARTwhite.png) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
 }

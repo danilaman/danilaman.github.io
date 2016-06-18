@@ -4,8 +4,12 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
-	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
 	<script src="js/platform.js"></script>
 	<title>Стройлофт</title>
 </head>
@@ -39,7 +43,7 @@
 "></textarea>
 			</div>
 
-				<a href = "#"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
 
 				<div id="sendapp">
 					<div id="freeapp">
@@ -92,7 +96,7 @@
 		<p class="subBlackTopic" style = "margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
 		<div class="servRow">
-			<a href = "#" class="oneService">
+			<a href = "#" class="oneService" style = "padding-right:60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -101,7 +105,7 @@
 				<img src = "images/men_cl.png" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "padding: 0px 120px">
+			<a href = "#" class="oneService" style = "padding: 0px 60px">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -110,7 +114,7 @@
 				<img src = "images/contractor_cl.jpg" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "float:right">
+			<a href = "#" class="oneService" style = "float:right; padding-left: 60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -122,7 +126,7 @@
 		<div style = "clear:both"></div>
 
 		<div class="servRow">
-			<a href = "#" class="oneService">
+			<a href = "#" class="oneService" style = "padding-right:60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -131,7 +135,7 @@
 				<img src = "images/men_cl.png" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "padding: 0px 120px">
+			<a href = "#" class="oneService" style = "padding: 0px 60px">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -140,7 +144,7 @@
 				<img src = "images/contractor_cl.jpg" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "float:right">
+			<a href = "#" class="oneService" style = "float:right; padding-left: 60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -153,7 +157,7 @@
 		<div style = "clear:both"></div>
 
 		<div class="servRow">
-			<a href = "#" class="oneService">
+			<a href = "#" class="oneService" style = "padding-right:60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -162,7 +166,7 @@
 				<img src = "images/men_cl.png" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "padding: 0px 120px">
+			<a href = "#" class="oneService" style = "padding: 0px 60px">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -171,7 +175,7 @@
 				<img src = "images/contractor_cl.jpg" class = "onePx">
 			</a>
 
-			<a href = "#" class="oneService" style = "float:right">
+			<a href = "#" class="oneService" style = "float:right; padding-left: 60px;">
 				<div class="frameServ">
 					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 					<div class = "examplesGreen">Примеры работ</div>
@@ -182,6 +186,191 @@
 		</div>
 		<div style = "clear:both"></div>
 		</div>
-	</div>
+
+		<div id = "trythis">
+			<p class="whiteTopic" style = "padding-top: 60px;">Убедитесь сами насколько это просто и быстро</p>
+			<hr class="redLine" color="#fff">
+			<p class="subtextWhite">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+			<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Попробовать" class = "whiteButton" id = "tryThis"></a>
+		</div>
+
+		<div id="reviews">
+			<p class = "blackTopic">Что говорят наши пользователи</p>
+			<hr class = "redLine" color = "#ffb837">
+			<p class="subBlackTopic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+		<div class="reviewsString">
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+				<div class="oneReview">
+					<img src = "images/Petr.png" class="clientPhoto">
+					<div class="aboutClient">
+						<div class="clientName">Петр Васильев</div>
+						<div class="clientsProf">Частный мастер</div>
+					</div>
+					<div style = "clear:both;"></div>
+					<div class="rev">
+						Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+					</div>
+					<div class="vote">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+				</div>
+			</div>
+		<div style = "clear:both;"></div>
+
+		<a href = "#" class = "greenLink">Смотреть все отзывы</a>
+		</div>
+
+		<div id = "footer">
+			<div id="footerLeft">
+				<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+				<p class = "copy">Все права защищены 2016</p>
+			</div>
+
+			<div id="footerSecond">
+				<a href = "#" class = "whiteLink">- Заказы</a>
+				<a href = "#" class = "whiteLink">- Исполнители</a>
+				<a href = "#" class = "whiteLink">- Блог</a>
+				<a href = "#" class = "whiteLink">- Как это работает?</a>
+			</div>
+
+			<div id="footerThird">
+				<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+				<a href = "#" class = "whiteLink">- Пользовательское соглашение</a>
+				<a href = "#" class = "whiteLink">- О нас</a>
+				<a href = "#" class = "whiteLink">- Поддержка</a>
+			</div>
+
+			<div id="footerFourth">
+				<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+				<a href = "#" id = "dart" style = "margin: 25px;"></a>
+				<img src = "images/DARTwhite.png" class = "onePx">
+			</div>
+		</div>
 </body>
 </html>

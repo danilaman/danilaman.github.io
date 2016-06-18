@@ -1,8 +1,6 @@
 $(document).ready(function()
 {
 	$('.oneService').hover(function(){
-
-
 	var bw = $(this).find(".serviceimg").css("backgroundImage")
 	var cl = $(this).find(".serviceimg").attr("servicePhoto")
 
@@ -21,6 +19,18 @@ $(document).ready(function()
 	"background-size": "cover", "wudth": "170px", "height": "170px"
 	})
 		$(this).find(".examplesGreen").slideToggle(300)
-
 })
+
+	
+	$('.reviewsString').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+	nextArrow: "",
+	autoplaySpeed: 3000,
+	autoplay: true,
+});
 })
