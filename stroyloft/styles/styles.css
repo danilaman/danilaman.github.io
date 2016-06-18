@@ -317,9 +317,8 @@ body
 .servRow
 {
 	width: 800px;
-	height: 220px;
-	border: 1px solid black;
-	margin: 30px auto;
+	height: 210px;
+	margin: 0px auto;
 }
 
 .oneService
