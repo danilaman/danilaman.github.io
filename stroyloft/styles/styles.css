@@ -77,7 +77,6 @@ body
 	text-align: center;
 	margin-bottom: 8px;
 	font-size: 24px;
-	font-weight: 700;
 	margin-top: 10px;
 }
 
@@ -245,14 +244,16 @@ body
 	font-family: RalewaySemibold;
 	color: #ffb837;
 	font-size: 24px;
+	font-weight: 700;
 }
 
 .freeDesc
 {
 	margin: 0px;
 	color: #fff;
-	font-family: RalewaySemibold;
+	font-family: RalewayRegular;
 	letter-spacing: 1px;
+	font-weight: 200;
 }
 
 .yellowButton
@@ -701,4 +702,11 @@ body
 	background: url(../images/DARTwhite.png) no-repeat center center;
 	-moz-background-size: cover;
 	background-size: cover;
+}
+
+#allfooters
+{
+	height: 180px;
+	width: 1303px;
+	margin: 0px auto;
 }
