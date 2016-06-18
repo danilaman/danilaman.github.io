@@ -58,10 +58,10 @@ body
 {
 	margin: 0px auto;
 	text-align: center;
-	width: 800px;
+	width: 900px;
 	color: #fff;
 	font-family: RalewayRegular;
-	font-size: 28px;
+	font-size: 31px;
 	padding-top: 50px;
 }
 
@@ -71,6 +71,9 @@ body
 	color: #414141;
 	text-align: center;
 	margin-bottom: 8px;
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 10px;
 }
 
 .blackTopic
@@ -79,33 +82,36 @@ body
 	width: 100%;
 	color: #414141;
 	font-family: RalewayRegular;
-	font-size: 28px;
-	padding-top: 50px;
+	font-size: 32px;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	margin-top:0px;
+	font-weight: 700;
 }
 
 .subBlackTopic
 {
 	font-family: OpenSans;
-	color: #414141;
+	color: #9f9f9f;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .vSubtext
 {
-	color: #414141;
+	color: #9f9f9f;
 	font-family: RalewayRegular;
 	text-align: center;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .subtextWhite
 {
-	color: #fff;
+	color: #ccc;
 	font-family: RalewayLight;
 	text-align: center;
 	font-size: 12px;
-	padding: 25px 0px 0px 25px;
+	padding: 20px 0px 0px 25px;
 	font-size: 12px;
 	letter-spacing: 1px;
 }
@@ -121,7 +127,7 @@ body
 
 #whatDo
 {
-	width: 955px;
+	width: 910px;
 	height: 45px;
 	font-family: RalewaySemibold;
 	color: #414141;
@@ -129,13 +135,14 @@ body
 	border-radius: 7px 7px 0px 0px;
 	line-height: 45px;
 	font-size: 22px;
-	padding-left: 45px;
+	padding: 5px 45px;
+	font-weight: 700;
 }
 
 .formspanel
 {
 	width: 900px;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 
 .formlab
@@ -220,6 +227,8 @@ body
 	height: 100px;
 	position: relative;
 	margin-bottom: 30px;
+	margin-top: 15px;
+	font-weight: 700;
 }
 
 #freeapp
@@ -260,6 +269,7 @@ body
 	position: absolute;
 	right: 0;
 	top: 0;
+	font-weight: 700;
 }
 
 #SendApp
@@ -323,7 +333,7 @@ body
 #services
 {
 	width: 100%;
-	height: 800px;
+	height: 920px;
 	margin: 0px auto;
 	background: url(../images/cool_bg.png) no-repeat center center;
 	-moz-background-size: cover;
@@ -332,14 +342,14 @@ body
 
 .servRow
 {
-	width: 800px;
-	height: 210px;
+	width: 950px;
+	height: 260px;
 	margin: 0px auto;
 }
 
 .oneService
 {
-	width: 180px;
+	width: 220px;
 	height: 220px;
 	display: inline-block;
 	text-decoration: none;
@@ -347,13 +357,13 @@ body
 
 .serviceimg, .serviceimgColor
 {
-	width: 180px;
-	height: 180px;
+	width: 230px;
+	height: 230px;
 }
 
 .servicename
 {
-	width: 180px;
+	width: 220px;
 	height: 40px;
 	line-height: 40px;
 	font-family: OpenSansBold;
@@ -380,8 +390,8 @@ body
 
 .frameServ
 {
-	width: 170px;
-	height: 170px;
+	width: 220px;
+	height: 220px;
 	overflow: hidden;
 	position: relative;
 }
@@ -389,7 +399,7 @@ body
 .examplesGreen
 {
 	background: rgba(99, 195, 153, 0.9);
-	width: 170px;
+	width: 220px;
 	height: 40px;
 	position: absolute;
 	bottom: 0;
@@ -413,7 +423,7 @@ body
 {
 	width: 100%;
 	height: 300px;
-	margin: 30px 0px;
+	margin: 40px auto;
 	background: url(../images/FastBg.png) no-repeat center center;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -427,8 +437,8 @@ body
 
 .oneReview
 {
-	height: 220px;
-	width: 250px;
+	height: 360px;
+	width: 350px;
 	padding: 15px;
 	display: inline-block;
 	outline: none;
@@ -436,22 +446,23 @@ body
 
 .reviewsString
 {
-	height: 250px;
+	height: 320px;
 	width: 100%;
 	margin: 20px auto;
 }
 
 .clientPhoto
 {
-	width: 45px;
-	height: 45px;
+	width: 60px;
+	height: 60px;
 	float: left;
 	border-radius: 50%;
+
 }
 
 .aboutClient
 {
-	width: 160px;
+	width: 250px;
 	padding: 10px 30px 0px 0px;
 	height: 35px;
 	float:right;
@@ -460,14 +471,14 @@ body
 .clientName
 {
 	font-family: RalewayRegular;
-	font-size: 16px;
+	font-size: 20px;
 	color: #212121;
 }
 
 .clientsProf
 {
 	font-family: RalewayBold;
-	font-size: 12px;
+	font-size: 14px;
 	color: #212121;
 	letter-spacing: 1px;
 }
@@ -476,10 +487,11 @@ body
 {
 	color: #86878b;
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 17px;
 	padding: 10px;
 	background: #f4f4f4;
-	margin: 5px auto;
+	margin: 10px auto;
+	margin-top: 16px;
 }
 
 .vote
@@ -535,7 +547,7 @@ body
 
 .blueButton
 {
-	height: 30px;
+	height: 35px;
 	text-decoration: none;
 	font-family: OpenSansSemibold;
 	background: none;
@@ -545,7 +557,7 @@ body
 	color: #018cd7;
 	cursor: pointer;
 	transition: 0.3s;
-	font-size: 12px;
+	font-size: 16px;
 	float:right;
 	margin-top: 20px;
 }
@@ -576,10 +588,15 @@ body
 	display: inline-block;
 	margin: 30px auto;
 	font-family: OpenSans;
-	color: #fff;
-	font-size: 12px;
+	color: RGBA(255, 255, 255, 0.9);
+	font-size: 15px;
 	transition: 0.3s;
-	margin: 5px;
+	margin: 2px 0;
+}
+
+.whiteLink
+{
+	color: RGBA(255, 255, 255, 1);
 }
 
 .greenLink:hover
@@ -593,7 +610,7 @@ body
 	height: 180px;
 	background: #71dbac;
 	display: block;
-	margin-top: 140px;
+	margin-top: 170px;
 	min-width: 1303px;
 }
 
@@ -618,7 +635,7 @@ body
 	font-size: 10px;
 	letter-spacing: 1px;
 	padding-left: 5px;
-	margin-top: 50px;
+	margin-top: 28px;
 }
 
 #footerSecond

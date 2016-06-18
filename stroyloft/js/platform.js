@@ -8,7 +8,7 @@ $(document).ready(function()
 	window.cl = cl
 
 		$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-	"background-size": "cover", "wudth": "200px", "height": "200px"
+	"background-size": "cover", "wudth": "250px", "height": "250px"
 		})
 
 		$(this).find(".examplesGreen").slideToggle(300)
@@ -16,7 +16,7 @@ $(document).ready(function()
 	function()
 	{
 		$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-	"background-size": "cover", "wudth": "170px", "height": "170px"
+	"background-size": "cover", "wudth": "220px", "height": "220px"
 	})
 		$(this).find(".examplesGreen").slideToggle(300)
 })
