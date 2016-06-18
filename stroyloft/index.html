@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="js/platform.js"></script>
 	<title>Стройлофт</title>
 </head>
 <body>
@@ -56,8 +58,8 @@
 		<p class = "blackTopic">Вы оставляете заявку - вас находят</p>
 		<hr class = "redLine" color = "#ffb837">
 		<p class="subBlackTopic">Среднее время ожидания отклика на заявку составляет 10-15 минут</p>
-		<div id="rowAdv">
 
+		<div id="rowAdv">
 			<div class="advantage">
 				<img src = "images/emptyicon.png" class="roundIcon">
 				<p class="medTopic">Просто</p>
@@ -81,6 +83,40 @@
 				<p class="advSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
 				elit. Aenean euismod bibendum</p>
 			</div>
+		</div>
+	</div>
+
+	<div id="services">
+		<p class = "blackTopic" style = "padding-top: 20px;">Популярные виды услуг</p>
+		<hr class = "redLine" color = "#ffb837">
+		<p class="subBlackTopic">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+		<div class="servRow">
+			<a href = "#" class="oneService">
+				<div class="frameServ">
+					<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
+					<div class = "examplesGreen">Примеры работ</div>
+				</div>
+				<p class = "servicename">Сантехника</p>
+			</a>
+
+			<a href = "#" class="oneService" style = "padding: 0px 120px">
+				<div class="frameServ">
+					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+					<div class = "examplesGreen">Примеры работ</div>
+				</div>
+				<p class = "servicename">Подрядчик</p>
+			</a>
+
+			<a href = "#" class="oneService" style = "float:right">
+				<div class="frameServ">
+					<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+					<div class = "examplesGreen">Примеры работ</div>
+				</div>
+				<p class = "servicename">Подрядчик</p>
+			</a>
+
+		</div>
 		</div>
 	</div>
 </body>
