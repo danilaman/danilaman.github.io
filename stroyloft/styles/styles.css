@@ -387,3 +387,9 @@ body
 	letter-spacing: 1px;
 	display: none;
 }
+
+.onePx
+{
+	height: 0px;
+	width: 0px;
+}
