@@ -1005,6 +1005,7 @@ ul
 	left: -45px;
 	margin-top: 2px;
 	color: #e8e8e8;
+	transition: 0.3s;
 }
 
 .rightArrow
