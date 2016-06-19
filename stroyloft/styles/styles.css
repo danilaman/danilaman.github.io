@@ -21,12 +21,13 @@ body
 {
 	height: 60px;
 	margin: 15px 20px 15px 120px;
+	float: left;
 }
 
 #navlist
 {
-	float: right;
-	margin: 0px 80px 0px 0px;
+	float: left;
+	margin: 0px 0px 0px 80px;
 }
 
 .navmenu
