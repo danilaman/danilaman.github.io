@@ -991,6 +991,7 @@ ul
 	text-decoration: none;
 	display: inline-block;
 	transition: 0.3s;
+	color: #414141;
 }
 
 .navNum:hover
