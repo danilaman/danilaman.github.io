@@ -20,14 +20,22 @@ body
 #mainlogo
 {
 	height: 60px;
-	margin: 15px 20px 15px 120px;
+	margin: 15px 20px 15px 0px;
 	float: left;
 }
 
 #navlist
 {
 	float: left;
-	margin: 0px 0px 0px 80px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 10px;
+}
+
+#navUni
+{
+	width: 1025px;
+	height: height: 90px;
+	margin: 0px auto;
 }
 
 .navmenu
