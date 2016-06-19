@@ -452,6 +452,7 @@ body
 {
 	width: 100%;
 	height: 400px;
+
 }
 
 .oneReview
@@ -511,6 +512,7 @@ body
 	background: #f4f4f4;
 	margin: 10px auto;
 	margin-top: 16px;
+	height: 115px;
 }
 
 .vote
@@ -724,4 +726,304 @@ body
 	height: 180px;
 	width: 1303px;
 	margin: 0px auto;
+}
+
+/*orders*/
+
+#ordHeader
+{
+	width: 100%;
+	height: 395px;
+	background: url(../images/ord_Bg.png) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#ShowOrdTopic
+{
+	padding: 160px 0px;
+	width: 700px;
+}
+
+.typeJob
+{
+	background: #e6e6e6;
+	height: 45px;
+	line-height: 45px;
+	padding: 0px;
+	color: #414141;
+	font-size: 14px;
+	font-family: RalewayBold;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	margin: 3px;
+}
+
+.JobRow
+{
+	margin: 6px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+#jobBlocks
+{
+	margin: 45px auto 0px;
+	width: 1045px;
+}
+
+.jobTypeLink
+{
+	color: #414141;
+	text-decoration: none;
+	display: block;
+	padding: 0px 15px;
+}
+
+.jobTypeLink:hover
+{
+	color: #fff;
+	background: #898989;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+.hoverMenu
+{
+	position: absolute;
+	padding: 7px 5px;
+	left: 0;
+	z-index: 10;
+	display: none;
+	background: #ffb837;
+}
+
+.hoverMenu li
+{
+	text-align: left;
+	width: 268px;
+	padding: 8px;
+	height: 16px;
+	line-height: 16px;
+	font-family: RalewayRegular;
+	font-size: 15px;
+}
+
+.hoverMenu li a
+{
+	color: #414141;
+	text-decoration: none;
+}
+
+.hoverMenu li a:hover
+{
+	border-bottom: 2px solid #fff;
+}
+
+.ThSpace
+{
+	height: 3px;
+}
+
+#lastOrders
+{
+	width: 100%;
+	margin-top: 190px;
+}
+
+.oneOrder
+{
+	width: 1170px;
+	height: 180px;
+	margin: 15px auto 20px;
+}
+
+.orderTime
+{
+	color: #63c399;
+	font-family: RalewayBold;
+	font-size: 16px;
+	margin: 0px 25px;
+	float:left;
+}
+
+.typeBuild
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 16px;
+	margin: 0px 25px;
+	float:right;
+}
+
+.orderInf
+{
+	width: 1170px;
+	height: 150px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	margin-top: 8px;
+}
+
+.orderTitle
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 16px;
+	float:left;
+	margin: 15px 0px 0px 25px;
+	text-decoration: none;
+}
+
+.orderPrice
+{
+	float:left;
+	margin: 13px 0px 0px 10px;
+	height: 14px;
+	padding: 5px 16px;
+	background: #63c399;
+	color: #fff;
+	border-radius: 7px;
+}
+
+.orderLocation
+{
+	color: #ffb837;
+	font-family: RalewayBold;
+	font-size: 16px;
+	margin: 0px 25px;
+	float:right;
+	margin: 15px 26px 0px 0px;
+}
+
+.aboutOrder
+{
+	color: #414141;
+	font-size: 16px;
+	font-family: RalewayRegular;
+	margin: 18px 20px;
+}
+
+.customer
+{
+	color: #414141;
+	font-size: 16px;
+	font-family: RalewayRegular;
+	margin: 0px 0px 0px 20px;
+	float: left;
+	display: inline-block;
+}
+
+.customerName
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 16px;
+	margin: 0px 25px 0px 0px;
+	float:right;
+	display: inline-block;
+}
+
+.aboutCustomer
+{
+	width: 100%;
+}
+
+.orderDots
+{
+	display: inline-block;
+	height: 16px;
+	overflow: hidden;
+	line-height: 12px;
+	letter-spacing: 8px;
+	font-family: RalewayRegular;
+	color: #e6e6e6;
+	font-weight: 900;
+	margin: 0px 5px;
+}
+
+.yellowBigBtn
+{
+	color: #feba40;
+	display: block;
+	width: 1166px;
+	height: 40px;
+	margin: 50px auto;
+	border: 2px solid #feba40;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	border-radius: 7px;
+	font-family: OpenSansSemibold;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.yellowBigBtn:hover
+{
+	background: #feba40;
+	color: #fff;
+}
+
+#pageNav
+{
+	height: 37px;
+	max-width: 545px;
+	margin: 60px auto;
+	position: relative;
+}
+
+.navNum
+{
+	width: 35px;
+	height: 35px;
+	border: 1px solid #e8e8e8;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 7px;
+	margin: 0px 10px;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.navNum:hover
+{
+	border: 1px solid #febe4b;
+}
+
+.leftArrow
+{
+	position: absolute;
+	left: -45px;
+	margin-top: 2px;
+	color: #e8e8e8;
+}
+
+.rightArrow
+{
+	position: absolute;
+	right: -45px;
+	top: 0px;
+	margin-top: 2px;
+	color: #e8e8e8;
+	transition: 0.3s;
+}
+
+.leftArrow:hover, .rightArrow:hover
+{
+	color: #9c9c9c;
+}
+
+#NavPadding
+{
+	width: 700px;
+	height: 37px;
+	margin: 60px auto;
 }

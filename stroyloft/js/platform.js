@@ -33,4 +33,18 @@ $(document).ready(function()
 	autoplaySpeed: 3000,
 	autoplay: true,
 });
+
+
+	$(".typeJob").hover(function()
+	{
+		$(this).find(".hoverMenu").toggle()
+	},
+	function()
+	{
+		$(this).find(".hoverMenu").toggle()
+	})
+
+	var wdt = $(".aboutCustomer").width()-(120+($(".aboutCustomer").find(".customerName").width()));
+	$(".aboutCustomer").find(".orderDots").css("width", wdt + "px")
+
 })

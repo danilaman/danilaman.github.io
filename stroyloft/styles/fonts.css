@@ -39,3 +39,9 @@
 	font-family: RalewaySemibold;
 	src: url(../fonts/ralewaysemibold.ttf);
 }
+
+@font-face
+{
+	font-family: RalewayMedium;
+	src: url(../fonts/ralewaymedium.ttf);
+}
