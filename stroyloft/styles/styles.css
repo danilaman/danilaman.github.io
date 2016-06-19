@@ -282,6 +282,12 @@ body
 	right: 0;
 	top: 0;
 	font-weight: 700;
+	transition: 0.3s;
+}
+
+.yellowButton:hover
+{
+	background: #e3a22d;
 }
 
 #SendApp
