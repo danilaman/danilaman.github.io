@@ -14,7 +14,7 @@ body
 	height: 90px;
 	background: #fff;
 	position: relative;
-	min-width: 1303px;
+	min-width: 1025px;
 }
 
 #mainlogo
@@ -632,7 +632,7 @@ body
 	background: #71dbac;
 	display: block;
 	margin-top: 170px;
-	min-width: 1303px;
+	min-width: 1025px;
 }
 
 #footerLeft
