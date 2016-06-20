@@ -46,7 +46,7 @@ $(document).ready(function()
 
 	function dots()
 	{
-		var wdt = $(".aboutCustomer").width()-(120+($(".aboutCustomer").find(".customerName").width()));
+		var wdt = $(".aboutCustomer").width()-(125+($(".aboutCustomer").find(".customerName").width()));
 		$(".aboutCustomer").find(".orderDots").css("width", wdt + "px");
 	}
 
