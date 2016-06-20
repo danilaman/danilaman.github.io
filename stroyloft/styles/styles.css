@@ -639,7 +639,7 @@ body
 {
 	width: 280px;
 	height: 180px;
-	margin: 0px 10px 0px 80px;
+	margin: 0px 10px 0px 0px;
 	float: left;
 }
 
@@ -724,7 +724,7 @@ body
 #allfooters
 {
 	height: 180px;
-	width: 1303px;
+	width: 1130px;
 	margin: 0px auto;
 }
 
