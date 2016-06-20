@@ -44,8 +44,13 @@ $(document).ready(function()
 		$(this).find(".hoverMenu").toggle()
 	})
 
-	var wdt = $(".aboutCustomer").width()-(120+($(".aboutCustomer").find(".customerName").width()));
-	$(".aboutCustomer").find(".orderDots").css("width", wdt + "px")
+	function dots()
+	{
+		var wdt = $(".aboutCustomer").width()-(120+($(".aboutCustomer").find(".customerName").width()));
+		$(".aboutCustomer").find(".orderDots").css("width", wdt + "px");
+	}
 
-	$("#pageNav").width($(".navNum").length*61);
+		$("#pageNav").width($(".navNum").length*61);
+		setTimeout(dots, 100);
+	
 })

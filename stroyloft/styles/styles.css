@@ -75,7 +75,7 @@ body
 	width: 900px;
 	color: #fff;
 	font-family: RalewayRegular;
-	font-size: 31px;
+	font-size: 36px;
 	padding-top: 50px;
 }
 
@@ -95,7 +95,7 @@ body
 	width: 100%;
 	color: #414141;
 	font-family: RalewayRegular;
-	font-size: 32px;
+	font-size: 36px;
 	padding-top: 20px;
 	margin-bottom: 10px;
 	margin-top:0px;
@@ -108,7 +108,7 @@ body
 	font-family: OpenSans;
 	color: #9f9f9f;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .vSubtext
@@ -126,7 +126,7 @@ body
 	text-align: center;
 	font-size: 12px;
 	padding: 20px 0px 0px 25px;
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 1px;
 }
 
@@ -764,8 +764,9 @@ body
 
 #ShowOrdTopic
 {
-	padding: 160px 0px;
-	width: 700px;
+	padding: 156px 0px;
+	font-size: 36px;
+	width: 800px;
 }
 
 .typeJob
@@ -855,14 +856,14 @@ ul
 #lastOrders
 {
 	width: 100%;
-	margin-top: 190px;
+	margin-top: 50px;
 }
 
 .oneOrder
 {
 	width: 1170px;
 	height: 180px;
-	margin: 15px auto 20px;
+	margin: 15px auto 30px;
 }
 
 .orderTime
@@ -964,14 +965,15 @@ ul
 .orderDots
 {
 	display: inline-block;
-	height: 16px;
+	height: 18px;
 	overflow: hidden;
-	line-height: 12px;
 	letter-spacing: 8px;
-	font-family: RalewayRegular;
+	font-family: Roboto;
 	color: #e6e6e6;
 	font-weight: 900;
 	margin: 0px 5px;
+	font-size: 18px;
+	line-height: 12px;
 }
 
 .yellowBigBtn
@@ -1056,4 +1058,10 @@ ul
 	width: 700px;
 	height: 37px;
 	margin: 60px auto;
+}
+
+.orderPrice .fa.fa-rub
+{
+	position: relative;
+	top: -1px;
 }
