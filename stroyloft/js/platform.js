@@ -50,7 +50,7 @@ $(document).ready(function()
 		$(".aboutCustomer").find(".orderDots").css("width", wdt + "px");
 	}
 
-		$("#pageNav").width($(".navNum").length*61);
+		$("#pageNav").width($(".navNum").length*62);
 		setTimeout(dots, 100);
 	
 })
