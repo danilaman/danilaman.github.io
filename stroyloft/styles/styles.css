@@ -879,6 +879,11 @@ ul
 	text-decoration: none;
 }
 
+.orderTitle:hover
+{
+	text-decoration: underline;
+}
+
 .orderPrice
 {
 	float:left;
