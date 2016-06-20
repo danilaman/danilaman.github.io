@@ -46,8 +46,12 @@ $(document).ready(function()
 
 	function dots()
 	{
-		var wdt = $(".aboutCustomer").width()-(121+($(".aboutCustomer").find(".customerName").width()));
-		$(".aboutCustomer").find(".orderDots").css("width", wdt + "px");
+		$(".aboutCustomer").each(function(i)
+		{
+			var wdt = $(this).width()-(122+($(this).find(".customerName").width()));
+			$(this).find(".orderDots").css("width", wdt + "px");
+		})
+		
 	}
 
 		$("#pageNav").width($(".navNum").length*62);
