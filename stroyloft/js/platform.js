@@ -55,6 +55,6 @@ $(document).ready(function()
 	}
 
 		$("#pageNav").width($(".navNum").length*62);
-		setTimeout(dots, 100);
+		setTimeout(dots, 500);
 	
 })
