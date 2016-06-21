@@ -70,6 +70,18 @@ $(document).ready(function()
 	setTimeout(smallDots, 500);
 
 
+	function masterDots()
+	{
+		$(".mCraft").each(function(i)
+		{
+			var wdt = $(this).width()-(($(this).find(".oneCraft").width()) + ($(this).find(".priceM").width()) + 60);
+			$(this).find(".mDots").css("width", wdt + "px");
+		})
+	}
+
+	setTimeout(masterDots, 500);
+
+
 	function roomsAligment()
 	{
 		$(".workOne").each(function(i)
@@ -143,4 +155,18 @@ $(document).ready(function()
 	})
 
 	setTimeout(roomsAligment, 500)
+
+	$(".masterPhoto").each(function()
+	{
+		if( $(this).find("img").width() >= $(this).find("img").height() )
+		{
+			$(this).find("img").height( $(this).height() )
+			$(this).find("img").css("left", ( $(this).width() - $(this).find("img").width() )/2 )
+		}
+		else
+		{
+			$(this).find("img").width( $(this).width() )
+			$(this).find("img").css("top", ( $(this).height() - $(this).find("img").height() )/2 )
+		}
+	})
 })

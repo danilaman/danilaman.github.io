@@ -864,7 +864,7 @@ ul
 	height: 3px;
 }
 
-#lastOrders, #lastReviews, #lastWorking
+#lastOrders, #lastReviews, #lastWorking, #listMasters
 {
 	width: 100%;
 	margin-top: 50px;
@@ -1235,4 +1235,172 @@ ul
 	font-family: RalewayMedium;
 	font-size: 20px;
 	color: #fff;
+}
+
+/*masters*/
+
+.mastersContainer
+{
+	width: 1170px;
+	height: 1000px;
+	margin: 50px auto;
+}
+
+.oneMaster
+{
+	height: 515px;
+	width: 100%;
+
+}
+
+.masterMain
+{
+	height: 456px;
+	width: 830px;
+	border: 1px solid #e8e8e8;
+	border-radius: 7px;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.masterPhoto
+{
+	width: 140px;
+	height: 140px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	border-radius: 3px;
+	margin: 28px 20px 15px 28px;
+	float: left;
+}
+
+.masterPhoto img
+{
+	position: absolute;
+}
+
+.masterName
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 18px;
+	float:left;
+	margin: 0px 8px;
+	text-decoration: none;
+}
+
+.masterName:hover
+{
+	text-decoration: underline;
+}
+
+.onlineDot
+{
+	display: inline;
+	background: #63c399;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	position: absolute;
+	left: 8px;
+	top: 32px;
+}
+
+.masterOnline
+{
+	color: #86c29a;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	margin: 25px 0px 0px 8px;
+	padding-left: 12px;
+}
+
+.masterInf
+{
+	width: 400px;
+	float: left;
+	margin: 28px 0px 0px 0px;
+	position: relative;
+}
+
+.masterPost
+{
+	color: #414141;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	float:left;
+	margin: 3px 8px;
+}
+
+.masterPricelist
+{
+	width: 644px;
+	height: 120px;
+	border: 1px solid red;
+	position: absolute;
+	bottom: 230px;
+	right: 0;
+}
+
+.masterPhotos
+{
+	height: 230px;
+	width: 100%;
+	background: blue;
+}
+
+.blodSubTopic
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 18px;
+	margin: 0px;
+}
+
+.regularSubTopic
+{
+	color: #414141;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	margin: 0px;
+}
+
+.prTopic
+{
+	margin-bottom: 10px;
+}
+
+.mCraft
+{
+	height: 20px;
+	width: 644px;
+	display: block;
+}
+
+.priceM
+{
+	float: right;
+	line-height: 15px;
+}
+
+.oneCraft
+{
+	display: inline-block;
+	padding-top: 20px;
+}
+
+.mDots
+{
+	display: inline-block;
+	height: 18px;
+	overflow: hidden;
+	letter-spacing: 8px;
+	font-family: Roboto;
+	color: #e6e6e6;
+	font-weight: 900;
+	margin: 0px 5px;
+	font-size: 18px;
+	line-height: 12px;
 }
