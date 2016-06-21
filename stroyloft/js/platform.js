@@ -57,25 +57,28 @@ $(document).ready(function()
 	setTimeout(dots, 500);
 	
 
-	$(".workOne").each(function(i)
+	function roomsAligment()
 	{
-		if($(this).find(".roomPhoto").width()>$(this).find(".roomPhoto").height())
+		$(".workOne").each(function(i)
 		{
-			$(this).find(".roomPhoto").height($(this).height())
-			$(this).find(".roomPhoto").css({"left":($(this).width()-$(this).find(".roomPhoto").width())/2,
-																			"top":"0",
-																			"width": ($(this).find(".roomPhoto").width()),
-																			"transition": "0.5s"})
-		}
-		else
-		{
-			$(this).find(".roomPhoto").width($(this).width())
-			$(this).find(".roomPhoto").css({"top":($(this).height()-$(this).find(".roomPhoto").height())/2,
-																			"left":"0",
-																			"height": ($(this).find(".roomPhoto").height()),
-																			"transition": "0.5s"})
-		}
-	})
+			if($(this).find(".roomPhoto").width()>$(this).find(".roomPhoto").height())
+			{
+				$(this).find(".roomPhoto").height($(this).height())
+				$(this).find(".roomPhoto").css({"left":($(this).width()-$(this).find(".roomPhoto").width())/2,
+					"top":"0",
+					"width": ($(this).find(".roomPhoto").width()),
+					"transition": "0.5s"})
+			}
+			else
+			{
+				$(this).find(".roomPhoto").width($(this).width())
+				$(this).find(".roomPhoto").css({"top":($(this).height()-$(this).find(".roomPhoto").height())/2,
+					"left":"0",
+					"height": ($(this).find(".roomPhoto").height()),
+					"transition": "0.5s"})
+			}
+		})
+	}
 
 
 	$(".workOne").hover(function()
@@ -126,4 +129,5 @@ $(document).ready(function()
 		})
 	})
 
+	setTimeout(roomsAligment, 500)
 })
