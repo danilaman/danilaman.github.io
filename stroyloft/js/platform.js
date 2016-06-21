@@ -53,9 +53,22 @@ $(document).ready(function()
 		})
 	}
 
-	$("#pageNav").width($(".navNum").length*62);
 	setTimeout(dots, 500);
 	
+	$("#pageNav").width($(".navNum").length*62);
+
+
+	function smallDots()
+	{
+		$(".smallCast").each(function(i)
+		{
+			var wdt = 415-(($(this).find(".customerNameSmall").width()));
+			$(this).find(".dotsSmall").css("width", wdt + "px");
+		})
+	}
+
+	setTimeout(smallDots, 500);
+
 
 	function roomsAligment()
 	{
