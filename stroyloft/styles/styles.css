@@ -771,19 +771,18 @@ margin: 30px 8px;
 {
 	width: 120px;
 	height: 45px;
-	background: url(../images/dart.png) no-repeat center center;
+	background: url(../images/DARTwhite.png) no-repeat center center;
 	-moz-background-size: cover;
 	background-size: cover;
 	display: inline-block;
-	transition: 0.6s;
+	transition: 0.4s;
+	opacity: 0.6;
 }
 
 #dart:hover
 {
-	background: url(../images/DARTwhite.png) no-repeat center center;
-	-moz-background-size: cover;
-	background-size: cover;
-}
+	opacity: 1;
+} 
 
 #allfooters
 {
