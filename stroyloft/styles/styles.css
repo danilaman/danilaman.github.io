@@ -775,7 +775,7 @@ margin: 30px 8px;
 	-moz-background-size: cover;
 	background-size: cover;
 	display: inline-block;
-	transition: 0.3s;
+	transition: 0.6s;
 }
 
 #dart:hover
