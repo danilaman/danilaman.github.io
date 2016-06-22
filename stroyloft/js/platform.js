@@ -70,17 +70,6 @@ $(document).ready(function()
 	setTimeout(smallDots, 500);
 
 
-	function masterDots()
-	{
-		$(".mCraft").each(function(i)
-		{
-			var wdt = $(this).width()-(($(this).find(".oneCraft").width()) + ($(this).find(".priceM").width()) + 60);
-			$(this).find(".mDots").css("width", wdt + "px");
-		})
-	}
-
-	setTimeout(masterDots, 500);
-
 
 	function roomsAligment()
 	{
@@ -102,12 +91,15 @@ $(document).ready(function()
 					"height": ($(this).find(".roomPhoto").height()),
 					"transition": "0.5s"})
 			}
+			$(this).find(".roomPhoto").show();
 		})
 	}
 
 
 	$(".workOne").hover(function()
 	{
+		if( $(this).find(".roomPhoto").css("display") != "none" )
+		{
 			var realData = [$(this).find(".roomPhoto").width(),$(this).find(".roomPhoto").height(),$(this).find(".roomPhoto").css("left"),$(this).find(".roomPhoto").css("top"), $(this).find(".roomPhoto").index(".roomPhoto")];
 			window.realData = realData
 			console.log(realData)
@@ -120,10 +112,12 @@ $(document).ready(function()
 				"top": ($(this).height()-($(this).find(".roomPhoto").height()+percentW))/2
 			})
 			$(this).find(".greenPhoto").css({"background": "rgba(89, 175, 137, 0.9)", "transition":"0.8s"})
-		
+		}
 	},
 	function()
 	{
+		if( $(this).find(".roomPhoto").css("display") != "none" )
+		{
 			$(this).find(".roomPhoto").css({"width": realData[0]+"px",
 				"left": realData[2],
 				"height": realData[1],
@@ -131,8 +125,7 @@ $(document).ready(function()
 			})
 
 			$(this).find(".greenPhoto").css({"background": "rgba(99, 195, 153, 0.9)", "transition":"0.8s"})
-		
-
+		}
 	})
 
 	$(".workString").each(function(i)
@@ -169,4 +162,15 @@ $(document).ready(function()
 			$(this).find("img").css("top", ( $(this).height() - $(this).find("img").height() )/2 )
 		}
 	})
+
+	$(".mSlider").slick({
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		nextArrow: '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>',
+		prevArrow: '<i class="fa fa-angle-left fa-4x lastArrow" aria-hidden="true"></i>'
+	})
+
 })
