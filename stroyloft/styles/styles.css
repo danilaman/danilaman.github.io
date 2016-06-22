@@ -156,8 +156,8 @@ body
 
 .formspanel
 {
-	width: 900px;
-	margin: 20px auto;
+	width: 920px;
+	margin: 20px 40px;
 }
 
 .formlab
@@ -173,7 +173,7 @@ body
 {
 	display: block;
 	margin: 5px 0px;
-	width: 100%;
+	width: 890px;
 	height: 40px;
 	padding: 0px;
 	outline: none;
@@ -190,7 +190,7 @@ body
 {
 	display: block;
 	margin: 5px 0px;
-	width: 100%;
+	width: 890px;
 	height: 80px;
 	padding: 10px 15px;
 	outline: none;
