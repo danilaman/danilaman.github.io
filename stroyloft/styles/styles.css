@@ -218,6 +218,7 @@ body
 	letter-spacing: 1px;
 	margin: 50px auto;
 	display: block;
+	transition: 0.3s;
 }
 
 .whiteButton:hover
@@ -226,9 +227,44 @@ body
 	color: #414141;
 }
 
+.yButton
+{
+	height: 45px;
+	text-decoration: none;
+	font-family: RalewaySemibold;
+	background: none;
+	outline: none;
+	border: 2px solid #ffb837;
+	border-radius: 5px;
+	color: #ffb837;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	display: block;
+	transition: 0.3s;
+}
+
+.whiteButton:hover
+{
+	background: #fff;
+	color: #414141;
+}
+
+.yButton:hover
+{
+	background: #ffb837;
+	color: #fff;
+}
+
 #HowWorks
 {
 	margin: 30px 0px;
+}
+
+.ySubFun
+{
+margin: 30px 8px;
 }
 
 #sendapp
