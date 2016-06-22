@@ -142,7 +142,7 @@ body
 
 #whatDo
 {
-	width: 900px;
+	width: 920px;
 	height: 45px;
 	font-family: RalewaySemibold;
 	color: #414141;
@@ -150,7 +150,7 @@ body
 	border-radius: 7px 7px 0px 0px;
 	line-height: 45px;
 	font-size: 22px;
-	padding: 5px 50px;
+	padding: 5px 40px;
 	font-weight: 700;
 }
 
