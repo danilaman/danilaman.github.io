@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="js/platform.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$(".fileBtnMaster").hover(function()
+			{
+				$(".greyLink").css("textDecoration", "underline")
+			},
+			function()
+			{
+				$(".greyLink").css("textDecoration", "none")
+			})
+
+			$(".typeJob").each(function()
+			{
+				if( $(this).find("input").prop("checked") == true )
+				{
+					$(this).find("span").css({"background": "#63c399", "color":"#fff"})
+				}
+			})
+
+			$(".typeJob").click(function()
+			{
+				if( $(this).find("input").prop("checked") == false )
+				{
+					$(this).find("input").prop("checked", true)
+					$(this).find("span").css({"background": "#63c399", "color":"#fff"})
+				}
+				else
+				{
+					$(this).find("input").prop("checked", false)
+					$(this).find("span").css({"background": "#e6e6e6", "color":"#414141"})
+				}
+				
+			})
+
+			if ($("#step1Reg").css("display") != "none")
+			{
+				var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
+				if(hgh < 80)
+					hgh = 80
+
+
+				$("#footer").css("marginTop",hgh)
+			}
+
+			$(window).resize(function()
+			{
+				if ($("#step1Reg").css("display") 	= "none")
+				{
+					var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
+					if(hgh < 80)
+						hgh = 80
+
+
+					$("#footer").css("marginTop",hgh)
+				}
+			})
+
+			$(".infoUser").click(function()
+			{
+				$("#step1Reg").hide();
+				$("#step2Reg").show();
+
+				$("#footer").css("marginTop", "135px")
+				//Когда изображение загружено
+				if( $(".uplCont").find("img").height() >= $(".uplCont").find("img").width() )
+				{
+					$(".uplCont").find("img").width( $(".uplCont").width() )
+					$(".uplCont").find("img").css("top", ($(".uplCont").height() - $(".uplCont").find("img").height())/2)
+				}
+				else
+				{
+					$(".uplCont").find("img").height( $(".uplCont").height() )
+					$(".uplCont").find("img").css("left", ($(".uplCont").width() - $(".uplCont").find("img").width())/2)
+				}
+			})
+		})
+	</script>
+	<title>Все исполнители</title>
+</head>
+
+<div id="navbar" class = "shd">
+	<div id = "navUni">
+		<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+		<ul id="navlist">
+			<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
+			<li class="navmenu"><a href = "masters.html">Все исполнители</a></li>
+			<li class="navmenu"><a href = "working.html">Примеры работ</a></li>
+			<li class="navmenu"><a href = "reviews.html">Отзывы</a></li>
+			<li class="navmenu realMenu"><div class = "navDot"></div><a href = "#">Войти/Регистрация</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id = "contRegContaioner">
+	<div class = "smallTopic regC">Регистрация в качестве подрядчика</div><br>
+	<div class="regHr">
+		<hr class = "redLine regC" color = "#ffb837">
+	</div>
+
+	<form id="step1Reg" action="#" method="post" enctype="multipart/form-data">
+		<label for = "contactorFaceField" class = "usLab">Напишите контактное лицо:</label><br>
+		<input type = "text" name = "contactorFaceField" class = "usField Reg1Right" pattern = "^[А-Яа-яЁё\s]+$" required>
+
+		<div class = "TRowReg1">
+
+			<div class="emailAligment">
+				<label for = "contactorEmailField" class = "usLab">Напишите Ваш email:</label><br>
+				<input type = "email" name = "contactorEmailField" class = "usField" required>
+			</div>
+
+			<label for = "contactorPhoneField" class = "usLab">Напишите Ваш номер телефона:</label><br>
+
+			<input type = "tel" name = "contactorPhoneField" class = "usField reg1Left" required>
+
+		</div>
+		<input type = "radio" name = "Iagree" required style = "box-shadow:none;">
+		<label for = "Iagree" class = "regularSubTopic">Я согласен с правилами <a href = "#" class = "greenLinkReg Label">Стройлофт.ру</a></label>
+
+		<br>
+		<input type = "submit" value = "Следующий шаг" class = "yellowButton sml">
+		<div class="infoUser">Шаг 1 из 2</div>
+	</form>
+
+	<form id = "step2Reg" action="#" method="post" enctype="multipart/form-data">
+		<div class="reg2row1">
+
+			<div class = "allField" style = "margin-left: 0px;">
+				<label for = "contactorNameField" class = "usLab">Напишите Ваше имя:</label><br>
+				<input type = "text" name = "contactorNameField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+			</div>
+
+			<div class = "allField">
+				<label for = "contactorDadField" class = "usLab">Напишите Ваше Отчество:</label><br>
+				<input type = "text" name = "contactorDadField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+			</div>
+
+			<div class = "allField">
+				<label for = "contactorSnField" class = "usLab">Напишите Вашу фамилию:</label><br>
+				<input type = "text" name = "contactorSnField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+			</div>
+		</div>
+
+		<div class="reg2row2">
+			<div class = "allField row2">
+				<label for = "contactorCityField" class = "usLab">В каком городе или области вы работаете:</label><br>
+				<input type = "text" name = "contactorCityField" class = "usField" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+			</div>
+		</div>
+
+		<div id="workForm">
+			<div class = "usLab">Форма работы:</div>
+			<div class="oneWorkForm" width = "150px">
+				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Частный мастер</label>
+				<input type = "radio" name = "Master">
+			</div>
+
+			<div class="oneWorkForm" width = "100px">
+				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Компания</label>
+				<input type = "radio" name = "Master">
+			</div>
+
+			<div class="oneWorkForm" width = "140px">
+				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Своя бригада</label>
+				<input type = "radio" name = "Master">
+			</div>
+
+		</div>
+
+		<div id = "avatarUpl">
+			<div class="usLab">Прикрепите фотографию:</div>
+
+			<div class = "uplCont">
+				<img class = "preUplPhoto" src = "images/master2.jpg">
+			</div>
+
+			<div id="photoLaw">
+				<span class="regularSubTopic sml">Требования к фотографии:</span>
+				<br><br>
+				<span class="regularSubTopic sml">- Фото должно быть хорошего качества</span><br>
+				<span class="regularSubTopic sml">- На фото должны быть Вы и лицо должно быть хорошо видно</span>
+				<input type = "file" class = "fileBtnMaster">
+				<span class = "uploadText greyLink"><i class="fa fa-camera" style = "color: #4c4740; margin-right: 8px;" aria-hidden="true"></i>Загрузить фото</span>
+			</div>
+		</div>
+
+
+		<div class = "usLab specCh">Выбирите Ваши специализации:</div>
+
+		<div id="jobBlocks" class = "reg">
+			<ul class="JobRow">
+				<li class="typeJob left"><span class = "jobTypeLink">Мелкие бытовые услуги</span><input type = "checkbox" name = "masterCrafts" value = "smallService">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Комплексные работы</span><input type = "checkbox" name = "masterCrafts" value = "complex">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Строительно-монтажные работы</span><input type = "checkbox" name = "masterCrafts" value = "building">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Инжененрые системы</span><input type = "checkbox" name = "masterCrafts" value = "ingeneering">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Отделочные работы</span><input type = "checkbox" name = "masterCrafts" value = "roomBld">
+					<div class = "ThSpace"></div>
+				</li>
+			</ul>
+
+			<ul class="JobRow">
+				<li class="typeJob left"><span class = "jobTypeLink">Благоустройство территорий</span><input type = "checkbox" value = "garden" name = "masterCrafts">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Проектирование и дизайн</span><input type = "checkbox" name = "masterCrafts" value = "design">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Интерьер</span><input type = "checkbox" name = "masterCrafts" value = "interior">
+					<div class = "ThSpace"></div>
+				</li>
+				<li class="typeJob"><span class = "jobTypeLink">Обслуживание объектов</span><input type = "checkbox" name = "masterCrafts" value = "management">
+					<div class = "ThSpace"></div>
+				</li>
+			</ul>
+		</div>
+
+
+<input value="Завершить регистрацию" class="yellowButton sml" type="submit">
+<div class="infoUser">Шаг 2 из 2</div>
+	</div>
+</div>
+
+</form>
+
+</div>
+
+<div id = "footer" class = "footerAll">
+	<div id="allfooters">
+		<div id="footerLeft">
+			<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+			<p class = "copy">Все права защищены 2016</p>
+		</div>
+
+		<div id="footerSecond">
+			<a href = "#" class = "whiteLink">- Заказы</a>
+			<a href = "#" class = "whiteLink">- Исполнители</a>
+			<a href = "#" class = "whiteLink">- Блог</a>
+			<a href = "#" class = "whiteLink">- Как это работает?</a>
+		</div>
+
+		<div id="footerThird">
+			<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+			<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+			<a href = "#" class = "whiteLink">- О нас</a>
+			<a href = "#" class = "whiteLink">- Поддержка</a>
+		</div>
+
+		<div id="footerFourth">
+			<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+			<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+			<img src = "images/DARTwhite.png" class = "onePx">
+		</div>
+	</div>
+</div>
+</body>
+</html>

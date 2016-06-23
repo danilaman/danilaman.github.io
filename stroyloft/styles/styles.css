@@ -1646,3 +1646,284 @@ ul
 	display: inline-block;
 	margin: 10px 0px 5px 0px;
 }
+
+/*regisrt*/
+
+#contRegContaioner
+{
+	width: 1000px;
+	margin: 25px auto;
+}
+
+.smallTopic.regC
+{
+	float: left;
+}
+
+.redLine.regC
+{
+	margin: 35px 0px;
+}
+
+.smallTopic
+{
+	text-align: center;
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 24px;
+}
+
+.regHr
+{
+	display: block;
+	width: 65px;
+}
+
+#step1Reg
+{
+	width: 660px;
+	height: 100%;
+	margin: 25px 0px;
+	position: relative;
+}
+
+.usLab
+{
+	line-height: 16px;
+	font-size: 16px;
+	font-family: RalewayBold;
+	color: #414141;
+	margin: 0px;
+}
+
+.usField
+{
+	width: 280px;
+	height: 35px;
+	border-radius: 7px;
+	border: 1px solid #cdcdcd;
+	font-size: 16px;
+	font-family: OpenSans;
+	color: #414141;
+	padding: 0px 10px;
+	outline: none;
+}
+
+.usField.reg1Left
+{
+	display: block;
+	margin: 4px 0px 15px 0px;
+}
+
+.usField:invalid
+{
+	box-shadow: none;
+}
+
+.TRowReg1
+{
+	width: 660px;
+	margin: 15px 0px;
+}
+
+.emailAligment
+{
+	float: right;
+	margin-top: 4px;
+}
+
+.regularSubTopic[for], .regularSubTopic.sml
+{
+	font-size: 14px;
+}
+
+.greenLinkReg.Label
+{
+	font-family: RalewayRegular;
+}
+
+.yellowButton.sml
+{
+	display: inline-block;
+	padding: 0px 15px;
+	height: 35px;
+	position: static;
+	margin: 20px 0px;
+	float: left;
+	display: inline-block;
+}
+
+.infoUser
+{
+	font-size: 14px;
+	color: #cdcdcd;
+	font-family: OpenSansSemibold;
+	float: left;
+	display: inline-block;
+	margin: 28px 10px;
+
+}
+
+.Reg1Right
+{
+	margin-top: 4px;
+}
+
+#navbar.shd
+{
+	box-shadow: 0 4px 2px -2px #cacaca;
+}
+
+#step2Reg
+{
+	display: none;
+}
+
+.reg2row1
+{
+	width: 820px;
+	height: 62px;
+}
+
+.Reg2Top
+{
+	margin: 4px 5px;
+	width: 230px;
+	display: inline-block;
+}
+
+.reg2row1 .allField
+{
+	width: 270px;
+	height: 62px;
+	display: inline-block;
+	float: left;
+}
+
+.reg2row2
+{
+	margin-top: 10px;
+}
+
+.reg2row2 input[type="text"]
+{
+	margin-top: 4px;
+}
+
+#workForm
+{
+	margin-top: 10px;
+	display: inline-block;
+	float: left;
+
+}
+
+.oneWorkForm input[type="radio"]
+{
+	float: left;
+	margin-left: 0px;
+}
+
+.oneWorkForm
+{
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#avatarUpl
+{
+	width: 700px;
+	margin-top: 100px;
+	position: relative;
+}
+
+.uplCont
+{
+	width: 140px;
+	height: 140px;
+	margin-top: 30px;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.preUplPhoto
+{
+	position: absolute;
+	opacity: 0.6;
+}
+
+#photoLaw
+{
+	width: 500px;
+	height: 140px;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	padding-left: 10px;
+}
+
+.fileBtnMaster
+{
+	display: inline-block;
+	float: left;
+	height: 50px;
+	position: absolute;
+	left: 150px;
+	top: 138px;
+	z-index: 11;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.greyLink
+{
+	color: #4c4740;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.greyLink:hover
+{
+	text-decoration: underline;
+}
+
+.uploadText
+{
+	display: block;
+	position: absolute;
+	top: 165px;
+	left: 152px;
+}
+
+#jobBlocks.reg
+{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.specCh
+{
+	margin-top: 220px;
+}
+
+.typeJob.left
+{
+	margin-left: 0px;
+}
+
+#jobBlocks.reg .JobRow .typeJob span:hover
+{
+	background: #e6e6e6;
+	color: #414141;
+}
+
+.typeJob input
+{
+	display: none;
+}
