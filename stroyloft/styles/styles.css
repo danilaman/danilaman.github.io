@@ -324,7 +324,7 @@ margin: 30px 8px;
 
 .yellowButton:hover
 {
-	background: #e3a22d;
+	background: #f8b133;
 }
 
 #SendApp
@@ -859,12 +859,19 @@ margin: 30px 8px;
 	text-decoration: none;
 	display: block;
 	padding: 0px 15px;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	 user-select: none;
 }
 
 .jobTypeLink:hover
 {
 	color: #fff;
 	background: #898989;
+	
 }
 
 ul
@@ -1746,7 +1753,7 @@ ul
 {
 	display: inline-block;
 	padding: 0px 15px;
-	height: 35px;
+	height: 40px;
 	position: static;
 	margin: 20px 0px;
 	float: left;
@@ -1760,7 +1767,7 @@ ul
 	font-family: OpenSansSemibold;
 	float: left;
 	display: inline-block;
-	margin: 28px 10px;
+	margin: 31px 10px;
 
 }
 
@@ -1781,7 +1788,7 @@ ul
 
 .reg2row1
 {
-	width: 820px;
+	width: 880px;
 	height: 62px;
 }
 
@@ -1794,7 +1801,7 @@ ul
 
 .reg2row1 .allField
 {
-	width: 270px;
+	width: 280px;
 	height: 62px;
 	display: inline-block;
 	float: left;
@@ -1802,7 +1809,7 @@ ul
 
 .reg2row2
 {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .reg2row2 input[type="text"]
@@ -1812,7 +1819,7 @@ ul
 
 #workForm
 {
-	margin-top: 10px;
+	margin-top: 25px;
 	display: inline-block;
 	float: left;
 
@@ -1822,6 +1829,7 @@ ul
 {
 	float: left;
 	margin-left: 0px;
+	margin-top: 2px;
 }
 
 .oneWorkForm
@@ -1863,7 +1871,7 @@ ul
 	display: inline-block;
 	float: left;
 	margin-top: 30px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .fileBtnMaster
@@ -1897,7 +1905,7 @@ ul
 	display: block;
 	position: absolute;
 	top: 165px;
-	left: 152px;
+	left: 160px;
 }
 
 #jobBlocks.reg
@@ -1926,4 +1934,13 @@ ul
 .typeJob input
 {
 	display: none;
+}
+
+.userError
+{
+	line-height: 16px;
+	font-size: 16px;
+	font-family: RalewayBold;
+	color: #b91c1c;
+	margin: 25px auto 5px;
 }

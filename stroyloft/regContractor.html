@@ -10,6 +10,12 @@
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<style>
+		#footer
+		{
+			margin-top: 100px;
+		}
+	</style>
 	<script src="js/platform.js"></script>
 	<script>
 		$(document).ready(function()
@@ -31,17 +37,38 @@
 				}
 			})
 
+			var skill = 0;
+			window.skill = skill
+
 			$(".typeJob").click(function()
 			{
 				if( $(this).find("input").prop("checked") == false )
 				{
-					$(this).find("input").prop("checked", true)
-					$(this).find("span").css({"background": "#63c399", "color":"#fff"})
+					if(skill >= 5)
+					{
+						
+					}
+					else
+					{
+						$(this).find("input").prop("checked", true)
+						$(this).find("span").css({"background": "#63c399", "color":"#fff"})
+						skill++
+							if (skill >= 5)
+							{
+								$(".userError").html("Вы выбрали максимальное число специализаций")
+							}
+					}
+					
 				}
 				else
 				{
+					if(skill >= 5)
+					{
+						$(".userError").html("&nbsp;")
+					}
 					$(this).find("input").prop("checked", false)
 					$(this).find("span").css({"background": "#e6e6e6", "color":"#414141"})
+					skill--;
 				}
 				
 			})
@@ -49,8 +76,8 @@
 			if ($("#step1Reg").css("display") != "none")
 			{
 				var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
-				if(hgh < 80)
-					hgh = 80
+				if(hgh < 100)
+					hgh = 100
 
 
 				$("#footer").css("marginTop",hgh)
@@ -58,11 +85,11 @@
 
 			$(window).resize(function()
 			{
-				if ($("#step1Reg").css("display") 	= "none")
+				if ($("#step1Reg").css("display") != "none")
 				{
 					var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
-					if(hgh < 80)
-						hgh = 80
+					if(hgh < 100)
+						hgh = 100
 
 
 					$("#footer").css("marginTop",hgh)
@@ -74,7 +101,7 @@
 				$("#step1Reg").hide();
 				$("#step2Reg").show();
 
-				$("#footer").css("marginTop", "135px")
+				$("#footer").css("marginTop", "170px")
 				//Когда изображение загружено
 				if( $(".uplCont").find("img").height() >= $(".uplCont").find("img").width() )
 				{
@@ -113,21 +140,21 @@
 
 	<form id="step1Reg" action="#" method="post" enctype="multipart/form-data">
 		<label for = "contactorFaceField" class = "usLab">Напишите контактное лицо:</label><br>
-		<input type = "text" name = "contactorFaceField" class = "usField Reg1Right" pattern = "^[А-Яа-яЁё\s]+$" required>
+		<input type = "text" id = "contactorFaceField" name = "contactorFaceField" class = "usField Reg1Right" pattern = "^[А-Яа-яЁё\s]+$" required>
 
 		<div class = "TRowReg1">
 
 			<div class="emailAligment">
 				<label for = "contactorEmailField" class = "usLab">Напишите Ваш email:</label><br>
-				<input type = "email" name = "contactorEmailField" class = "usField" required>
+				<input type = "email" id = "contactorEmailField" name = "contactorEmailField" class = "usField" required>
 			</div>
 
 			<label for = "contactorPhoneField" class = "usLab">Напишите Ваш номер телефона:</label><br>
 
-			<input type = "tel" name = "contactorPhoneField" class = "usField reg1Left" required>
+			<input type = "tel" id = "contactorPhoneField" name = "contactorPhoneField" class = "usField reg1Left" required>
 
 		</div>
-		<input type = "radio" name = "Iagree" required style = "box-shadow:none;">
+		<input type = "radio" id = "Iagree" name = "Iagree" required style = "box-shadow:none;">
 		<label for = "Iagree" class = "regularSubTopic">Я согласен с правилами <a href = "#" class = "greenLinkReg Label">Стройлофт.ру</a></label>
 
 		<br>
@@ -140,42 +167,42 @@
 
 			<div class = "allField" style = "margin-left: 0px;">
 				<label for = "contactorNameField" class = "usLab">Напишите Ваше имя:</label><br>
-				<input type = "text" name = "contactorNameField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorNameField" name = "contactorNameField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 
 			<div class = "allField">
 				<label for = "contactorDadField" class = "usLab">Напишите Ваше Отчество:</label><br>
-				<input type = "text" name = "contactorDadField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorDadField" name = "contactorDadField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 
 			<div class = "allField">
 				<label for = "contactorSnField" class = "usLab">Напишите Вашу фамилию:</label><br>
-				<input type = "text" name = "contactorSnField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorSnField" name = "contactorSnField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 		</div>
 
 		<div class="reg2row2">
 			<div class = "allField row2">
 				<label for = "contactorCityField" class = "usLab">В каком городе или области вы работаете:</label><br>
-				<input type = "text" name = "contactorCityField" class = "usField" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorCityField" name = "contactorCityField" class = "usField" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 		</div>
 
 		<div id="workForm">
 			<div class = "usLab">Форма работы:</div>
 			<div class="oneWorkForm" width = "150px">
-				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Частный мастер</label>
-				<input type = "radio" name = "Master" required>
+				<label for = "mastWork" class = "regularSubTopic" style = "display: inline-block">Частный мастер</label>
+				<input type = "radio" id = "mastWork" name = "Master" required>
 			</div>
 
 			<div class="oneWorkForm" width = "100px">
-				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Компания</label>
-				<input type = "radio" name = "Master" required>
+				<label for = "comWork" class = "regularSubTopic" style = "display: inline-block">Компания</label>
+				<input type = "radio" id = "comWork" name = "Master" required>
 			</div>
 
 			<div class="oneWorkForm" width = "140px">
-				<label for = "Master" class = "regularSubTopic" style = "display: inline-block">Своя бригада</label>
-				<input type = "radio" name = "Master" required>
+				<label for = "brigWork" class = "regularSubTopic" style = "display: inline-block">Своя бригада</label>
+				<input type = "radio" id = "brigWork" name = "Master" required>
 			</div>
 
 		</div>
@@ -235,6 +262,7 @@
 			</ul>
 		</div>
 
+<div class = "userError">&nbsp;</div>
 
 <input value="Завершить регистрацию" class="yellowButton sml" type="submit">
 <div class="infoUser">Шаг 2 из 2</div>
