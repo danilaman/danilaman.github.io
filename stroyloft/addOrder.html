@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="js/platform.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+	<title>Размещение заказа</title>
+</head>
+
+<div id="navbar" class = "shd">
+	<div id = "navUni">
+		<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+		<ul id="navlist">
+			<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
+			<li class="navmenu"><a href = "masters.html">Все исполнители</a></li>
+			<li class="navmenu"><a href = "working.html">Примеры работ</a></li>
+			<li class="navmenu"><a href = "reviews.html">Отзывы</a></li>
+			<li class="navmenu realMenu"><div class = "navDot"></div><a href = "#">Войти/Регистрация</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id = "addOrderContainer">
+	<div class = "smallTopic regC">Разместить заказ</div><br>
+	<div class="regHr">
+		<hr class = "redLine regC" color = "#ffb837">
+	</div>
+
+
+	<form id = "addOrdForm" action="#" method="post" enctype="multipart/form-data">
+		<label for = "aoTopic" class = "usLab">Заголовок заказа:</label>
+		<input type = "text" id = "aoTopic" class = "usFieldMed addOrd" placeholder = "Например, ремонт ванной, стяжка пола, укладка ламината и т.д.
+		" required>
+
+		<label for = "aoTA" class = "usLab">Заголовок заказа</label>
+		<textarea id = "aoTA" textareatype = "ta" class = "usFieldMed addOrd" resize = "none" placeholder = "Например, объём работ, материалы, когда нужно приступить/закончить работу, и т.п.
+		" required></textarea>
+
+		<div class="addfilesLink">
+			<input type = "file" style = "left: 0;" class = "fileHideOrd">
+			<input type = "file" style = "right: 0;" class = "fileHideOrd">
+
+			<a href = "#" class = "greenLinkRegUnd" style = "float: left;"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите смету</span></a>
+
+			<a href = "#" style = "right: 0px;" class = "greenLinkRegUnd"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите фото</span></a>
+		</div>
+
+		<div style = "clear:both;"></div>
+
+		<div class = "financeOrder">
+			<label class = "usLab" style = "display: block; margin: 28px 0px 20px;">Укажите бюджет заказа</label>
+			<input type = "radio" name = "moneyOrder" value = "mCat1" id = "mCat1">
+			<label for = "mCat1" class = "regularSubTopic">Мелкий заказ (несколько тысяч рублей)</label><br>
+
+			<input type = "radio" name = "moneyOrder" value = "mCat2" id = "mCat2">
+			<label for = "mCat2" class = "regularSubTopic">Средний заказ (несколько десятков тысяч рублей) </label><br>
+
+			<input type = "radio" name = "moneyOrder" value = "mCat3" id = "mCat3">
+			<label for = "mCat3" class = "regularSubTopic">Крупный заказ (несколько сотен тысяч рублей) </label><br>
+
+			<input type = "radio" name = "moneyOrder" value = "mCat4" id = "mCat4">
+			<label for = "mCat4" class = "regularSubTopic">Очень крупный заказ (более полумиллиона)</label><br>
+		</div>
+		
+		<label for = "aoAdress" class = "usLab">Адрес заказа:</label>
+		<input type = "text" id = "aoAdress" class = "usFieldMed addOrd" placeholder = "Например, г. Санкт-Петербург, Невский пр., д. 35" required>
+
+		<label for = "aoAdress" class = "usLab">Напишите Ваше имя:</label>
+		<input type = "text" id = "aoAdress" class = "usFieldMed addOrd" pattern="^[А-Яа-яЁё]+$" required>
+
+		<div class="makeOrdColLeft">
+			<label for = "chiefTel" class = "usLab">Напишите Ваш телефон:</label><br>
+			<input type = "tel" id = "chiefTel" class = "usFieldMedHalf addOrd" required>
+
+			<label for = "chiefPass" class = "usLab">Напишите Ваш пароль от личного кабинета:</label><br>
+			<input type = "password" id = "chiefPass" class = "usFieldMedHalf addOrd" required>
+
+			<label for = "chiefPassC" class = "usLab">Подтверждение пароля:</label><br>
+			<input type = "password" id = "chiefPassC" class = "usFieldMedHalf addOrd" required>
+		</div>
+
+		<div class="makeOrdColRight">
+		<label for = "chiefEmail" class = "usLab">Напишите Ваш email:</label><br>
+			<input type = "email" id = "chiefEmail" class = "usFieldMedHalf addOrd" required>
+		</div>
+
+		<div style = "clear:both;"></div>
+
+		<input id="Iagree" name="Iagree" required style="box-shadow:none;margin: 15px 0px;" type="radio">
+		<label for="Iagree" class="regularSubTopic">Я согласен с правилами <a href="#" class="greenLinkReg Label">Стройлофт.ру</a></label>
+
+		<div style = "clear:both;"></div>
+
+		<div class="g-recaptcha" data-sitekey="6LfObiMTAAAAAFUpotlhafgWEGstm9IrxsTvAoVJ"></div>
+		
+		<input value="Разместить заказ" class="yellowButton sml" type="submit">
+
+	</form>
+
+</div>
+
+<div id = "footer" style = "margin-top: 140px;" class = "footerAll">
+	<div id="allfooters">
+		<div id="footerLeft">
+			<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+			<p class = "copy">Все права защищены 2016</p>
+		</div>
+
+		<div id="footerSecond">
+			<a href = "#" class = "whiteLink">- Заказы</a>
+			<a href = "#" class = "whiteLink">- Исполнители</a>
+			<a href = "#" class = "whiteLink">- Блог</a>
+			<a href = "#" class = "whiteLink">- Как это работает?</a>
+		</div>
+
+		<div id="footerThird">
+			<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+			<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+			<a href = "#" class = "whiteLink">- О нас</a>
+			<a href = "#" class = "whiteLink">- Поддержка</a>
+		</div>
+
+		<div id="footerFourth">
+			<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+			<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+			<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+			<img src = "images/DARTwhite.png" class = "onePx">
+		</div>
+	</div>
+</div>
+</body>
+</html>

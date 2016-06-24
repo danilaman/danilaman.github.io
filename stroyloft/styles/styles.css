@@ -632,6 +632,11 @@ margin: 30px 8px;
 	transition: 0.3s;
 }
 
+.greenLinkFa
+{
+	color: #63c399;
+}
+
 .greenLinkReg
 {
 	text-align: center;
@@ -641,6 +646,22 @@ margin: 30px 8px;
 	color: #63c399;
 	font-size: 14px;
 	transition: 0.3s;
+}
+
+.greenLinkRegUnd
+{
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: OpenSansSemibold;
+	color: #63c399;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.greenLinkRegUnd .regUnd
+{
+	text-decoration: underline;
 }
 
 .whiteLink
@@ -1662,6 +1683,17 @@ ul
 	margin: 25px auto;
 }
 
+#addOrderContainer
+{
+	width: 1000px;
+	margin: 25px auto;
+}
+
+#addOrdForm
+{
+	width: 920px;
+}
+
 .smallTopic.regC
 {
 	float: left;
@@ -1714,6 +1746,57 @@ ul
 	color: #414141;
 	padding: 0px 10px;
 	outline: none;
+}
+
+.usFieldMed
+{
+	width: 900px;
+	height: 35px;
+	border-radius: 7px;
+	border: 1px solid #cdcdcd;
+	font-size: 16px;
+	font-family: OpenSans;
+	color: #414141;
+	padding: 0px 10px;
+	outline: none;
+}
+
+.usFieldMedHalf
+{
+	width: 420px;
+	height: 35px;
+	border-radius: 7px;
+	border: 1px solid #cdcdcd;
+	font-size: 16px;
+	font-family: OpenSans;
+	color: #414141;
+	padding: 0px 10px;
+	outline: none;
+}
+
+.addOrd.usFieldMed, .addOrd.usFieldMedHalf
+{
+	margin: 8px 0px 16px 0px;
+}
+
+.usFieldMed[textareatype="ta"]
+{
+	width: 890px;
+	height: 150px;
+	border-radius: 7px;
+	border: 1px solid #cdcdcd;
+	font-size: 16px;
+	font-family: OpenSans;
+	color: #414141;
+	padding: 0px 10px;
+	outline: none;
+	resize: none;
+	padding: 15px;
+}
+
+.usFieldMed.addOrd[textareatype="ta"]
+{
+	margin-bottom: 2px;
 }
 
 .usField.reg1Left
@@ -1943,4 +2026,60 @@ ul
 	font-family: RalewayBold;
 	color: #b91c1c;
 	margin: 25px auto 5px;
+}
+
+textarea:invalid
+{
+	box-shadow:none;
+}
+
+.addfilesLink
+{
+	width: 320px;
+	height: 20px;
+	float: right;
+	position: relative;
+	margin-top: 6px;
+}
+
+.addfilesLink a
+{
+	position: absolute;
+	top: 0px;
+	z-index: 11;
+}
+
+.fileHideOrd
+{
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: 12;
+	cursor: pointer;
+}
+
+.financeOrder
+{
+	display: block;
+	width: 500px;
+	margin: 20px 0px;
+}
+
+.financeOrder input
+{
+	margin: 6px 2px 16px 0px;
+}
+
+.makeOrdColLeft
+{
+	width: 440px;
+	float:left;
+}
+
+.makeOrdColRight
+{
+	width: 440px;
+	float: right;
 }
