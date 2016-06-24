@@ -18,12 +18,12 @@
 
 			$('#docFile').on('change', function (event, files, label) {
 				var fileName = document.getElementById('docFile').files[0].name;
-				$("#docFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i> " + fileName)
+				$("#docFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i><br>" + fileName)
 			})
 
 			$('#PhotoFile').on('change', function (event, files, label) {
 				var photoName = document.getElementById('PhotoFile').files[0].name;
-				$("#PhotoFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i> " + photoName)
+				$("#PhotoFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i><br>" + photoName)
 			})
 		}
 
