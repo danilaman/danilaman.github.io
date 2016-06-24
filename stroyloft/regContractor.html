@@ -46,17 +46,17 @@
 				{
 					if(skill >= 5)
 					{
-						$(".yellowButton.sml").prop("disabled",true)
+						
 					}
 					else
 					{
 						$(this).find("input").prop("checked", true)
 						$(this).find("span").css({"background": "#63c399", "color":"#fff"})
 						skill++
-							if (skill >= 5)
-							{
-								$(".userError").html("Вы выбрали максимальное количество специализаций")
-							}
+						if (skill >= 5)
+						{
+							$(".userError").html("Вы выбрали максимальное количество специализаций")
+						}
 					}
 					
 				}
@@ -65,7 +65,6 @@
 					if(skill >= 5)
 					{
 						$(".userError").html("&nbsp;")
-						$(".yellowButton.sml").prop("disabled",false)
 					}
 					$(this).find("input").prop("checked", false)
 					$(this).find("span").css({"background": "#e6e6e6", "color":"#414141"})
@@ -263,10 +262,10 @@
 			</ul>
 		</div>
 
-<div class = "userError">&nbsp;</div>
+		<div class = "userError">&nbsp;</div>
 
-<input value="Завершить регистрацию" class="yellowButton sml" type="submit">
-<div class="infoUser">Шаг 2 из 2</div>
+		<input value="Завершить регистрацию" class="yellowButton sml" type="submit">
+		<div class="infoUser">Шаг 2 из 2</div>
 	</div>
 </div>
 
