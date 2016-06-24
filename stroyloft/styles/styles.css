@@ -660,6 +660,13 @@ margin: 30px 8px;
 	cursor: pointer;
 }
 
+.greenLinkRegUnd.photo
+{
+	width: 150px;
+	height: 20px;
+	overflow: visible;
+}
+
 .greenLinkRegUnd .regUnd
 {
 	text-decoration: underline;
@@ -2043,7 +2050,7 @@ textarea:invalid
 	margin-top: 6px;
 }
 
-.addfilesLink a
+.addfilesLink div
 {
 	position: absolute;
 	top: 0px;
@@ -2053,11 +2060,11 @@ textarea:invalid
 .fileHideOrd
 {
 	width: 150px;
-	height: 20px;
+	height: 40px;
 	position: absolute;
 	top: 0;
 	opacity: 0;
-	z-index: 12;
+	z-index: 14;
 	cursor: pointer;
 }
 

@@ -12,7 +12,24 @@
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
 	<script src="js/platform.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-	
+	<script>
+		window.onload = function() {
+			
+
+			$('#docFile').on('change', function (event, files, label) {
+				var fileName = document.getElementById('docFile').files[0].name;
+				$("#docFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i> " + fileName)
+			})
+
+			$('#PhotoFile').on('change', function (event, files, label) {
+				var photoName = document.getElementById('PhotoFile').files[0].name;
+				$("#PhotoFileText").html("<i class='fa fa-file greenLinkFa' aria-hidden='true'></i> " + photoName)
+			})
+		}
+
+
+	</script>
+
 	<title>Размещение заказа</title>
 </head>
 
@@ -46,12 +63,12 @@
 		" required></textarea>
 
 		<div class="addfilesLink">
-			<input type = "file" style = "left: 0;" class = "fileHideOrd">
-			<input type = "file" style = "right: 0;" class = "fileHideOrd">
+			<input type = "file" id = "docFile" style = "left: 0;" class = "fileHideOrd">
+			<input type = "file" id = "PhotoFile" style = "right: 0;" class = "fileHideOrd">
 
-			<a href = "#" class = "greenLinkRegUnd" style = "float: left;"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите смету</span></a>
+			<div class = "greenLinkRegUnd photo" id = "docFileText"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите смету</span></div>
 
-			<a href = "#" style = "right: 0px;" class = "greenLinkRegUnd"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите фото</span></a>
+			<div style = "right: 0px;" id = "PhotoFileText" class = "greenLinkRegUnd photo" ><i class="fa fa-camera greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите фото</span></div>
 		</div>
 
 		<div style = "clear:both;"></div>
@@ -89,7 +106,7 @@
 		</div>
 
 		<div class="makeOrdColRight">
-		<label for = "chiefEmail" class = "usLab">Напишите Ваш email:</label><br>
+			<label for = "chiefEmail" class = "usLab">Напишите Ваш email:</label><br>
 			<input type = "email" id = "chiefEmail" class = "usFieldMedHalf addOrd" required>
 		</div>
 
@@ -101,7 +118,7 @@
 		<div style = "clear:both;"></div>
 
 		<div class="g-recaptcha" data-sitekey="6LfObiMTAAAAAFUpotlhafgWEGstm9IrxsTvAoVJ"></div>
-		
+
 		<input value="Разместить заказ" class="yellowButton sml" type="submit">
 
 	</form>
