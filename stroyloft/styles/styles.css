@@ -2443,6 +2443,7 @@ textarea:invalid
 	float: left;
 	display: inline-block;
 	margin: 4px;
+	width: 200px;
 }
 
 .typeJob.categCab span
