@@ -59,17 +59,22 @@
 				$(".greyLink").css("textDecoration", "none")
 			})
 
+			function imgAlign()
+			{
+				if( $(".uplContCab").find("img").height() >= $(".uplContCab").find("img").width() )
+				{
+					$(".uplContCab").find("img").width( $(".uplContCab").width() )
+					$(".uplContCab").find("img").css("top", ($(".uplContCab").height() - $(".uplContCab").find("img").height())/2)
+				}
+				else
+				{
+					$(".uplContCab").find("img").height( $(".uplContCab").height() )
+					$(".uplContCab").find("img").css("left", ($(".uplContCab").width() - $(".uplContCab").find("img").width())/2)
+				}
+			}
 
-			if( $(".uplContCab").find("img").height() >= $(".uplContCab").find("img").width() )
-			{
-				$(".uplContCab").find("img").width( $(".uplContCab").width() )
-				$(".uplContCab").find("img").css("top", ($(".uplContCab").height() - $(".uplContCab").find("img").height())/2)
-			}
-			else
-			{
-				$(".uplContCab").find("img").height( $(".uplContCab").height() )
-				$(".uplContCab").find("img").css("left", ($(".uplContCab").width() - $(".uplContCab").find("img").width())/2)
-			}
+			setTimeout(imgAlign, 500)
+			
 		})
 	</script>
 	<title>Основная информация</title>
