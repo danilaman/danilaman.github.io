@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<link rel="stylesheet" href="../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="../plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="../js/platform.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$(".freeCab").click(function()
+			{
+				//смена статуса
+				$(".freeCab").css({"background": "#63c399",
+					"color":"#fff"})
+
+				$(".busyCab").css({"background": "#fff",
+					"color":"#414141"})
+			})
+
+			$(".busyCab").click(function()
+			{
+				//смена статуса
+				$(".freeCab").css({"background": "#fff",
+					"color":"#414141"})
+
+				$(".busyCab").css({"background": "#63c399",
+					"color":"#fff"})
+			})
+
+
+
+			$(".cabinetTopUser").click(function()
+			{
+				$(".cabMasterPanel").toggle()
+				$("#hideAll").toggle()
+			})
+
+
+			$("#hideAll").click(function()
+			{
+				$(".cabMasterPanel").toggle()
+				$("#hideAll").toggle()
+			})
+
+
+			$(".fileBtnMasterCab").hover(function()
+			{
+				$(".greyLink").css("textDecoration", "underline")
+			},
+			function()
+			{
+				$(".greyLink").css("textDecoration", "none")
+			})
+
+
+			if( $(".uplContCab").find("img").height() >= $(".uplCont").find("img").width() )
+			{
+				$(".uplContCab").find("img").width( $(".uplContCab").width() )
+				$(".uplContCab").find("img").css("top", ($(".uplContCab").height() - $(".uplContCab").find("img").height())/2)
+			}
+			else
+			{
+				$(".uplContCab").find("img").height( $(".uplContCab").height() )
+				$(".uplContCab").find("img").css("left", ($(".uplContCab").width() - $(".uplContCab").find("img").width())/2)
+			}
+		})
+	</script>
+	<title>Основная информация</title>
+</head>
+<body>
+
+	<div id="hideAll"></div>
+
+	<div id="navbarCab" class = "shd">
+		<div id = "navUniCab">
+			<a href = "../index.html"><img id="mainlogo" src = "../images/logo.png"></a>
+			<ul id="navlist">
+				<li class="navmenu"><a href = "orders.html">Поиск заказов</a></li>
+				<li class="navmenu"><a href = "masters.html">Сообщения</a></li>
+				<li class="navmenu"><a href = "working.html">Мои заказы</a></li>
+			</ul>
+			<a href = "#" class = "cabinetTopUser"><img src = "../images/master1.png"> <span>Игорь Петров <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+			<a href = "#" class = "fullAccess">Полный доступ <i class="fa fa-check" aria-hidden="true"></i></a>
+			<div class = "cabMasterPanel">
+
+				<div class="relPn">
+					<div class="trForPn"></div>
+				</div>
+
+				<a href = "#" class = "freeCab grn">
+					Свободен
+				</a>
+				<a href = "#" class = "busyCab">
+					Занят
+				</a>
+				<a href = "#" class = "CabPnItem"><i class="fa fa-user" aria-hidden="true"></i>Моя страница</a>
+				<a href = "#" class = "CabPnItem"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a>
+				<a href = "#" class = "CabPnItem"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти из аккаунта</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="cabMain">
+		<div id="leftCab">
+			<a href = "#" class = "leftItem">Общая информация</a>
+			<a href = "#" class = "leftItem" style = "margin: 4px 0px;">Примеры работ</a>
+			<a href = "#" class = "leftItem">Отзывы клиентов</a>
+		</div>
+		<div id="rightCab">
+			<div class = "smallTopic myPg">Моя страница</div>
+			<a href = "#" class="editPg myPg">Редактировать</a>
+			<hr style = "margin-top: 60px;" color = "#ffb837" size = "2px">
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">ФИО</div>
+				<div class="rightStrCab regularSubTopic md">Игорь Васильевич Петров</div>
+			</div>
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">Фотография</div>
+			</div>
+
+			<div id = "avatarUplCab">
+
+				<div class = "uplContCab">
+					<img class = "preUplPhotoCab" src = "../images/master2.jpg">
+				</div>
+				<div class = "bottomDec"><i class="fa fa-check" aria-hidden="true"></i></div>
+
+				<div id="photoLawCab">
+					<span class="regularSubTopic md">Требования к фотографии:</span>
+					<br><br>
+					<span class="regularSubTopic md">- Фото должно быть хорошего качества</span><br>
+					<span class="regularSubTopic md">- На фото должны быть Вы и лицо должно быть хорошо видно</span>
+					<input type = "file" class = "fileBtnMasterCab">
+					<span class = "uploadTextCab greyLink"><i class="fa fa-camera" style = "color: #4c4740; margin-right: 8px;" aria-hidden="true"></i>Обновить фото</span>
+				</div>
+			</div>
+
+			<div class = "strUserCab" style = "margin-top: 200px;">
+				<div class="leftStrCab usLab">Форма работы</div>
+				<div class="rightStrCab regularSubTopic md">Своя бригада</div>
+			</div>
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">Местоположение</div>
+				<div class="rightStrCab regularSubTopic md">Санкт-Петербург, Кировский район</div>
+			</div>
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">Телефон</div>
+				<div class="rightStrCab regularSubTopic md">+7 (921) 333-33-33</div>
+			</div>
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">E-mail</div>
+				<div class="rightStrCab regularSubTopic md">petrov@mail.ru</div>
+			</div>
+
+			<div class = "strUserCab">
+				<div class="leftStrCab usLab">Специализации</div>
+				<div class="rightStrCab regularSubTopic md">
+					<div class="typeJob categCab"><span class="jobTypeLink">Мелкие бытовые услуги</span>
+						<div class="ThSpace"></div>
+					</div>
+
+					<div class="typeJob categCab"><span class="jobTypeLink">Комплексные работы</span>
+						<div class="ThSpace"></div>
+					</div>
+
+					<div class="typeJob categCab"><span class="jobTypeLink">Обслуживание объектов</span>
+						<div class="ThSpace"></div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id = "footer" class = "footerAll cabftr">
+		<div id="allfooters">
+			<div id="footerLeft">
+				<a href = "#" style = "margin-top: 30px;"><img src = "../images/logo_white.png" class = "whiteLogo"></a>
+				<p class = "copy">Все права защищены 2016</p>
+			</div>
+
+			<div id="footerSecond">
+				<a href = "#" class = "whiteLink">- Заказы</a>
+				<a href = "#" class = "whiteLink">- Исполнители</a>
+				<a href = "#" class = "whiteLink">- Блог</a>
+				<a href = "#" class = "whiteLink">- Как это работает?</a>
+			</div>
+
+			<div id="footerThird">
+				<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+				<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+				<a href = "#" class = "whiteLink">- О нас</a>
+				<a href = "#" class = "whiteLink">- Поддержка</a>
+			</div>
+
+			<div id="footerFourth">
+				<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+				<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+				<img src = "../images/DARTwhite.png" class = "onePx">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

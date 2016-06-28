@@ -24,7 +24,7 @@ body
 	float: left;
 }
 
-#navlist
+#navUni #navlist
 {
 	float: left;
 	margin: 0px 0px 0px 20px;
@@ -34,11 +34,11 @@ body
 #navUni
 {
 	width: 1035px;
-	height: height: 90px;
+	height: 90px;
 	margin: 0px auto;
 }
 
-.navmenu
+#navUni #navlist .navmenu
 {
 	display: inline-block;
 	font-family: RalewaySemibold;
@@ -264,7 +264,7 @@ body
 
 .ySubFun
 {
-margin: 30px 8px;
+	margin: 30px 8px;
 }
 
 #sendapp
@@ -706,6 +706,11 @@ margin: 30px 8px;
 	min-width: 1025px;
 }
 
+#footer.cabftr
+{
+	background: #414141;
+}
+
 .realMenu a
 {
 	color: #63c399;
@@ -893,7 +898,7 @@ margin: 30px 8px;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	 user-select: none;
+	user-select: none;
 }
 
 .jobTypeLink:hover
@@ -1835,6 +1840,11 @@ ul
 	font-size: 14px;
 }
 
+.regularSubTopic.md
+{
+	font-size: 16px;
+}
+
 .greenLinkReg.Label
 {
 	font-family: RalewayRegular;
@@ -2090,4 +2100,358 @@ textarea:invalid
 {
 	width: 440px;
 	float: right;
+}
+
+/*navbar cab*/
+
+#navbarCab
+{
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	position: relative;
+	min-width: 1025px;
+}
+
+#navUniCab
+{
+	width: 1070px;
+	height: 90px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#navUniCab #navlist
+{
+	float: left;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+
+#navUniCab #navlist .navmenu
+{
+	display: inline-block;
+	font-family: RalewaySemibold;
+	line-height: 90px;
+	margin: 0px 15px;
+}
+
+#navbarCab.shd
+{
+	box-shadow: 0 4px 2px -2px #cacaca;
+}
+
+#cabMain
+{
+	height: 800px;
+	width: 1070px;
+	margin: 25px auto;
+	position: relative;
+}
+
+.fullAccess
+{
+	background: #63c399;
+	border-radius: 4px;
+	padding: 2px 7px;
+	text-decoration: none;
+	font-family: RalewaySemibold;
+	color: #fff;
+	font-size: 16px;
+	margin: 34px 15px 33px;
+	float: right;
+}
+
+.cabinetTopUser
+{
+	float: right;
+	line-height: 90px;
+}
+
+.cabinetTopUser img
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	margin: 25px 12px;
+}
+
+.cabinetTopUser span
+{
+	float: right;
+	font-family: RalewaySemibold;
+	color: #414141;
+}
+
+.cabinetTopUser span i
+{
+	float: right;
+	line-height: 90px;
+	margin: 0px 8px;
+}
+
+.cabMasterPanel
+{
+	width: 290px;
+	height: 160px;
+	border: 2px solid #e6e6e6;
+	background: #fff;
+	top: 80px;
+	right: 0px;
+	position: absolute;
+	display: none;
+	z-index: 10;
+}
+
+.freeCab
+{
+	height: 40px;
+	width: 145px;
+	line-height: 40px;
+	float: left;
+	color: #414141;
+	font-family: OpenSans;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.busyCab
+{
+	height: 40px;
+	width: 145px;
+	line-height: 40px;
+	float: right;
+	color: #414141;
+	font-family: OpenSans;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.CabPnItem
+{
+	height: 38px;
+	border-top: 2px solid #e6e6e6;
+	color: #414141;
+	line-height: 38px;
+	width: 100%;
+	display: inline-block;
+	font-family: OpenSans;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.CabPnItem i 
+{
+	margin: 0px 12px;
+}
+
+.freeCab.grn
+{
+	background: #63c399;
+	color: #fff;
+}
+
+.relPn
+{
+	position: relative;
+}
+
+.trForPn
+{
+	width: 23px;
+	height: 30px;
+	position: absolute;
+	background: url(../images/trShd.png) no-repeat center top;
+	-moz-background-size: cover;
+	background-size: cover;
+	top: -30px;
+	left: 240px;
+	z-index: 11;
+}
+
+#hideAll
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	display: none;
+}
+
+#leftCab
+{
+	width: 245px;
+	height: 500px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.leftItem
+{
+	width: 205px;
+	height: 45px;
+	line-height: 45px;
+	font-family: RalewaySemibold;
+	text-decoration: none;
+	color: #414141;
+	display: inline-block;
+	transition: 0.2s;
+	padding-left: 40px;
+}
+
+.leftItem:hover
+{
+	background: #e6e6e6;
+}
+
+#rightCab
+{
+	width: 700px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.smallTopic.myPg
+{
+	float: left;
+	margin: 5px 0px 20px;
+}
+
+.editPg.myPg
+{
+	float: right;
+	margin: 5px 0px 20px;
+}
+
+.editPg
+{
+	font-family: RalewayRegular;
+	font-size: 24px;
+	color: #e6e6e6;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.editPg:hover
+{
+	color: #414141;
+}
+
+.strUserCab
+{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+}
+
+.leftStrCab
+{
+	float: left;
+	line-height: 45px;
+}
+
+.rightStrCab
+{
+	float: right;
+	line-height: 45px;
+	width: 500px;
+}
+
+#avatarUplCab
+{
+	width: 700px;
+	position: relative;
+}
+
+.uplContCab
+{
+	width: 140px;
+	height: 140px;
+	margin-top: 20px;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+#photoLawCab
+{
+	width: 400px;
+	height: 140px;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding-left: 60px;	
+}
+
+.fileBtnMasterCab
+{
+	display: inline-block;
+	float: left;
+	height: 50px;
+	position: absolute;
+	left: 200px;
+	top: 120px;
+	z-index: 11;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.uploadTextCab
+{
+	display: block;
+	position: absolute;
+	top: 140px;
+	left: 200px;
+}
+
+.preUplPhotoCab
+{
+	position: absolute;
+}
+
+.bottomDec
+{
+	border: 25px solid transparent;
+	border-right: 25px solid #63c399;
+	border-bottom: 25px solid #63c399;
+	position: absolute;
+	border-radius: 0px 0px 4px 0px;
+	top: 111px;
+	left: 91px;
+}
+
+.bottomDec i
+{
+	position: absolute;
+	color: #fff;
+}
+
+.typeJob.categCab
+{
+	margin: 0px;
+	float: left;
+	display: inline-block;
+	margin: 4px;
+}
+
+.typeJob.categCab span
+{
+	background: #63c399;
+	color: #fff;
+}	
+
+.typeJob.categCab span:hover
+{
+	background: #63c399;
 }
