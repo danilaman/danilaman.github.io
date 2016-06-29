@@ -472,6 +472,9 @@ body
 {
 	height: 0px;
 	width: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
 }
 
 #trythis
@@ -2241,6 +2244,12 @@ textarea:invalid
 	font-family: OpenSans;
 	font-size: 16px;
 	text-decoration: none;
+	transition: 0.3s;
+}
+
+.CabPnItem:hover
+{
+	background: #e6e6e6;
 }
 
 .CabPnItem i 
