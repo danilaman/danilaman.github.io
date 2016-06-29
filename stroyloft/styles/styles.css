@@ -2487,6 +2487,12 @@ textarea:invalid
 	background: #e6e6e6;
 	text-align: center;
 	position: relative;
+	transition: 0.3s;
+}
+
+.masterWorkCab.uplImg:hover
+{
+	background: #d5d5d5;
 }
 
 .masterWorkCab.uplImg i
