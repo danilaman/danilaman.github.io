@@ -2516,3 +2516,144 @@ textarea:invalid
 	font-size: 14px;
 	text-decoration: none;
 }
+
+.goodRevsTb
+{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #63c399;
+	font-family: RalewaySemibold;
+	font-size: 14px;
+	transition: 0.3s;
+	margin-bottom: 20px;
+}
+
+.goodRevsTb:hover,.goodRevsTb.realPg
+{
+	background: #63c399;
+	color: #fff;
+}
+
+.badRevsTb
+{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #ffb837;
+	font-family: RalewaySemibold;
+	font-size: 14px;
+	transition: 0.3s;
+	margin: 0px 20px;
+	margin-bottom: 20px;
+}
+
+.badRevsTb:hover,.badRevsTb.realPg
+{
+	background: #ffb837;
+	color: #fff;
+}
+
+.allRevsTb
+{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #414141;
+	font-family: RalewaySemibold;
+	font-size: 14px;
+	transition: 0.3s;
+	margin-bottom: 20px;
+}
+
+.allRevsTb:hover,.allRevsTb.realPg
+{
+	background: #e6e6e6;
+	color: #414141;
+}
+
+.cabinetRev
+{
+	width: 700px;
+	display: inline-block;
+	margin: 25px 0px;
+	position: relative;
+}
+
+.cabinetRev .revText
+{
+	width: 700px;
+}
+
+.cabinetRev .smallCast .customerSmall
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 11;
+}
+
+.cabinetRev .smallCast .customerNameSmall
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 11;
+	background: #f4f4f4;
+}
+
+.cabinetRev .smallCast .dotsSml
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 10;
+
+	overflow: hidden;
+	position: absolute;
+	top: 14px;
+	left: 70px;
+	color: #414141;
+	letter-spacing: 8px;
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 24px;
+	height: 28px;
+}
+
+.cabinetRev .smallCast
+{
+	position: relative;
+	height: 45px;
+	margin-top: 15px;
+}
+
+.cabinetRev .fa-thumbs-o-up
+{
+	color: #63c399;
+}
+
+.cabinetRev .fa-thumbs-o-down
+{
+	color: #ffb837;
+}
+
+.cabinetRev .fa-2x
+{
+	position: absolute;
+	top: -18px;
+	right: -25px;
+}
