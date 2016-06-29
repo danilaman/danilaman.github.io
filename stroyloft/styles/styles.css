@@ -2314,7 +2314,7 @@ textarea:invalid
 	padding-left: 40px;
 }
 
-.leftItem:hover
+.leftItem:hover, .leftItem.rlPage
 {
 	background: #e6e6e6;
 }
