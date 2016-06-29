@@ -1530,6 +1530,7 @@ ul
 {
 	width: 206px;
 	height: 175px;
+	display: block;
 }
 
 .roomMasterPhoto
@@ -1537,10 +1538,6 @@ ul
 	margin: 8px 60px;
 }
 
-.masterWork
-{
-	display: block;
-}
 
 #masterPslider
 {
@@ -2150,7 +2147,6 @@ textarea:invalid
 	height: 800px;
 	width: 1070px;
 	margin: 25px auto;
-	position: relative;
 }
 
 .fullAccess
@@ -2296,9 +2292,7 @@ textarea:invalid
 {
 	width: 245px;
 	height: 500px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
+	float: left;
 }
 
 .leftItem
@@ -2322,9 +2316,8 @@ textarea:invalid
 #rightCab
 {
 	width: 700px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
+	float: right;
+	margin-top: -8px;
 }
 
 .smallTopic.myPg
@@ -2464,4 +2457,56 @@ textarea:invalid
 .typeJob.categCab span:hover
 {
 	background: #63c399;
+}
+
+.masterWorkCab
+{
+	display: inline-block;
+	height: 180px;
+	width: 200px;
+	overflow: hidden;
+	margin: 15px 0px;
+}
+
+#rightCab .masterWorkCab .greenPhoto
+{
+	height: 40px;
+	width: 200px;
+	margin: 0px auto;
+	line-height: 40px;
+}
+
+.masterWorkCab:nth-of-type(3n+3)
+{
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.masterWorkCab.uplImg
+{
+	background: #e6e6e6;
+	text-align: center;
+	position: relative;
+}
+
+.masterWorkCab.uplImg i
+{
+	color: #4c4740;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -44px;
+	margin-left: -25px;
+}
+
+.greySmlLink
+{
+	position: absolute;
+	top: 110px;
+	width: 200px;
+	left: 0px;
+	font-family: RalewayRegular;
+	color: #4c4740;
+	font-size: 14px;
+	text-decoration: none;
 }
