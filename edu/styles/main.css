@@ -1,0 +1,180 @@
+	@font-face
+	{
+		font-family: Grotesk;
+		src: url(../fonts/grotesk.otf);
+	}
+
+	body
+	{
+		margin: 0px;
+		overflow: hidden;
+	}
+	
+	#pic
+	{
+		height: 98%;
+		margin-right: 0px;
+		float: left;
+		width: 50px;
+	}
+	
+	#map
+	{
+		height: 98%;
+		width: 50px;
+		float: left;
+	}
+	
+	#work
+	{
+		margin: 0.5% auto;
+	}
+	
+	#margin
+	{
+		width: 1%;
+		height: 1px;
+		float: left;
+	}
+	
+	h5, h6, h1, h3
+	{
+		font-family: Grotesk;
+		text-align:center;
+	}
+	
+	h1
+	{
+		font-weight: 200;
+	}
+	
+	#tactic
+	{
+		width: 54px;
+		margin: 0px auto;
+	}
+	
+	#tactic td
+	{
+		width: 30px;
+		height: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.dr
+	{
+		width: 23px;
+		height: 23px;
+	}
+	
+	.btt
+	{
+		width: 65%;
+		height: 40px;
+		font-family: Verdana;
+		color: #ffffff;
+		background: #607D8B;
+		border-radius: 2px;
+		border: 0px;
+		outline: none;
+		border-bottom: 3px solid #37474F;
+		font-size: 14px;
+	}
+	
+	.btt:active
+	{
+		border-bottom: 2px solid #37474F;
+	}
+	
+	.mbtt
+	{
+		width: 45%;
+		height: 30px;
+		font-family: Verdana;
+		color: #ffffff;
+		background: #607D8B;
+		border-radius: 2px;
+		border: 0px;
+		outline: none;
+		border-bottom: 3px solid #37474F;
+		margin-top: 10px;
+	}
+	
+	.mbtt:active
+	{
+		border-bottom: 2px solid #37474F;
+	}
+	
+	#pointmap
+	{
+		width: 1px;
+		height: 1px;
+		background: red;
+	}
+	
+	#point
+	{
+		width: 1px;
+		height: 1px;
+		background: blue;
+	}
+	
+	#modal
+	{
+		width: 680px;
+		height: 300px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		background: #F5F5F5;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -150px;
+		margin-left: -340px;
+		z-index: 100;
+		display: none;
+	}
+	
+	.a_true
+	{
+		width: 18px;
+		height: 5px; 
+		background: green;
+	}
+	
+	.a_false
+	{
+		width: 18px;
+		height: 5px; 
+		background: red;
+	}
+	
+	#true
+	{
+		margin: 0px auto;
+	}
+	
+	.vt
+	{
+		font-family: Segoe UI;
+		font-size: 72px;
+		margin-top: 1%;
+	}
+	
+	.bbtt
+	{
+		width: 40%;
+		margin: 0px auto;
+		text-align: center;
+	}
+	
+	footer
+	{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-family: Grotesk;
+		text-align: center;
+		line-height: 25px;
+	}
