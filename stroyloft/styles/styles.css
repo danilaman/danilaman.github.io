@@ -2656,11 +2656,13 @@ textarea:invalid
 .cabinetRev .fa-thumbs-o-up
 {
 	color: #63c399;
+	cursor: pointer;
 }
 
 .cabinetRev .fa-thumbs-o-down
 {
 	color: #ffb837;
+	cursor: pointer;
 }
 
 .cabinetRev .fa-2x
