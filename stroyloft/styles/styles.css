@@ -1371,7 +1371,7 @@ ul
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
-	border-radius: 3px;
+	border-radius: 5px;
 	margin: 28px 20px 15px 28px;
 	float: left;
 }
@@ -2488,7 +2488,7 @@ textarea:invalid
 	line-height: 40px;
 }
 
-.rightCab .masterWorkCab:nth-of-type(3n+3), .masterSubInfo .masterWorkCab:nth-of-type(3n+2)
+#rightCab.albm .masterWorkCab:nth-of-type(3n+3), .masterSubInfo .masterWorkCab:nth-of-type(3n+2)
 {
 	margin-left: 45px;
 	margin-right: 45px;

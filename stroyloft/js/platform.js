@@ -1,40 +1,5 @@
 $(document).ready(function()
 {
-	$('.oneService').hover(function(){
-		var bw = $(this).find(".serviceimg").css("backgroundImage")
-		var cl = $(this).find(".serviceimg").attr("servicePhoto")
-
-		window.bw = bw
-		window.cl = cl
-
-		$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-			"background-size": "cover", "height": "250px"
-		})
-
-		$(this).find(".examplesGreen").slideToggle(300)
-	},
-	function()
-	{
-		$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-			"background-size": "cover", "height": "220px"
-		})
-		$(this).find(".examplesGreen").slideToggle(300)
-	})
-
-	
-	$('.reviewsString').slick({
-		dots: true,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		centerMode: true,
-		variableWidth: true,
-		nextArrow: "",
-		autoplaySpeed: 3000,
-		autoplay: true,
-	});
-
-
 	$(".typeJob").hover(function()
 	{
 		$(this).find(".hoverMenu").toggle()
@@ -52,11 +17,9 @@ $(document).ready(function()
 			$(this).find(".orderDots").css("width", wdt + "px");
 		})
 	}
-
 	setTimeout(dots, 500);
 	
 	$("#pageNav").width($(".navNum").length*62);
-
 
 	function smallDots()
 	{
@@ -66,10 +29,7 @@ $(document).ready(function()
 			$(this).find(".dotsSmall").css("width", wdt + "px");
 		})
 	}
-
 	setTimeout(smallDots, 500);
-
-
 
 	function roomsAligment()
 	{
@@ -167,15 +127,5 @@ $(document).ready(function()
 	}
 
 	setTimeout(PhAligm, 500)
-	
-	$(".mSlider").slick({
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		centerMode: true,
-		variableWidth: true,
-		nextArrow: '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>',
-		prevArrow: '<i class="fa fa-angle-left fa-4x lastArrow" aria-hidden="true"></i>'
-	})
 
 })
