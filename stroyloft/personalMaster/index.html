@@ -14,23 +14,6 @@
 	<script>
 		$(document).ready(function()
 		{
-
-			function imgAlign()
-			{
-				if( $(".uplContCab").find("img").height() >= $(".uplContCab").find("img").width())
-				{
-					$(".uplContCab").find("img").width( $(".uplContCab").width() )
-					$(".uplContCab").find("img").css("top", ($(".uplContCab").height() - $(".uplContCab").find("img").height())/2)
-				}
-				else
-				{
-					$(".uplContCab").find("img").height( $(".uplContCab").height() )
-					$(".uplContCab").find("img").css("left", ($(".uplContCab").width() - $(".uplContCab").find("img").width())/2)
-				}
-			}
-
-			setTimeout(imgAlign, 1000)
-
 			$(".backToList a span,.backToList a i").hover(function()
 			{
 				$(".backToList a span").css("color","#414141")
@@ -77,7 +60,7 @@
 
 			<div class = "masterMainInf">
 				<a href = "#" class = "blueButton masterInf">Предложить работу</a>
-				<a href = "#" class = "masterPhoto" style = "margin-left: 0px;border-radius: 5px;" alt = "Мастер"><img src = "../images/master1.png"></a>
+				<a href = "#" class = "masterPhoto" style = "margin-left: 0px;border-radius: 5px;" alt = "Мастер"><img src = "../images/master2.jpg"></a>
 
 				<div class="masterInf">
 					<div class = "rightPhotoTopic">Пётр Васильевич Маминов</div>

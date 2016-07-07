@@ -137,7 +137,7 @@ $(document).ready(function()
 			if(e == 2)
 			{
 				$(this).css({"marginLeft":"56px",
-											"marginRight":"56px"})
+					"marginRight":"56px"})
 			}
 			else if(e = 3)
 			{
@@ -149,20 +149,25 @@ $(document).ready(function()
 
 	setTimeout(roomsAligment, 500)
 
-	$(".masterPhoto").each(function()
+	function PhAligm()
 	{
-		if( $(this).find("img").width() >= $(this).find("img").height() )
+		$(".masterPhoto").each(function()
 		{
-			$(this).find("img").height( $(this).height() )
-			$(this).find("img").css("left", ( $(this).width() - $(this).find("img").width() )/2 )
-		}
-		else
-		{
-			$(this).find("img").width( $(this).width() )
-			$(this).find("img").css("top", ( $(this).height() - $(this).find("img").height() )/2 )
-		}
-	})
+			if( $(this).find("img").width() >= $(this).find("img").height() )
+			{
+				$(this).find("img").height( $(this).height() )
+				$(this).find("img").css("left", ( $(this).width() - $(this).find("img").width() )/2 )
+			}
+			else
+			{
+				$(this).find("img").width( $(this).width() )
+				$(this).find("img").css("top", ( $(this).height() - $(this).find("img").height() )/2 )
+			}
+		})
+	}
 
+	setTimeout(PhAligm, 500)
+	
 	$(".mSlider").slick({
 		infinite: true,
 		speed: 300,
