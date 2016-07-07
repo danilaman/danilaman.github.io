@@ -2812,3 +2812,14 @@ textarea:invalid
 {
 	margin: 20px 0px;
 }
+
+.voteMaster.infMas
+{
+	width: 140px;
+	left: 0px;
+}
+
+.good.central
+{
+	margin: 0px 13px;
+}
