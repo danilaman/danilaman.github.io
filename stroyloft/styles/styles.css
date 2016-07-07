@@ -2488,7 +2488,7 @@ textarea:invalid
 	line-height: 40px;
 }
 
-.masterWorkCab:nth-of-type(3n+3)
+.rightCab .masterWorkCab:nth-of-type(3n+3), .masterSubInfo .masterWorkCab:nth-of-type(3n+2)
 {
 	margin-left: 45px;
 	margin-right: 45px;
