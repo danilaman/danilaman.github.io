@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/fonts.css">
+	<link rel="stylesheet" href="../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="../plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="../js/platform.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$(".backToList a span,.backToList a i").hover(function()
+			{
+				$(".backToList a span").css("color","#414141")
+				$(".backToList a i").css("color","#777777")
+			},
+			function()
+			{
+				$(".backToList a span").css("color","#86878b")
+				$(".backToList a i").css("color","#e8e8e8")
+			})
+			
+		})
+	</script>
+	<title>Пётр Маминов</title>
+</head>
+<body>
+
+	<div id="hideAll"></div>
+
+	<div id="navbar">
+		<div id = "navUni">
+			<a href = "index.html"><img id="mainlogo" src = "../images/logo.png"></a>
+			<ul id="navlist">
+				<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
+				<li class="navmenu realMenu"><div class = "navDot"></div><a href = "masters.html">Все исполнители</a></li>
+				<li class="navmenu"><a href = "working.html">Примеры работ</a></li>
+				<li class="navmenu"><a href = "reviews.html">Отзывы</a></li>
+				<li class="navmenu"><a href = "#">Войти/Регистрация</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="cabMain" style = "height: auto;">
+		<div class = "backToList">
+			<a href = "#"><i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i> <span>Обратно к списку исполнителей<span></a>
+		</div>
+
+		<div id="leftCab">
+			<a href = "#" class = "leftItem">Общая информация</a>
+			<a href = "#" class = "leftItem" style = "margin: 4px 0px;">Примеры работ</a>
+			<a href = "#" class = "leftItem rlPage">Отзывы клиентов</a>
+		</div>
+		<div id="rightCab">
+
+			<div class = "masterMainInf">
+				<a href = "#" class = "blueButton masterInf">Предложить работу</a>
+				<a href = "#" class = "masterPhoto" style = "margin-left: 0px;border-radius: 5px;" alt = "Мастер"><img src = "../images/master2.jpg"></a>
+
+				<div class="masterInf">
+					<div class = "rightPhotoTopic">Пётр Васильевич Маминов</div>
+					<p class = "masterPost">Частный мастер</p>
+
+					<div class = "rightPhotoTopic" style = "margin-top: 45px;">Образование</div>
+					<p class = "masterPost">Высшее (СПб ГАСУ, Архитектор, 2009 г.в.)</p>
+				</div>
+
+				<div class="orderLocation masterLocation"><i class="fa fa-map-marker" aria-hidden="true"></i> Санкт-Петербург</div>
+
+				<div class="voteMaster infMas">
+					<a href = "#"><div class="bad">0</div></a>
+					<a href = "#"><div class="good central">20</div></a>
+					<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+				</div>
+				
+				<div style = "clear:both;"></div>
+				<div class = "masterSubInfo">
+
+					<a href = "#" class="goodRevsTb">Положительные</a>
+					<a href = "#" class="badRevsTb">Отрицательные</a>
+					<a href = "#" class="allRevsTb realPg">Все отзывы</a>
+
+
+					<div class="cabinetRev">
+						<i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+						<div class="revText">Первый раз пользовалась услугами Игоря! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо за прекрасную работу!
+							<div class="smallCast">
+								<div class="customerSmall">Заказчик</div>
+								<div class = "dotsSml">..............................................</div>
+								<div class = "customerNameSmall">Ольга Дмитриевна</div>
+								<div style = "clear:both;"></div>
+							</div>
+						</div>
+						<p class="reviewTime"><i class="fa fa-clock-o" aria-hidden="true"></i> Добавлено 23.05.2016</p>
+						<a href = "#" class = "blueButton bbRev">Посмотреть заказ</a>
+						<div srtle = "clear:both;"></div>
+					</div>
+
+
+					<div class="cabinetRev">
+						<i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
+						<div class="revText">Ужасный мастер, почему таких сразу не убивают? Мало того, что спалил до тла мою квартиру, так еще и помял машину, когда выпрагивал из окна, спасаясь от пожара! Не рекомендую Игоря, хотя в прочем, он уже и не сможет работать более.
+							<div class="smallCast">
+								<div class="customerSmall">Заказчик</div>
+								<div class = "dotsSml">..............................................</div>
+								<div class = "customerNameSmall">Ольга Дмитриевна</div>
+								<div style = "clear:both;"></div>
+							</div>
+						</div>
+						<p class="reviewTime"><i class="fa fa-clock-o" aria-hidden="true"></i> Добавлено 23.05.2016</p>
+						<a href = "#" class = "blueButton bbRev">Посмотреть заказ</a>
+						<div srtle = "clear:both;"></div>
+					</div>
+
+					<div class="cabinetRev">
+						<i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
+						<div class="revText">Ужасный мастер, почему таких сразу не убивают? Мало того, что спалил до тла мою квартиру, так еще и помял машину, когда выпрагивал из окна, спасаясь от пожара! Не рекомендую Игоря, хотя в прочем, он уже и не сможет работать более.
+							<div class="smallCast">
+								<div class="customerSmall">Заказчик</div>
+								<div class = "dotsSml">..............................................</div>
+								<div class = "customerNameSmall">Ольга Дмитриевна</div>
+								<div style = "clear:both;"></div>
+							</div>
+						</div>
+						<p class="reviewTime"><i class="fa fa-clock-o" aria-hidden="true"></i> Добавлено 23.05.2016</p>
+						<a href = "#" class = "blueButton bbRev">Посмотреть заказ</a>
+						<div srtle = "clear:both;"></div>
+					</div>
+
+					<div class="cabinetRev">
+						<i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
+						<div class="revText">Ужасный мастер, почему таких сразу не убивают? Мало того, что спалил до тла мою квартиру, так еще и помял машину, когда выпрагивал из окна, спасаясь от пожара! Не рекомендую Игоря, хотя в прочем, он уже и не сможет работать более.
+							<div class="smallCast">
+								<div class="customerSmall">Заказчик</div>
+								<div class = "dotsSml">..............................................</div>
+								<div class = "customerNameSmall">Ольга Дмитриевна</div>
+								<div style = "clear:both;"></div>
+							</div>
+						</div>
+						<p class="reviewTime"><i class="fa fa-clock-o" aria-hidden="true"></i> Добавлено 23.05.2016</p>
+						<a href = "#" class = "blueButton bbRev">Посмотреть заказ</a>
+						<div srtle = "clear:both;"></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="NavPadding" style = "margin: 40px auto 60px;">
+				<div id="pageNav">
+					<a href = "#"><i class="fa fa-long-arrow-left fa-2x leftArrow" aria-hidden="true"></i></a>
+					<a href = "#" class="navNum realNum">1</a>
+					<a href = "#" class="navNum">2</a>
+					<a href = "#" class="navNum">3</a>
+					<a href = "#" class="navNum">4</a>
+					<a href = "#" class="navNum">5</a>
+					<a href = "#" class="navNum">6</a>
+					<a href = "#" class="navNum">7</a>
+					<a href = "#" class="navNum">8</a>
+					<a href = "#" class="navNum">9</a>
+
+					<a href = "#"><i class="fa fa-long-arrow-right fa-2x rightArrow" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<div style = "clear:both;height:0px;"></div>
+	</div>
+
+	<div id = "footer" class = "footerAll">
+		<div id="allfooters">
+			<div id="footerLeft">
+				<a href = "#" style = "margin-top: 30px;"><img src = "../images/logo_white.png" class = "whiteLogo"></a>
+				<p class = "copy">Все права защищены 2016</p>
+			</div>
+
+			<div id="footerSecond">
+				<a href = "#" class = "whiteLink">- Заказы</a>
+				<a href = "#" class = "whiteLink">- Исполнители</a>
+				<a href = "#" class = "whiteLink">- Блог</a>
+				<a href = "#" class = "whiteLink">- Как это работает?</a>
+			</div>
+
+			<div id="footerThird">
+				<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+				<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+				<a href = "#" class = "whiteLink">- О нас</a>
+				<a href = "#" class = "whiteLink">- Поддержка</a>
+			</div>
+
+			<div id="footerFourth">
+				<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+				<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+				<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+				<img src = "../images/DARTwhite.png" class = "onePx">
+			</div>
+		</div>
+	</div>
+	<img src = "../images/trShd.png" class = "onePx">
+</body>
+</html>
