@@ -1482,6 +1482,18 @@ ul
 	position: relative;
 }
 
+.masterCraft.infCraft
+{
+	margin: 2px 0px;
+	width: 700px;
+}
+
+.masterCraft.infCraft.craftPrice
+{
+	width: 150px;
+	right: 0px;
+}
+
 .craftName
 {
 	position: absolute;
@@ -2656,4 +2668,147 @@ textarea:invalid
 	position: absolute;
 	top: -24px;
 	right: -50px;
+}
+
+#FullAccessPn
+{
+	width: 270px;
+	height: 120px;
+	background: #fff;
+	position: absolute;
+	top: 80px;
+	left: 586px;
+	z-index: 11;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	display: none;
+}
+
+.hvAccessLeft
+{
+	font-family: OpenSansSemibold;
+	color: #414141;
+	font-size: 16px;
+	margin: 14px 14px 0px 14px;
+	float: left;
+}
+
+.greenLink.hvAcc
+{
+	font-size: 16px;
+	float: right;
+	text-align: right;
+	display: inline;
+	margin: 15px;
+	width: auto;
+}
+
+.greenLink.hvAcc:hover
+{
+	text-decoration: underline;
+}
+
+.fullAccess.hvAcc
+{
+	width: auto;
+	margin: 0px;
+	float: right;
+	margin-right: 14px;
+}
+
+.redLink.hvAcc
+{
+	font-family: RalewayRegular;
+	float: right;
+	margin: 12px 14px;
+}
+
+.trForPn.hvAcc
+{
+	left: 240px;
+	top: -20px;
+	z-index: 9;
+	height: 20px;
+}
+
+.backToList
+{
+	width: 100%;
+	height: 55px;
+	line-height: 0px;
+	position: relative;
+}
+
+.backToList a span
+{
+	font-family: OpenSans;
+	color: #86878b;
+	font-size: 16px;
+	text-decoration: none;
+	position: absolute;
+	left: 40px;
+	transition: 0.3s;
+}
+
+.backToList a i
+{
+	color: #e8e8e8;
+	position: absolute;
+	top: -15px;
+	transition: 0.3s;
+}
+
+.masterMainInf
+{
+	width: 100%;
+	position: relative;
+}
+
+.rightPhotoTopic,.infoHdr
+{
+	color: #414141;
+	font-family: RalewayBold;
+	font-size: 18px;
+	float:left;
+	text-decoration: none;
+	width: 100%;
+}
+
+.masterInf .rightPhotoTopic
+{
+	margin: 0px 8px;
+}
+
+.masterMainInf .voteMaster
+{
+	left: 8px;
+}
+
+.blueButton.masterInf
+{
+	line-height: 35px;
+	position: absolute;
+	top: 150px;
+	right: 0px;
+	padding: 0px 10px;
+	width: 180px;
+	text-align: center;
+}
+
+.masterSubInfo
+{
+	width: 100%;
+	margin-top: 80px;
+}
+
+.greenTopic
+{
+	color: #63c399;
+	font-family: RalewaySemibold;
+	font-size: 18px;
+	margin: 0px;
+}
+
+.oneServMaster
+{
+	margin: 20px 0px;
 }
