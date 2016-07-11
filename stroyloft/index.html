@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles/styles.css"/>
-	<!--<link rel="stylesheet" href="styles/mob_styles.css">-->
 	<link rel="stylesheet" href="styles/fonts.css"/>
 	<link rel="stylesheet" href="styles/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
@@ -11,19 +10,7 @@
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
-	<!--<script src="js/mobile.js"></script>-->
-	<script type="text/javascript">
-	    var mobiles = ["iPhone", "iPod", "Android"];//mobile devices
-	    var i;
-
-	    for(i=0;i< mobiles.lenght;i++){
-	        //testing if the RE matches the mobile agents
-	        var er = new RegExp(mobiles,"i");
-	        if( er.test( navigation.userAgent ) ) {
-	        	alert("mob")
-	        }
-	    }
-	</script>
+	<script type = "text/javascript" src = "js/platform.js"></script>
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
@@ -61,6 +48,8 @@
 				autoplay: true,
 			})
 		})
+
+		isMobile("index.html")
 	</script>
 	<title>Стройлофт</title>
 </head>
