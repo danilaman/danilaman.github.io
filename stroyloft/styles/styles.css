@@ -2879,6 +2879,7 @@ textarea:invalid
 	{
 		height: auto;
 		min-height: auto;
+		margin-bottom: 25px;
 	}
 
 	#mainlogo
