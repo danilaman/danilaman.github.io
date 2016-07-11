@@ -2,22 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles/styles.css"/>
-	<link rel="stylesheet" href="styles/fonts.css"/>
-	<link rel="stylesheet" href="styles/font-awesome.min.css"/>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
-	<script type = "text/javascript" src = "js/platform.js"></script>
-	<script type = "text/javascript" src = "js/mobile_doc.js"></script>
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
-			if(isMobile)
-				$('html').load('mobile/index.html');
-
 			$('.oneService').hover(function(){
 				var bw = $(this).find(".serviceimg").css("backgroundImage")
 				var cl = $(this).find(".serviceimg").attr("servicePhoto")
@@ -51,10 +46,7 @@
 				autoplaySpeed: 3000,
 				autoplay: true,
 			})
-
 		})
-
-
 	</script>
 	<title>Стройлофт</title>
 </head>
