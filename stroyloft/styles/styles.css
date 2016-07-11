@@ -2883,7 +2883,8 @@ textarea:invalid
 
 	#mainlogo
 	{
-		margin-left: 15px;
+		margin: 25px 0px 25px 15px;
+		height: 40px;
 	}
 
 	#navUni #navlist .navmenu
@@ -3092,5 +3093,11 @@ textarea:invalid
 	{
 		width: 90%;
 		margin: 0px auto;
+	}
+
+	#tryThis
+	{
+		display: block;
+		clear: both;
 	}
 }
