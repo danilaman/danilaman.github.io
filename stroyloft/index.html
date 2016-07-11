@@ -49,7 +49,14 @@
 			})
 		})
 
-		
+		if(isMobile)
+		{
+			$.post("mobile/index.html", function(data)
+			{
+				$("body").html(data)
+			})
+		}
+
 	</script>
 	<title>Стройлофт</title>
 </head>
