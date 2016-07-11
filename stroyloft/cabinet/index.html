@@ -35,18 +35,23 @@
 			})
 
 
-
 			$(".cabinetTopUser").click(function()
 			{
 				$(".cabMasterPanel").toggle()
 				$("#hideAll").toggle()
 			})
 
+			$(".fullAccess").click(function()
+			{
+				$("#FullAccessPn").toggle()
+				$("#hideAll").toggle()
+			})
 
 			$("#hideAll").click(function()
 			{
-				$(".cabMasterPanel").toggle()
-				$("#hideAll").toggle()
+				$(".cabMasterPanel").hide()
+				$("#hideAll").hide()
+				$("#FullAccessPn").hide()
 			})
 
 
@@ -92,6 +97,18 @@
 				<li class="navmenu"><a href = "working.html">Мои заказы</a></li>
 			</ul>
 			<a href = "#" class = "cabinetTopUser"><img src = "../images/master1.png"> <span>Игорь Петров <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+			<div id="FullAccessPn">
+				<div class="hvAccessLeft">Оплачено до:</div>
+				<a href = "#" class = "greenLink hvAcc">31.07.2016</a>
+				<div style = "clear:both;"></div>
+
+				<div class="hvAccessLeft" style = "margin-top: 0px;">Баланс</div>
+				<a href = "#" class = "fullAccess hvAcc">1500 руб.</a>
+				<div style = "clear:both;"></div>
+				
+				<div class="trForPn hvAcc"></div>
+				<a href = "#" class = "redLink hvAcc"><i class="fa fa-plus" aria-hidden="true" style = "margin-right: 6px;"></i>Полный доступ</a>
+			</div>
 			<a href = "#" class = "fullAccess">Полный доступ <i class="fa fa-check" aria-hidden="true"></i></a>
 			<div class = "cabMasterPanel">
 
@@ -105,18 +122,18 @@
 				<a href = "#" class = "busyCab">
 					Занят
 				</a>
-				<a href = "#" class = "CabPnItem"><i class="fa fa-user" aria-hidden="true"></i>Моя страница</a>
-				<a href = "#" class = "CabPnItem"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a>
-				<a href = "#" class = "CabPnItem"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти из аккаунта</a>
+				<a href = "index.html" class = "CabPnItem"><i class="fa fa-user" aria-hidden="true"></i>Моя страница</a>
+				<a href = "settings.html" class = "CabPnItem"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a>
+				<a href = "exit.html" class = "CabPnItem"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти из аккаунта</a>
 			</div>
 		</div>
 	</div>
 
 	<div id="cabMain">
 		<div id="leftCab">
-			<a href = "#" class = "leftItem rlPage">Общая информация</a>
-			<a href = "#" class = "leftItem" style = "margin: 4px 0px;">Примеры работ</a>
-			<a href = "#" class = "leftItem">Отзывы клиентов</a>
+			<a href = "index.html" class = "leftItem rlPage">Общая информация</a>
+			<a href = "portfolio.html" class = "leftItem" style = "margin: 4px 0px;">Примеры работ</a>
+			<a href = "reviewscab.html" class = "leftItem">Отзывы клиентов</a>
 		</div>
 		<div id="rightCab">
 			<div class = "smallTopic myPg">Моя страница</div>
