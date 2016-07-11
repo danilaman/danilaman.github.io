@@ -2879,7 +2879,6 @@ textarea:invalid
 	{
 		height: auto;
 		min-height: auto;
-		margin-bottom: 25px;
 	}
 
 	#mainlogo
@@ -3096,9 +3095,10 @@ textarea:invalid
 		margin: 0px auto;
 	}
 
-	#tryThis
+	#tryThis.whitebutton
 	{
 		display: block;
 		clear: both;
+		margin-bottom: 25px;
 	}
 }
