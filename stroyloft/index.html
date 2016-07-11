@@ -10,7 +10,6 @@
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
-<<<<<<< HEAD
 	<script type="text/javascript" src="js/device.min.js"></script>
 	<script src="js/platform.js"></script>
 	<script type = "text/javascript">
@@ -20,45 +19,6 @@
 				$("body").html( data );
 			});
 		}
-=======
-	<script type = "text/javascript">
-		$(document).ready(function()
-		{
-			$('.oneService').hover(function(){
-				var bw = $(this).find(".serviceimg").css("backgroundImage")
-				var cl = $(this).find(".serviceimg").attr("servicePhoto")
-
-				window.bw = bw
-				window.cl = cl
-
-				$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-					"background-size": "cover", "height": "250px"
-				})
-
-				$(this).find(".examplesGreen").slideToggle(300)
-			},
-			function()
-			{
-				$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-					"background-size": "cover", "height": "220px"
-				})
-				$(this).find(".examplesGreen").slideToggle(300)
-			})
-
-
-			$('.reviewsString').slick({
-				dots: true,
-				infinite: true,
-				speed: 300,
-				slidesToShow: 1,
-				centerMode: true,
-				variableWidth: true,
-				nextArrow: "",
-				autoplaySpeed: 3000,
-				autoplay: true,
-			})
-		})
->>>>>>> origin/master
 	</script>
 	<title>Стройлофт</title>
 </head>
@@ -140,7 +100,6 @@
 						</div>
 					</div>
 				</div>
-<<<<<<< HEAD
 
 				<div id="services">
 					<p class = "blackTopic" style = "padding-top: 20px;">Популярные виды услуг</p>
@@ -218,85 +177,6 @@
 							<img src = "images/men_cl.png" class = "onePx">
 						</a>
 
-=======
-
-				<div id="services">
-					<p class = "blackTopic" style = "padding-top: 20px;">Популярные виды услуг</p>
-					<hr class = "redLine" color = "#ffb837">
-					<p class="subBlackTopic" style = "margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-
-					<div class="servRow">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
-							<div class="frameServ">
-								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Сантехника</p>
-							<img src = "images/men_cl.png" class = "onePx">
-						</a>
-
-						<a href = "#" class="oneService" style = "padding: 0px 70px">
-							<div class="frameServ">
-								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Подрядчик</p>
-							<img src = "images/contractor_cl.jpg" class = "onePx">
-						</a>
-
-						<a href = "#" class="oneService" style = "float:right; padding-left: 70px;">
-							<div class="frameServ">
-								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Подрядчик</p>
-							<img src = "images/contractor_cl.jpg" class = "onePx">
-						</a>
-					</div>
-					<div style = "clear:both"></div>
-
-					<div class="servRow" style = "margin: 3px auto;">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
-							<div class="frameServ">
-								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Сантехника</p>
-							<img src = "images/men_cl.png" class = "onePx">
-						</a>
-
-						<a href = "#" class="oneService" style = "padding: 0px 70px">
-							<div class="frameServ">
-								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Подрядчик</p>
-							<img src = "images/contractor_cl.jpg" class = "onePx">
-						</a>
-
-						<a href = "#" class="oneService" style = "float:right; padding-left: 70px;">
-							<div class="frameServ">
-								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Подрядчик</p>
-							<img src = "images/contractor_cl.jpg" class = "onePx">
-						</a>
-
-					</div>
-					<div style = "clear:both"></div>
-
-					<div class="servRow">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
-							<div class="frameServ">
-								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
-								<div class = "examplesGreen">Примеры работ</div>
-							</div>
-							<p class = "servicename">Сантехника</p>
-							<img src = "images/men_cl.png" class = "onePx">
-						</a>
-
->>>>>>> origin/master
 						<a href = "#" class="oneService" style = "padding: 0px 70px">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
