@@ -2881,15 +2881,31 @@ textarea:invalid
 		min-height: auto;
 	}
 
+	#navbar
+	{
+		box-shadow: 0 10px 20px rgba(210,210,210,0.19), 0 6px 6px rgba(210,210,210,0.23);
+	}
+
 	#mainlogo
 	{
 		margin: 25px 0px 25px 15px;
 		height: 40px;
 	}
+	
+	.whiteTopic.firstTp
+	{
+		padding-top: 25px;
+	}
 
 	#navUni #navlist .navmenu
 	{
 		display: block;
+		clear: both;
+	}
+
+	.navmenu
+	{
+		border-bottom: 1px solid #7a7a7a;
 	}
 
 	#navlist
@@ -2911,6 +2927,7 @@ textarea:invalid
 	#header
 	{
 		background: none;
+		margin-top: 25px;
 	}
 
 	.whiteTopic
