@@ -11,9 +11,13 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
 	<script type = "text/javascript" src = "js/platform.js"></script>
+	<script type = "text/javascript" src = "js/mobile_doc.js"></script>
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
+			if(isMobile)
+				$('html').load('mobile/index.html');
+
 			$('.oneService').hover(function(){
 				var bw = $(this).find(".serviceimg").css("backgroundImage")
 				var cl = $(this).find(".serviceimg").attr("servicePhoto")
@@ -48,8 +52,6 @@
 				autoplay: true,
 			})
 
-			
-			$('body').load('mobile/index.html');
 		})
 
 

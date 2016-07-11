@@ -1,0 +1,46 @@
+body
+{
+	margin: 0px;
+}
+
+#navbar
+{
+	width: 100%;
+	background: red;
+	overflow: hidden;
+	transition: 0.3s;
+	background: #efefef;
+}
+
+#navlogo
+{
+	background: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#navItems
+{
+	padding: 0px;
+}
+
+#navItems a 
+{
+	display: block;
+	width: 100%;
+	margin: 25px auto;
+	text-decoration: none;
+	color: #414141;
+}
+
+#navItems a li
+{
+	list-style-type: none;
+	text-align: center;
+	width: 100%;
+	font-family: RalewaySemibold;
+}
+
+#navlogo i
+{
+	float: right;
+}
