@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map</title>
+	<script type = "text/javascript" src = "maplight.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+
+		})
+	</script>
+	<style type="text/css">
+		.tool{
+			position: absolute;
+			background: white;
+			padding: 10px 20px;
+			font-size: 14px;
+			font-family: arial;
+			z-index: 1010;
+			box-shadow: 0px 0px 4px 0px rgb(70, 70, 70);
+			-webkit-box-shadow: 0px 0px 4px 0px rgb(70, 70, 70);
+			-moz-box-shadow: 0px 0px 4px 0px rgb(70, 70, 70);
+			line-height: 21px;
+		}
+		.mapq{
+			background-size: cover;
+			background-repeat: no-repeat!important;
+		}
+
+		.drp
+		{
+			width: 35px;
+			height: 35px;
+			background: red;
+		}
+	</style>	
+
+	<script type="text/javascript">
+	function move(e,b,r)	//для получения координат мышки
+	{
+		e = e || window.event
+		if (e.pageX == null && e.clientX != null ) 
+		{
+			var html = document.documentElement
+			var body = document.body
+			e.pageX = e.clientX + (html && html.scrollLeft || body && body.scrollLeft || 0) - (html.clientLeft || 0)
+			e.pageY = e.clientY + (html && html.scrollTop || body && body.scrollTop || 0) - (html.clientTop || 0)
+		}
+		//устанавливаем тултип на уровне мышки
+		$('.tool').css('left',e.pageX + 15 + r + 'px');
+		$('.tool').css('top',e.pageY + 15 - b + 'px');
+	}
+	function out()
+	{
+		document.body.removeChild(tooltips);
+	}   
+	var maparray = [
+	/* участки */
+	'Зал;17;Для отдыха и гостей',
+	'Ванная;7;Гигиена',
+	'Рабочий кабинет;12;', 
+	'Оранжерея;3;',
+	'Спальня;15;',
+	'Туалет;2;',
+	'Прихожая;12;',
+	'Балкон;3;'
+	];
+	$(document).ready(function(){
+		$('map area').hover(function(){
+		},function(){
+			$(".tool").remove();
+		});
+	});
+	function over(tip)	//функция при наведении
+	{  
+		//обрабатываем массив с данными
+		data_color = '';
+		data = maparray[tip-1];
+		data = data.split(';');
+		name = 	data[0]
+		square = data[1]
+		desc = data[2]
+		//добавляем тултип
+		$('').appendTo('body').html(name+'
+			'+square+'кв.м.
+			'+desc);
+			move(0,0,0);
+		}         
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			jQuery('.mapq').maphilight();
+		});
+	</script>
+
+	<script>
+		$(document).ready(function()
+		{
+			$(".drp").draggable();
+
+			$('#area1').droppable({
+				drop: function() {
+					$('#drp').css("background","grey")
+				}
+			});
+		})
+	</script>
+</head>
+<body>
+	<img src="map.png" width="980px" usemap="#genlinks" class="mapq" alt="" />
+	<map name="genlinks" id="genlinks"> 
+		<area id = "area1" onmouseover="over($(this).index()+1)" shape="poly" alt="" title=""  coords="138,160,90,586,478,584,474,398,404,354,366,352,372,158,364,154" href="" target="" />
+		<area onmouseover="over($(this).index()+1)" shape="poly" alt="балкон" title="" coords="381,157,377,238,431,234,430,156" href="" target="" />
+		<area onmouseover="over($(this).index()+1)" shape="poly" title="" coords="67,172,112,172,81,433,29,432,14,310,17,284" href="" target="" />
+	</map>
+	<div class = "drp"></div>
+</body>
+</html>
