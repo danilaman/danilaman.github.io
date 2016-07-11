@@ -3099,6 +3099,11 @@ textarea:invalid
 	{
 		display: block;
 		clear: both;
-		margin-bottom: 25px;
+		margin: 25px auto;
+	}
+
+	div#trythis
+	{
+		padding-bottom: 1px;
 	}
 }
