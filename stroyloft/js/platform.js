@@ -128,4 +128,15 @@ $(document).ready(function()
 
 	setTimeout(PhAligm, 500)
 
+	$(".bars").click(function()
+	{
+		if($("#navlist").height() == 0)
+		{
+			$("#navlist").height("420px")
+		}
+		else
+		{
+			$("#navlist").height("0")
+		}
+	})
 })

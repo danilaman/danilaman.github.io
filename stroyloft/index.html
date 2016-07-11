@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
@@ -10,6 +11,7 @@
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script type = "text/javascript" src = "js/platform.js"></script>
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
@@ -54,7 +56,8 @@
 
 	<div id="navbar">
 		<div id = "navUni">
-			<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a> 
+			<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+			<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
 			<ul id="navlist">
 				<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
 				<li class="navmenu"><a href = "masters.html">Все исполнители</a></li>
@@ -66,7 +69,7 @@
 	</div>
 
 	<div id="header">
-		<p class="whiteTopic" style = "font-size: 31px;">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
+		<p class="whiteTopic firstTp">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
 		<form action="index.html" method="post" enctype="multipart/form-data">
 			<div id="connectHeader">
 				<div id = "whatDo">Что требуется сделать?</div>
@@ -82,7 +85,7 @@
 					"></textarea>
 				</div>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" style = "display:inline-block;" class = "whiteButton" id = "HowWorks"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
 
 				<div id="sendapp">
 					<div id="freeapp">
@@ -111,7 +114,7 @@
 					elit. Aenean euismod bibendum</p>
 				</div>
 
-				<div class="vantage" style = "padding:0px 160px;">
+				<div class="vantage vanCen">
 					<img src = "images/emptyicon.png" class="roundIcon">
 					<p class="medTopic">Быстро</p>
 					<hr class = "redLine" color = "#ffb837" style = "margin-top: 10px;">
@@ -119,7 +122,7 @@
 						elit. Aenean euismod bibendum</p>
 					</div>
 
-					<div class="vantage" style = "float:right;">
+					<div class="vantage vanRight">
 						<img src = "images/emptyicon.png" class="roundIcon">
 						<p class="medTopic">Удобно</p>
 						<hr class = "redLine" color = "#ffb837" style = "margin-top: 10px;">
@@ -135,7 +138,7 @@
 					<p class="subBlackTopic" style = "margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
 					<div class="servRow">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
+						<a href = "#" class="oneService leftServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -144,7 +147,7 @@
 							<img src = "images/men_cl.png" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "padding: 0px 70px">
+						<a href = "#" class="oneService cenServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -153,7 +156,7 @@
 							<img src = "images/contractor_cl.jpg" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "float:right; padding-left: 70px;">
+						<a href = "#" class="oneService rightServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -164,8 +167,8 @@
 					</div>
 					<div style = "clear:both"></div>
 
-					<div class="servRow" style = "margin: 3px auto;">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
+					<div class="servRow leftServ">
+						<a href = "#" class="oneService leftServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -174,7 +177,7 @@
 							<img src = "images/men_cl.png" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "padding: 0px 70px">
+						<a href = "#" class="oneService cenServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -183,7 +186,7 @@
 							<img src = "images/contractor_cl.jpg" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "float:right; padding-left: 70px;">
+						<a href = "#" class="oneService rightServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -196,7 +199,7 @@
 					<div style = "clear:both"></div>
 
 					<div class="servRow">
-						<a href = "#" class="oneService" style = "padding-right:70px;">
+						<a href = "#" class="oneService leftServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -205,7 +208,7 @@
 							<img src = "images/men_cl.png" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "padding: 0px 70px">
+						<a href = "#" class="oneService cenServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -214,7 +217,7 @@
 							<img src = "images/contractor_cl.jpg" class = "onePx">
 						</a>
 
-						<a href = "#" class="oneService" style = "float:right; padding-left: 70px;">
+						<a href = "#" class="oneService rightServ">
 							<div class="frameServ">
 								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
 								<div class = "examplesGreen">Примеры работ</div>
@@ -227,7 +230,7 @@
 				</div>
 
 				<div id = "trythis">
-					<p class="whiteTopic" style = "padding-top: 60px;">Убедитесь сами насколько это просто и быстро</p>
+					<p class="whiteTopic easyFast">Убедитесь сами насколько это просто и быстро</p>
 					<hr class="redLine" color="#fff">
 					<p class="subtextWhite">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
 					<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Попробовать" class = "whiteButton" id = "tryThis"></a>
@@ -411,7 +414,9 @@
 							<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
 							<img src = "images/DARTwhite.png" class = "onePx">
 						</div>
+						<div style="clear:both;"></div>
 					</div>
+					<div style="clear:both;"></div>
 				</div>
 			</body>
 			</html>

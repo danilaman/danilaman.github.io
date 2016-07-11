@@ -17,6 +17,11 @@ body
 	min-width: 1025px;
 }
 
+.bars.fa
+{
+	display: none;
+}
+
 #mainlogo
 {
 	height: 60px;
@@ -75,8 +80,17 @@ body
 	width: 900px;
 	color: #fff;
 	font-family: RalewayRegular;
-	font-size: 36px;
 	padding-top: 50px;
+}
+
+.whiteTopic.firstTp
+{
+	font-size: 31px;
+}
+
+.whiteTopic.easyFast
+{
+	padding-top: 60px;
 }
 
 .medTopic
@@ -260,6 +274,7 @@ body
 #HowWorks
 {
 	margin: 30px 0px;
+	display: inline-block;
 }
 
 .ySubFun
@@ -372,6 +387,16 @@ body
 	display: inline-block;
 }
 
+.vantage.vanCen
+{
+	padding:0px 160px;
+}
+
+.vantage.vanRight
+{
+	float: right;
+}
+
 .roundIcon
 {
 	height: 170px;
@@ -408,6 +433,22 @@ body
 	height: 220px;
 	display: inline-block;
 	text-decoration: none;
+}
+
+.leftServ.oneService
+{
+	padding-right: 70px;
+}
+
+.cenServ.oneService
+{
+	padding: 0px 70px;
+}
+
+.rightServ.oneService
+{
+	padding-left: 70px;
+	float: right;
 }
 
 .serviceimg, .serviceimgColor
@@ -2824,4 +2865,232 @@ textarea:invalid
 .good.central
 {
 	margin: 0px 13px; 
+}
+
+@media screen and (max-width: 800px) {
+	
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel
+	{
+		width: auto;
+		min-width: auto;
+	}
+
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel
+	{
+		height: auto;
+		min-height: auto;
+	}
+
+	#mainlogo
+	{
+		margin-left: 15px;
+	}
+
+	#navUni #navlist .navmenu
+	{
+		display: block;
+	}
+
+	#navlist
+	{
+		display: block;
+		clear: both;
+		width: 100%;
+		height: 0px;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+
+	#navUni #navlist
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#header
+	{
+		background: none;
+	}
+
+	.whiteTopic
+	{
+		color: #414141;
+		width: auto;
+		line-height: 40px;
+	}
+
+	#header
+	{
+		display: block;
+		clear: both;
+	}
+
+	.bars.fa
+	{
+		display: inline-block;
+		float: right;
+		color: #414141;
+		margin: 20px;
+	}
+
+	.formspanel
+	{
+		margin: 0px;
+		width: 95%;
+		margin: 25px auto;
+	}
+
+	.textField[type="text"]
+	{
+		width: auto;
+		position: relative;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 0px;
+	}
+
+	.textField
+	{
+		width: auto;
+		position: relative;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 2px;
+	}
+
+	.formlab
+	{
+		font-size: 16px;
+	}
+
+	.whiteButton
+	{
+		border-color: #a5a5a5;
+		color: #a5a5a5;
+	}
+
+	#HowWorks.whiteButton
+	{
+		display: block;
+		clear: both;
+		margin: 65px auto 15px;
+	}
+
+	.connectHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	#arc
+	{
+		display: none;
+	}
+
+
+	.freeDesc
+	{
+		color: #414141;
+		display: block;
+		width: 50%;
+	}
+
+	#sendapp
+	{
+		margin: 10px;
+	}
+
+	.vantage
+	{
+		display: block;
+		clear: both;
+		margin: 10px auto;
+	}
+
+	.vantage.vanCen
+	{
+		padding: 0px;
+	}
+
+	.vantage.vanRight
+	{
+		float: none;
+	}
+
+	.leftServ.oneService
+	{
+		padding: 0px;
+	}
+
+	.cenServ.oneService
+	{
+		padding: 0px;
+	}
+
+	.rightServ.oneService
+	{
+		padding: 0px;
+		float: none;
+	}
+
+	.oneService
+	{
+		display: block;
+		clear: both;
+		margin: 60px auto;
+	}
+
+	.oneService:nth-of-type(1)
+	{
+		margin-top: 45px;
+	}
+
+	#services
+	{
+		background: none;
+	}
+
+	.whiteTopic.easyFast
+	{
+		color: #ccc;
+	}
+
+	#footerLeft
+	{
+		display: block;
+		clear: both;
+		height: 160px;
+	}
+
+	.whiteLogo
+	{
+		margin-left: 40px;
+	}
+
+	.copy
+	{
+		position: absolute;
+		margin-left: 40px;
+	}
+
+	#footerSecond, #footerThird
+	{
+		margin-left: 45px;
+		padding: 0px;
+		height: auto;
+	}
+
+	#footerFourth
+	{
+		float: right;
+		margin-right: 45px;
+	}
+
+	.blackTopic,.subBlackTopic
+	{
+		width: 90%;
+		margin: 0px auto;
+	}
 }
