@@ -3394,6 +3394,7 @@ textarea:invalid
 	{
 		left: 15px;
 		width: 40%;
+		height: auto;
 	}
 
 	.freeDesc.masterDesc
