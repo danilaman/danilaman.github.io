@@ -25,6 +25,12 @@ $(document).ready(function()
 	if($(window).width()>1024)
 		$("#pageNav").width($(".navNum").length*62);
 
+	$(window).resize(function()
+	{
+		if($(window).width()>1024)
+			$("#pageNav").width($(".navNum").length*62);
+	})
+
 	function smallDots()
 	{
 		$(".smallCast").each(function(i)
