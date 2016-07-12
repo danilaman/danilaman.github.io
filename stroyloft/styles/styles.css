@@ -2882,7 +2882,7 @@ textarea:invalid
 
 @media screen and (max-width: 1024px) {
 	
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf
 	{
 		width: auto;
 		min-width: auto;
@@ -3307,6 +3307,16 @@ textarea:invalid
 		clear: both;
 	}
 
+	.masterPhoto
+	{
+		margin-top: 40px;
+	}
+
+	.voteMaster
+	{
+		top: 190px;
+	}
+
 	.randomReview
 	{
 		margin-top: 25px;
@@ -3395,19 +3405,19 @@ textarea:invalid
 	.randReviewText
 	{
 		width: 90%;
+		padding-left: 20px;
 	}
 
 	.wVallRevs
 	{
-		top: 1200px;
+		top: 1260px;
 		right: 15px;
 	}
 
 	.blueButton.master
 	{
 		left: 15px;
-		width: 40%;
-		height: auto;
+		width: 70%;
 	}
 
 	.freeDesc.masterDesc
@@ -3424,6 +3434,18 @@ textarea:invalid
 	#connectHeader a #HowWorks
 	{
 		margin-right: 15px;
+		float: none;
+	}
+
+	#connectHeader a .yButton.ySubFun
+	{
+		float: right;
+		margin: 0px 10px;
+	}
+
+	#jobCateg
+	{
+		margin-top: 100px;
 	}
 
 	.ThSpace,.hoverMenu
