@@ -3464,4 +3464,8 @@ textarea:invalid
 		padding: 5px 2px;
 	}
 
+	.workString .workOne
+	{
+		display: block;
+	}
 }

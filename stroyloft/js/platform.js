@@ -107,6 +107,11 @@ $(document).ready(function()
 					$(this).css({"marginLeft":"56px",
 						"marginRight":"56px"})
 				}
+				else
+				{
+					$(this).css({"marginLeft":"0px",
+						"marginRight":"0px","margin": "15px auto"})
+				}
 			}
 			else if(e = 3)
 			{
@@ -160,6 +165,33 @@ $(document).ready(function()
 
 		dots()
 		smallDots()
+
+		$(".workString").each(function(i)
+		{
+			var e = 1
+
+			$(this).find(".workOne").each(function()
+			{
+				if(e == 2)
+				{
+					if($(window).width()>1024)
+					{
+						$(this).css({"marginLeft":"56px",
+							"marginRight":"56px"})
+					}
+					else
+					{
+						$(this).css({"marginLeft":"0px",
+							"marginRight":"0px","margin": "15px auto"})
+					}
+				}
+				else if(e = 3)
+				{
+					e = 1
+				}
+				e++
+			})
+		})
 	})
 })
 
