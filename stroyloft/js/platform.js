@@ -182,7 +182,7 @@ $(document).ready(function()
 					else
 					{
 						$(this).css({"marginLeft":"0px",
-							"marginRight":"0px","margin": "15px auto"})
+							"marginRight":"0px","margin": "0px auto"})
 					}
 				}
 				else if(e = 3)
