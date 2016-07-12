@@ -3405,6 +3405,7 @@ textarea:invalid
 	{
 		width: 90%;
 		padding-left: 20px;
+		margin: 0px auto;
 	}
 
 	.wVallRevs
@@ -3416,7 +3417,7 @@ textarea:invalid
 	.blueButton.master
 	{
 		left: 15px;
-		width: 70%;
+		width: 80%;
 	}
 
 	.freeDesc.masterDesc
