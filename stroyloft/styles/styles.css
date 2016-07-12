@@ -742,7 +742,7 @@ body
 
 #footer
 {
-	width: 100%;
+	width: auto;
 	height: 180px;
 	background: #71dbac;
 	display: block;
@@ -865,7 +865,7 @@ body
 #allfooters
 {
 	height: 180px;
-	width: 1130px;
+	max-width: 1130px;
 	margin: 0px auto;
 }
 
@@ -2867,15 +2867,15 @@ textarea:invalid
 	margin: 0px 13px; 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1170px) {
 	
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
 	{
 		width: auto;
 		min-width: auto;
 	}
 
-	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
 	{
 		height: auto;
 		min-height: auto;
@@ -2916,6 +2916,7 @@ textarea:invalid
 		height: 0px;
 		overflow: hidden;
 		transition: 0.5s;
+		background: #fff;
 	}
 
 	#navUni #navlist
@@ -3098,6 +3099,8 @@ textarea:invalid
 		margin-left: 45px;
 		padding: 0px;
 		height: auto;
+		display: block;
+		float: none;
 	}
 
 	#footerFourth
@@ -3122,5 +3125,140 @@ textarea:invalid
 	div#trythis
 	{
 		padding-bottom: 1px;
+	}
+
+	li.realMenu .navDot
+	{
+		display: none;
+	}
+
+	#ordHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	#ShowOrdTopic
+	{
+		color: #fff;
+		padding: 50px 0px;
+	}
+
+	.typeJob
+	{
+		display: block;
+		clear: both;
+		width: 150px;
+	}
+
+	.orderTime
+	{
+		margin: 15px;
+		display: block;
+	}
+
+	.typeBuild
+	{
+		margin: 5px 25px;
+	}
+
+	.orderPrice
+	{
+		margin-left: 25px;
+	}
+
+	.orderLocation
+	{
+		float: right;
+		width: 50%;
+		text-align: right;
+		margin-top: 0px;
+	}
+
+	.aboutCustomer
+	{
+		margin-bottom: 5px;
+	}
+
+	.navNum
+	{
+		display: none;
+
+	}
+
+	.realNum
+	{
+		display: block;
+	}
+
+	#NavPadding,#pageNav
+	{
+		width: 120px;
+		max-width: auto;
+		clear: both;
+	}
+
+	.realNum
+	{
+		margin: 0px auto;
+	}
+
+	.typeJob
+	{
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	#ShowRevTopic
+	{
+		color: #fff;
+		padding: 50px 0px;
+	}
+
+	#revHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	.workOne
+	{
+		clear: both;
+		margin-bottom: 25px;
+	}
+
+	.workString
+	{
+		margin: 0px auto;
+		display: block;
+		text-align: center;
+	}
+
+	.c1Review
+	{
+		width: auto;
+		margin-left: 0px;
+	}
+
+	.c2Review
+	{
+		width: auto;
+		margin-right: 0px;
+	}
+
+	.smallCast .dotsSmall
+	{
+		display: none;
+	}
+
+	.reviewTime
+	{
+		margin-left: 10px;
+	}
+
+	.contLoader
+	{
+		height: 150px;
+		line-height: 120px;
 	}
 }

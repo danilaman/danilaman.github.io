@@ -19,7 +19,8 @@ $(document).ready(function()
 	}
 	setTimeout(dots, 500);
 	
-	$("#pageNav").width($(".navNum").length*62);
+	if($("#pageNav").css("clear")!="both")
+		$("#pageNav").width($(".navNum").length*62);
 
 	function smallDots()
 	{
@@ -96,8 +97,11 @@ $(document).ready(function()
 		{
 			if(e == 2)
 			{
-				$(this).css({"marginLeft":"56px",
-					"marginRight":"56px"})
+				if($(this).css("clear")!="both")
+				{
+					$(this).css({"marginLeft":"56px",
+						"marginRight":"56px"})
+				}
 			}
 			else if(e = 3)
 			{
@@ -132,7 +136,7 @@ $(document).ready(function()
 	{
 		if($("#navlist").height() == 0)
 		{
-			$("#navlist").height("420px")
+			$("#navlist").height("480px")
 		}
 		else
 		{
