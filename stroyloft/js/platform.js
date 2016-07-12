@@ -1,15 +1,15 @@
 $(document).ready(function()
 {
-	if($(window).width()>1024)
+	if($(document).width()>1024)
 	{
 		$(".typeJob").hover(function()
 		{
-			if($(window).width()>1024)
+			if($(document).width()>1024)
 				$(this).find(".hoverMenu").toggle()
 		},
 		function()
 		{
-			if($(window).width()>1024)
+			if($(document).width()>1024)
 				$(this).find(".hoverMenu").toggle()
 		})
 	}
@@ -24,7 +24,7 @@ $(document).ready(function()
 	}
 	setTimeout(dots, 500);
 	
-	if($(window).width()>1024)
+	if($(document).width()>1024)
 		$("#pageNav").width($(".navNum").length*62);
 
 	function smallDots()
@@ -102,7 +102,7 @@ $(document).ready(function()
 		{
 			if(e == 2)
 			{
-				if($(window).width()>1024)
+				if($(document).width()>1024)
 				{
 					$(this).css({"marginLeft":"56px",
 						"marginRight":"56px"})
@@ -158,7 +158,7 @@ $(document).ready(function()
 
 	$( window ).resize(function()
 	{
-		if($(window).width()>1024)
+		if($(document).width()>1024)
 			$("#pageNav").width($(".navNum").length*62);
 		else
 			$("#pageNav").width("120px")
@@ -174,15 +174,14 @@ $(document).ready(function()
 			{
 				if(e == 2)
 				{
-					if($(window).width()>1024)
+					if($(document).width()>1024)
 					{
-						$(this).css({"marginLeft":"56px",
-							"marginRight":"56px"})
+						$(this).css({"margin": "0px 56px"})
 					}
 					else
 					{
 						$(this).css({"marginLeft":"0px",
-							"marginRight":"0px","margin": "0px auto"})
+							"marginRight":"0px","margin": "25px auto"})
 					}
 				}
 				else if(e = 3)
