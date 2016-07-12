@@ -1,13 +1,16 @@
 $(document).ready(function()
 {
-	$(".typeJob").hover(function()
+	if($(window).width()>1024)
 	{
-		$(this).find(".hoverMenu").toggle()
-	},
-	function()
-	{
-		$(this).find(".hoverMenu").toggle()
-	})
+		$(".typeJob").hover(function()
+		{
+			$(this).find(".hoverMenu").toggle()
+		},
+		function()
+		{
+			$(this).find(".hoverMenu").toggle()
+		})
+	}
 
 	function dots()
 	{
@@ -19,7 +22,7 @@ $(document).ready(function()
 	}
 	setTimeout(dots, 500);
 	
-	if($("#pageNav").css("clear")!="both")
+	if($(window).width()>1024)
 		$("#pageNav").width($(".navNum").length*62);
 
 	function smallDots()
@@ -97,7 +100,7 @@ $(document).ready(function()
 		{
 			if(e == 2)
 			{
-				if($(this).css("clear")!="both")
+				if($(window).width()>1024)
 				{
 					$(this).css({"marginLeft":"56px",
 						"marginRight":"56px"})

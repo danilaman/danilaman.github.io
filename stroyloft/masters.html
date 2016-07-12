@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
@@ -14,13 +15,18 @@
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
+			if($(window).width()>800)
+				var nextArrow = '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>'
+			else
+				var nextArrow = ""
+
 			$(".mSlider").slick({
 				infinite: true,
 				speed: 300,
 				slidesToShow: 1,
 				centerMode: true,
 				variableWidth: true,
-				nextArrow: '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>',
+				nextArrow: nextArrow,
 				prevArrow: '<i class="fa fa-angle-left fa-4x lastArrow" aria-hidden="true"></i>'
 			})
 		})
@@ -32,6 +38,7 @@
 	<div id="navbar">
 		<div id = "navUni">
 			<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+			<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
 			<ul id="navlist">
 				<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
 				<li class="navmenu realMenu"><div class = "navDot"></div><a href = "masters.html">Все исполнители</a></li>
@@ -59,16 +66,16 @@
 					"></textarea>
 				</div>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" style = "display:inline-block; margin-right: 8px;" class = "whiteButton" id = "HowWorks"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" style = "margin-right: 8px;" class = "whiteButton" id = "HowWorks"></a>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Вакансии" style = "display:inline-block;" class = "yButton ySubFun"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Вакансии" class = "yButton ySubFun"></a>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Найти товар" style = "display:inline-block; margin-right: 0px;" class = "yButton ySubFun"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Найти товар" style = "margin-right: 0px;" class = "yButton ySubFun"></a>
 
-				<div id="sendapp" style = "width: 545px; margin-top: 7px;">
+				<div id="sendapp" class = "masterApp" >
 					<div id="freeapp">
 						<span class="freeTopic" style = "margin-left: 20px;">Бесплатно!</span>
-						<p class="freeDesc" style = "margin-left: 20px; width: 250px;">Отправка заявки бесплатна и ни к чему вас не обязывает</p>
+						<p class="freeDesc masterDesc">Отправка заявки бесплатна и ни к чему вас не обязывает</p>
 					</div>
 					<div id = "arc" style = "left: 245px;top: 70px; width: 150px;"></div>
 					<input type = "submit" style = "padding-left: 10px; padding-right: 10px; margin-top: 24px;" value = "Оставить заявку" class = "yellowButton" id = "SendApp">
@@ -437,7 +444,9 @@
 							<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
 							<img src = "images/DARTwhite.png" class = "onePx">
 						</div>
+						<div style = "clear:both;"></div>
 					</div>
+					<div style = "clear:both;"></div>
 				</div>
 			</body>
 			</html>

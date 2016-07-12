@@ -280,6 +280,7 @@ body
 .ySubFun
 {
 	margin: 30px 8px;
+	display: inline-block;
 }
 
 #sendapp
@@ -298,6 +299,18 @@ body
 	width: 253px;
 	height: 70px;
 	margin-top: 10px;
+}
+
+.masterApp
+{
+	width: 545px;
+	margin-top: 7px;
+}
+
+.freeDesc.masterDesc
+{
+	margin-left: 20px;
+	width: 250px;
 }
 
 .freeTopic
@@ -865,8 +878,9 @@ body
 #allfooters
 {
 	height: 180px;
-	max-width: 1130px;
+	width: 1170px;
 	margin: 0px auto;
+	text-align: center;
 }
 
 /*orders*/
@@ -2867,15 +2881,15 @@ textarea:invalid
 	margin: 0px 13px; 
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1024px) {
 	
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp
 	{
 		width: auto;
 		min-width: auto;
 	}
 
-	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft
 	{
 		height: auto;
 		min-height: auto;
@@ -3260,5 +3274,148 @@ textarea:invalid
 	{
 		height: 150px;
 		line-height: 120px;
+	}
+
+	#connectHeader .yButton.ySubFun
+	{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	#connectHeader #HowWorks
+	{
+		float: right;
+		margin-top: 30px;
+	}
+
+	.masterMain,.randomReview,.orderLocation.masterLocation,.masterPhoto,.voteMaster
+	{
+		float: none;
+		display: block;
+		clear: both;
+	}
+
+	.randomReview
+	{
+		margin-top: 25px;
+	}
+
+	.masterPhotos
+	{
+		position: static;
+	}
+
+	.masterPricelist
+	{
+		position: static;
+		display: block;
+		margin-right: 0px;
+	}
+
+	.masterInf
+	{
+		margin: 60px auto;
+		float: none;
+		display: block;
+	}
+
+	.masterOnline,.masterName
+	{
+		display: block;
+		float: none;
+		margin-top: 5px;
+	}
+
+	.masterPricelist
+	{
+		margin-left: 16px;
+	}
+
+	.mastDots
+	{
+		display: none;
+	}
+
+	.craftName
+	{
+		position: static;
+		display: inline;
+	}
+	
+	.craftPrice
+	{
+		position: static;
+		float: right;
+	}
+
+	.masterMain,.oneMaster,.randomReview
+	{
+		border-right: 0px;
+		border-left: 0px;
+	}
+
+	.workOne.masterWork
+	{
+		display: inline-block;
+		float: none;
+	}
+
+	.oneMaster
+	{
+		padding-bottom: 50px;
+	}
+
+	.workOne.masterWork.slick-slide.slick-cloned,.workOne.masterWork.slick-slide
+	{
+		display: inline-block;
+	}
+
+	#masterPslider
+	{
+		margin: 25px 0px;
+	}
+
+	.roomMasterPhoto
+	{
+		margin: 25px 0px 0px 16px;
+	}
+
+	.randReviewText
+	{
+		width: 90%;
+	}
+
+	.wVallRevs
+	{
+		top: 1200px;
+		right: 15px;
+	}
+
+	.blueButton.master
+	{
+		left: 15px;
+		width: 40%;
+	}
+
+	.freeDesc.masterDesc
+	{
+		width: 40%;
+	}
+
+	.rrevCont
+	{
+		border-right: 0px;
+		border-left: 0px;
+	}
+
+	#connectHeader a #HowWorks
+	{
+		margin-right: 15px;
+	}
+
+	.ThSpace,.hoverMenu
+	{
+		display: none;
+		position: static;
 	}
 }
