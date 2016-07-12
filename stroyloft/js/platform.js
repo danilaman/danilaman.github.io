@@ -4,11 +4,13 @@ $(document).ready(function()
 	{
 		$(".typeJob").hover(function()
 		{
-			$(this).find(".hoverMenu").toggle()
+			if($(window).width()>1024)
+				$(this).find(".hoverMenu").toggle()
 		},
 		function()
 		{
-			$(this).find(".hoverMenu").toggle()
+			if($(window).width()>1024)
+				$(this).find(".hoverMenu").toggle()
 		})
 	}
 
@@ -24,12 +26,6 @@ $(document).ready(function()
 	
 	if($(window).width()>1024)
 		$("#pageNav").width($(".navNum").length*62);
-
-	$(window).resize(function()
-	{
-		if($(window).width()>1024)
-			$("#pageNav").width($(".navNum").length*62);
-	})
 
 	function smallDots()
 	{
@@ -152,4 +148,18 @@ $(document).ready(function()
 			$("#navlist").height("0")
 		}
 	})
+
+
+
+	$( window ).resize(function()
+	{
+		if($(window).width()>1024)
+			$("#pageNav").width($(".navNum").length*62);
+		else
+			$("#pageNav").width("120px")
+
+		dots()
+		smallDots()
+	})
 })
+

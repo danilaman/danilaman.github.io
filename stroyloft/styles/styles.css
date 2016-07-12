@@ -3220,7 +3220,6 @@ textarea:invalid
 	#NavPadding,#pageNav
 	{
 		width: 120px;
-		max-width: auto;
 		clear: both;
 	}
 
