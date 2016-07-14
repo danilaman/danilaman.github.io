@@ -3244,11 +3244,6 @@ textarea:invalid
 		display: block;
 	}
 
-	.typeBuild
-	{
-		margin: 5px 25px;
-	}
-
 	.orderPrice
 	{
 		margin-left: 25px;
@@ -3482,14 +3477,16 @@ textarea:invalid
 		top: 1260px;
 		right: 0px;
 		left: 0px;
-		margin-top: -5px;
+		margin-top: 0px;
 	}
 
 	.blueButton.master
 	{
-		left: 15px;
-		width: 80%;
+		left: 0px;
+		right: 0px;
+		width: auto;
 		text-align: center;
+		margin: 0px 10%;
 	}
 
 	.freeDesc.masterDesc
@@ -3560,7 +3557,7 @@ textarea:invalid
 
 	.typeBuild
 	{
-		margin: 5px 0px;
+		margin: 0px auto 10px;
 		text-align: center;
 		display: inline-block;
 		width: 100%;
@@ -3589,6 +3586,7 @@ textarea:invalid
 		width: 95%;
 		text-align:right;
 		display: inline-block;
+		margin-top: 8px;
 	}
 
 	.orderDots
