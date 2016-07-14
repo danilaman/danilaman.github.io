@@ -3446,8 +3446,8 @@ textarea:invalid
 
 	.oneMaster
 	{
-		padding-bottom: 50px;
-		margin-bottom: 55px;
+		padding-bottom: 85px;
+		margin-bottom: 25px;
 	}
 
 	.workOne.masterWork.slick-slide.slick-cloned,.workOne.masterWork.slick-slide
@@ -3474,16 +3474,18 @@ textarea:invalid
 
 	.wVallRevs
 	{
-		top: 1260px;
+		bottom: 0px;
+		top: auto;
 		right: 0px;
 		left: 0px;
-		margin-top: 5px;
 	}
 
 	.blueButton.master
 	{
 		left: 0px;
 		right: 0px;
+		top: auto;
+		bottom: 35px;
 		width: auto;
 		text-align: center;
 		margin: 0px 10%;
