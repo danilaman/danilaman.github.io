@@ -3447,7 +3447,7 @@ textarea:invalid
 	.oneMaster
 	{
 		padding-bottom: 50px;
-		margin-bottom: 45px;
+		margin-bottom: 55px;
 	}
 
 	.workOne.masterWork.slick-slide.slick-cloned,.workOne.masterWork.slick-slide
@@ -3477,7 +3477,7 @@ textarea:invalid
 		top: 1260px;
 		right: 0px;
 		left: 0px;
-		margin-top: 0px;
+		margin-top: 5px;
 	}
 
 	.blueButton.master
