@@ -12,6 +12,8 @@ $(document).ready(function()
 			if($(document).width()>1024)
 				$(this).find(".hoverMenu").toggle()
 		})
+
+		$("#pageNav").width($(".navNum").length*62);
 	}
 
 	function dots()
@@ -24,8 +26,6 @@ $(document).ready(function()
 	}
 	setTimeout(dots, 500);
 	
-	if($(document).width()>1024)
-		$("#pageNav").width($(".navNum").length*62);
 
 	function smallDots()
 	{
@@ -35,6 +35,7 @@ $(document).ready(function()
 			$(this).find(".dotsSmall").css("width", wdt + "px");
 		})
 	}
+
 	setTimeout(smallDots, 500);
 
 	function roomsAligment()
@@ -122,6 +123,19 @@ $(document).ready(function()
 	})
 
 	setTimeout(roomsAligment, 500)
+
+
+	function scrollbarWidth() {
+		var block = $('<div>').css({'height':'50px','width':'50px'}),
+		indicator = $('<div>').css({'height':'200px'});
+
+		$('body').append(block.append(indicator));
+		var w1 = $('div', block).innerWidth();    
+		block.css('overflow-y', 'scroll');
+		var w2 = $('div', block).innerWidth();
+		$(block).remove();
+		return (w1 - w2);
+	}
 
 	function PhAligm()
 	{

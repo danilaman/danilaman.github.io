@@ -15,25 +15,78 @@
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
-			$('.oneService').hover(function(){
-				var bw = $(this).find(".serviceimg").css("backgroundImage")
-				var cl = $(this).find(".serviceimg").attr("servicePhoto")
+			$('.oneService').each(function(){
+				$(this).find(".serviceimg").attr("realPhoto", $(this).find(".serviceimg").css("backgroundImage"))
+			})
 
-				window.bw = bw
-				window.cl = cl
+			if($(document).width()<=1024)
+			{
+				$('.oneService').each(function(){
+					var bw = $(this).find(".serviceimg").css("backgroundImage")
+					var cl = $(this).find(".serviceimg").attr("servicePhoto")
 
-				$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-					"background-size": "cover", "height": "250px"
+					window.bw = bw
+					window.cl = cl
+
+					$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "250px"
+					})
+
+					$(this).find(".examplesGreen").slideToggle(300)
 				})
+			}
 
-				$(this).find(".examplesGreen").slideToggle(300)
+			$(window).resize(function()
+			{
+				if($(document).width()>1024)
+				{
+					$('.oneService').each(function(){
+						$(this).find(".serviceimg").css({"background": $(this).find(".serviceimg").attr("realPhoto") + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+							"background-size": "cover", "height": "220px"
+						})
+						$(this).find(".examplesGreen").hide(300)
+					})
+				}
+				else
+				{
+					$('.oneService').each(function(){
+						var bw = $(this).find(".serviceimg").css("backgroundImage")
+						var cl = $(this).find(".serviceimg").attr("servicePhoto")
+
+						$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+							"background-size": "cover", "height": "250px"
+						})
+
+						$(this).find(".examplesGreen").show(300)
+					})
+				}
+			})
+
+			$('.oneService').hover(function(){
+				if($(document).width()>1024)
+				{
+					var bw = $(this).find(".serviceimg").css("backgroundImage")
+					var cl = $(this).find(".serviceimg").attr("servicePhoto")
+
+					window.bw = bw
+					window.cl = cl
+
+					$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "250px"
+					})
+
+					$(this).find(".examplesGreen").slideToggle(300)
+				}
 			},
 			function()
 			{
-				$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
-					"background-size": "cover", "height": "220px"
-				})
-				$(this).find(".examplesGreen").slideToggle(300)
+				if($(document).width()>1024)
+				{
+					$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "220px"
+					})
+					$(this).find(".examplesGreen").slideToggle(300)
+				}
 			})
 
 
@@ -411,7 +464,7 @@
 							<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
 							<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
 
-							<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+							<a href = "#" id = "dart"></a>
 							<img src = "images/DARTwhite.png" class = "onePx">
 						</div>
 						<div style="clear:both;"></div>

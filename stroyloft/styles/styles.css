@@ -88,6 +88,11 @@ body
 	font-size: 31px;
 }
 
+.masterTop.whiteTopic
+{
+	font-size: 31px;
+}
+
 .whiteTopic.easyFast
 {
 	padding-top: 60px;
@@ -271,10 +276,20 @@ body
 	color: #fff;
 }
 
+.yButton.ySubFun.srcGood
+{
+	margin-right: 0px;
+}
+
 #HowWorks
 {
 	margin: 30px 0px;
 	display: inline-block;
+}
+
+#HowWorks.whiteButton
+{
+	margin-right: 8px;
 }
 
 .ySubFun
@@ -852,10 +867,16 @@ body
 	transition: 0.3s;
 }
 
+
 #footerFourth a:hover
 {
 	color: rgba(255, 255, 255, 1);
 	margin: 0px 10px;
+}
+
+#footerFourth a#dart
+{
+	margin: 25px 0px 0px 80px;
 }
 
 #dart
@@ -868,6 +889,7 @@ body
 	display: inline-block;
 	transition: 0.4s;
 	opacity: 0.6;
+	margin: 25px 0px 0px 80px;
 }
 
 #dart:hover
@@ -1112,8 +1134,8 @@ ul
 	color: #414141;
 	font-family: RalewayBold;
 	font-size: 16px;
-	margin: 0px 25px 0px 0px;
-	float:right;
+	margin: 0px 16px 16px 0px;
+	float: right;
 	display: inline-block;
 }
 
@@ -2881,7 +2903,11 @@ textarea:invalid
 }
 
 @media screen and (max-width: 1024px) {
-	
+	body
+	{
+		min-width: 320px;
+	}
+
 	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf
 	{
 		width: auto;
@@ -2892,6 +2918,11 @@ textarea:invalid
 	{
 		height: auto;
 		min-height: auto;
+	}
+
+	#allfooters
+	{
+		width: 100%;
 	}
 
 	#navbar
@@ -2908,11 +2939,14 @@ textarea:invalid
 	#freeapp
 	{
 		margin: 15px;
+		text-align: center;
 	}
 
 	.whiteTopic.firstTp
 	{
-		padding-top: 25px;
+		padding-top: 0px;
+		width: 96%;
+		margin: 0px auto;
 	}
 
 	#navUni #navlist .navmenu
@@ -2956,6 +2990,11 @@ textarea:invalid
 		line-height: 40px;
 	}
 
+	.masterTop.whiteTopic
+	{
+		padding-top: 10px;
+	}
+
 	#header
 	{
 		display: block;
@@ -2981,20 +3020,21 @@ textarea:invalid
 	{
 		width: auto;
 		position: relative;
-		width: 100%;
+		width: 98%;
 		margin-right: 0px;
 		margin-left: 0px;
 		padding: 0px;
+		padding-left: 1%;
 	}
 
 	.textField
 	{
 		width: auto;
 		position: relative;
-		width: 100%;
+		width: 98%;
 		margin-right: 0px;
 		margin-left: 0px;
-		padding: 2px;
+		padding: 1%;
 	}
 
 	.formlab
@@ -3013,12 +3053,15 @@ textarea:invalid
 		display: block;
 		clear: both;
 		margin: 65px auto 15px;
+
 	}
 
-	.connectHeader
+	#connectHeader
 	{
 		display: block;
 		clear: both;
+		width: 96%;
+		margin: 40px auto;
 	}
 
 	#arc
@@ -3031,7 +3074,7 @@ textarea:invalid
 	{
 		color: #414141;
 		display: block;
-		width: 50%;
+		width: 100%;
 	}
 
 	#SendApp[type="submit"]
@@ -3039,7 +3082,8 @@ textarea:invalid
 		margin: 15px;
 		position: static;
 		clear: both;
-		float: right;
+		margin: 25px auto;
+		display: block;
 	}
 
 	#HowFast
@@ -3051,7 +3095,7 @@ textarea:invalid
 	{
 		display: block;
 		clear: both;
-		margin: 10px auto;
+		margin: 10px auto 25px;
 	}
 
 	.vantage.vanCen
@@ -3100,6 +3144,8 @@ textarea:invalid
 	.whiteTopic.easyFast
 	{
 		color: #ccc;
+		line-height: 24px;
+		font-size: 20px;
 	}
 
 	#footerLeft
@@ -3107,38 +3153,53 @@ textarea:invalid
 		display: block;
 		clear: both;
 		height: 160px;
+		width: 100%;
+		text-align: center;
+		margin-right: 0px;
 	}
 
 	.whiteLogo
 	{
-		margin-left: 40px;
+		margin: 25px auto 0px;
 	}
 
 	.copy
 	{
 		position: absolute;
-		margin-left: 40px;
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		right: 0px;
+		padding-left: 0px;
 	}
 
 	#footerSecond, #footerThird
 	{
-		margin-left: 45px;
+		margin: 0px auto;
 		padding: 0px;
 		height: auto;
 		display: block;
 		float: none;
+		width: 180px;
 	}
 
 	#footerFourth
 	{
-		float: right;
-		margin-right: 45px;
+		margin: 15px auto;
+		text-align: center;
+		width: 100%;
+		height: 120px;
 	}
 
 	.blackTopic,.subBlackTopic
 	{
 		width: 90%;
 		margin: 0px auto;
+	}
+
+	.catTopicWord.blackTopic
+	{
+		margin-top: 40px;
 	}
 
 	#tryThis.whiteButton
@@ -3195,10 +3256,10 @@ textarea:invalid
 
 	.orderLocation
 	{
-		float: right;
-		width: 50%;
+		width: 100%;
 		text-align: right;
 		margin-top: 0px;
+		margin-top: 25px;
 	}
 
 	.aboutCustomer
@@ -3261,13 +3322,15 @@ textarea:invalid
 
 	.c1Review
 	{
-		width: auto;
-		margin-left: 0px;
+		width: 96%;
+		margin-left: 2%;
 	}
 
 	.c2Review
 	{
-		width: auto;
+		width: 96%;
+		margin-left: 2%;
+		float: none;
 		margin-right: 0px;
 	}
 
@@ -3306,6 +3369,11 @@ textarea:invalid
 		clear: both;
 	}
 
+	.orderLocation.masterLocation
+	{
+		margin-top: 0px;
+	}
+
 	.masterPhoto
 	{
 		margin-top: 40px;
@@ -3331,6 +3399,7 @@ textarea:invalid
 		position: static;
 		display: block;
 		margin-right: 0px;
+		margin-left: 8px;
 	}
 
 	.masterInf
@@ -3347,10 +3416,6 @@ textarea:invalid
 		margin-top: 5px;
 	}
 
-	.masterPricelist
-	{
-		margin-left: 16px;
-	}
 
 	.mastDots
 	{
@@ -3361,18 +3426,21 @@ textarea:invalid
 	{
 		position: static;
 		display: inline;
+		font-size: 14px;
 	}
 	
 	.craftPrice
 	{
 		position: static;
 		float: right;
+		font-size: 14px;
+		margin-right: 4px;
 	}
 
 	.masterMain,.oneMaster,.randomReview
 	{
-		border-right: 0px;
-		border-left: 0px;
+		width: 96%;
+		margin-left: 2%;
 	}
 
 	.workOne.masterWork
@@ -3384,6 +3452,7 @@ textarea:invalid
 	.oneMaster
 	{
 		padding-bottom: 50px;
+		margin-bottom: 45px;
 	}
 
 	.workOne.masterWork.slick-slide.slick-cloned,.workOne.masterWork.slick-slide
@@ -3411,41 +3480,40 @@ textarea:invalid
 	.wVallRevs
 	{
 		top: 1260px;
-		right: 15px;
+		right: 0px;
+		left: 0px;
+		margin-top: -5px;
 	}
 
 	.blueButton.master
 	{
 		left: 15px;
 		width: 80%;
+		text-align: center;
 	}
 
 	.freeDesc.masterDesc
 	{
-		width: 40%;
-	}
-
-	.rrevCont
-	{
-		border-right: 0px;
-		border-left: 0px;
+		width: 96%;
+		margin: 0px 2%;
 	}
 
 	#connectHeader a #HowWorks
 	{
-		margin-right: 15px;
+		margin: 50px auto 0px;
 		float: none;
 	}
 
 	#connectHeader a .yButton.ySubFun
 	{
-		float: right;
-		margin: 0px 10px;
+		float: none;
+		display: block;
+		margin: 15px auto;
 	}
 
 	#jobCateg
 	{
-		margin-top: 100px;
+		margin-top: 20px;
 	}
 
 	.ThSpace,.hoverMenu
@@ -3461,11 +3529,112 @@ textarea:invalid
 
 	#whatDo
 	{
-		padding: 5px 2px;
+		padding: 5px 10px;
 	}
 
 	.workString .workOne
 	{
 		display: block;
+	}
+
+	.whiteLink
+	{
+		margin: 4px 0px;
+	}
+
+	#footerFourth a
+	{
+		margin-top: 20px;
+	}
+
+	#footerFourth a#dart
+	{
+		display: block;
+		margin: 15px auto 5px;
+	}
+
+	.catTopicWord.blackTopic
+	{
+		margin-top: 0px;
+	}
+
+	.typeBuild
+	{
+		margin: 5px 0px;
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.orderTitle
+	{
+		width: 100%;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.beMaster
+	{
+		line-height: 24px;
+		padding: 5px 0px;
+		width: 96%;
+		margin: 50px auto;
+	}
+
+	.customerName
+	{
+		color: #414141;
+		font-family: RalewayBold;
+		font-size: 16px;
+		width: 95%;
+		text-align:right;
+		display: inline-block;
+	}
+
+	.orderDots
+	{
+		display: none;
+	}
+
+	.orderInf
+	{
+		width: 96%;
+		margin: 0px 2%;
+	}
+
+	#sendapp
+	{
+		width: 100%;
+	}
+
+	.masterMain .masterPhoto
+	{
+		margin: 40px auto 15px;
+	}
+
+	.voteMaster
+	{
+		left: 50%;
+		margin-left: -61px;
+	}
+
+	.workString .workOne
+	{
+		width: 94%;
+	}
+
+	.workString .workOne .greenPhoto
+	{
+		width: 100%;
+	}
+
+	.bbRev
+	{
+		margin: 55px auto 0px;
+		display: block;
+		float: none;
+		clear: both;
+		width: 50%;
+		text-align: center;
 	}
 }

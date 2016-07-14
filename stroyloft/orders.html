@@ -12,12 +12,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
 	<script src="js/platform.js"></script>
-	<script>
-		$(document).ready(function()
-		{
-
-		})
-	</script>
+	
 	<title>Все заказы</title>
 </head>
 <body>
@@ -41,7 +36,7 @@
 	</div>
 
 	<div id="jobCateg">
-		<p class = "blackTopic" style = "margin-top: 40px;">Категории работ</p>
+		<p class = "blackTopic catTopicWord">Категории работ</p>
 		<hr class = "redLine" color = "#ffb837" style = "margin: 20px auto;">
 		<p class="subBlackTopic">Выберите нужную вам категорию работ и вы найдете профессионалов по этому направлению</p>
 
@@ -165,7 +160,7 @@
 					<div class = "orderDots">.......................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class = "customerName">Ольга Дмитриевна Васильева</p>
 				</div>
-
+				<div style = "clear:both;"></div>
 			</div>
 		</div>
 		<div class="oneOrder">
@@ -184,7 +179,8 @@
 					<div class = "orderDots">.........................................................................................................................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class = "customerName">Дмитриевна</p>
 				</div>
-
+				<div style = "clear:both">
+				</div>
 			</div>
 		</div>
 		<div class="oneOrder">
@@ -203,7 +199,8 @@
 					<div class = "orderDots">.......................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class = "customerName">Ольга Дмитриевна</p>
 				</div>
-
+				<div style = "clear:both">
+				</div>
 			</div>
 		</div>
 		<div class="oneOrder">
@@ -222,11 +219,11 @@
 					<div class = "orderDots">.......................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class = "customerName">Ольга Дмитриевна</p>
 				</div>
-
+				<div style = "clear:both">
+				</div>
 			</div>
 		</div>
-
-		<a href = "#" class = "yellowBigBtn">Станьте исполнителем прямо сейчас и получайте заказы</a>
+		<a href = "#" class = "yellowBigBtn beMaster">Станьте исполнителем прямо сейчас и получайте заказы</a>
 
 		<div class="oneOrder">
 			<p class="orderTime"><i class="fa fa-clock-o" aria-hidden="true"></i> Добавлено 48 минут назад</p>
@@ -243,6 +240,8 @@
 					<p class = "customer">Заказчик</p>
 					<div class = "orderDots">.......................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class = "customerName">Ольга Дмитриевна</p>
+				</div>
+				<div style = "clear:both">
 				</div>
 			</div>
 		</div>
@@ -263,63 +262,61 @@
 					<div class="orderDots" style="width: 921.828px;">.......................................................................................................................................................................................................................................................................................................................................................</div>
 					<p class="customerName">Ольга Дмитриевна</p>
 				</div>
-				
+				<div style = "clear:both">
 
+				</div>
 			</div>
 		</div>
-		
-	</div>
-	
-	<div id="NavPadding">
-		<div id="pageNav">
-			<a href = "#"><i class="fa fa-long-arrow-left fa-2x leftArrow" aria-hidden="true"></i></a>
-			<a href = "#" class="navNum realNum">1</a>
-			<a href = "#" class="navNum">2</a>
-			<a href = "#" class="navNum">3</a>
-			<a href = "#" class="navNum">4</a>
-			<a href = "#" class="navNum">5</a>
-			<a href = "#" class="navNum">6</a>
-			<a href = "#" class="navNum">7</a>
-			<a href = "#" class="navNum">8</a>
-			<a href = "#" class="navNum">9</a>
 
-			<a href = "#"><i class="fa fa-long-arrow-right fa-2x rightArrow" aria-hidden="true"></i></a>
+		<div id="NavPadding">
+			<div id="pageNav">
+				<a href = "#"><i class="fa fa-long-arrow-left fa-2x leftArrow" aria-hidden="true"></i></a>
+				<a href = "#" class="navNum realNum">1</a>
+				<a href = "#" class="navNum">2</a>
+				<a href = "#" class="navNum">3</a>
+				<a href = "#" class="navNum">4</a>
+				<a href = "#" class="navNum">5</a>
+				<a href = "#" class="navNum">6</a>
+				<a href = "#" class="navNum">7</a>
+				<a href = "#" class="navNum">8</a>
+				<a href = "#" class="navNum">9</a>
+
+				<a href = "#"><i class="fa fa-long-arrow-right fa-2x rightArrow" aria-hidden="true"></i></a>
+			</div>
 		</div>
-	</div>
+		<div id = "footer" class = "footerAll">
+			<div id="allfooters">
+				<div id="footerLeft">
+					<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+					<p class = "copy">Все права защищены 2016</p>
+				</div>
 
-	<div id = "footer" class = "footerAll">
-		<div id="allfooters">
-			<div id="footerLeft">
-				<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
-				<p class = "copy">Все права защищены 2016</p>
-			</div>
+				<div id="footerSecond">
+					<a href = "#" class = "whiteLink">- Заказы</a>
+					<a href = "#" class = "whiteLink">- Исполнители</a>
+					<a href = "#" class = "whiteLink">- Блог</a>
+					<a href = "#" class = "whiteLink">- Как это работает?</a>
+				</div>
 
-			<div id="footerSecond">
-				<a href = "#" class = "whiteLink">- Заказы</a>
-				<a href = "#" class = "whiteLink">- Исполнители</a>
-				<a href = "#" class = "whiteLink">- Блог</a>
-				<a href = "#" class = "whiteLink">- Как это работает?</a>
-			</div>
+				<div id="footerThird">
+					<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+					<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+					<a href = "#" class = "whiteLink">- О нас</a>
+					<a href = "#" class = "whiteLink">- Поддержка</a>
+				</div>
 
-			<div id="footerThird">
-				<a href = "#" class = "whiteLink">- Стать исполнителем</a>
-				<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
-				<a href = "#" class = "whiteLink">- О нас</a>
-				<a href = "#" class = "whiteLink">- Поддержка</a>
-			</div>
+				<div id="footerFourth">
+					<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+					<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+					<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+					<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
 
-			<div id="footerFourth">
-				<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
-				<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-				<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-				<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-
-				<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
-				<img src = "images/DARTwhite.png" class = "onePx">
+					<a href = "#" id = "dart"></a>
+					<img src = "images/DARTwhite.png" class = "onePx">
+				</div>
+				<div style = "clear: both;"></div>
 			</div>
 			<div style = "clear: both;"></div>
 		</div>
-		<div style = "clear: both;"></div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>

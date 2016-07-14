@@ -15,11 +15,8 @@
 	<script type = "text/javascript">
 		$(document).ready(function()
 		{
-			if($(window).width()>1024)
-				var nextArrow = '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>'
-			else
-				var nextArrow = ""
-
+			var nextArrow = '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>'
+			
 			$(".mSlider").slick({
 				infinite: true,
 				speed: 300,
@@ -28,6 +25,27 @@
 				variableWidth: true,
 				nextArrow: nextArrow,
 				prevArrow: '<i class="fa fa-angle-left fa-4x lastArrow" aria-hidden="true"></i>'
+			})
+
+			if($(document).width()>1024)
+			{	
+				$(".fa.fa-angle-right.fa-4x.nextArrow").show()
+			}
+			else
+			{
+				$(".fa.fa-angle-right.fa-4x.nextArrow").hide()
+			}
+
+			$(window).resize(function()
+			{
+				if($(window).width()>1024)
+				{	
+					$(".fa.fa-angle-right.fa-4x.nextArrow").show()
+				}
+				else
+				{
+					$(".fa.fa-angle-right.fa-4x.nextArrow").hide()
+				}
 			})
 		})
 	</script>
@@ -50,7 +68,7 @@
 	</div>
 	
 	<div id="header">
-		<p class="whiteTopic" style = "font-size: 31px;">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
+		<p class="whiteTopic masterTop">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
 		<form action="index.html" method="post" enctype="multipart/form-data">
 			<div id="connectHeader">
 				<div id = "whatDo">Что требуется сделать?</div>
@@ -66,11 +84,11 @@
 					"></textarea>
 				</div>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" style = "margin-right: 8px;" class = "whiteButton" id = "HowWorks"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
 
 				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Вакансии" class = "yButton ySubFun"></a>
 
-				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Найти товар" style = "margin-right: 0px;" class = "yButton ySubFun"></a>
+				<a href = "#" style = "text-decoration:none;"><input type = "button" value = "Найти товар" class = "yButton ySubFun srcGood"></a>
 
 				<div id="sendapp" class = "masterApp" >
 					<div id="freeapp">
