@@ -3567,7 +3567,8 @@ textarea:invalid
 
 	.orderTitle
 	{
-		width: 100%;
+		width: 96%;
+		margin-left: 2%;
 		margin: 10px auto;
 		text-align: center;
 	}
