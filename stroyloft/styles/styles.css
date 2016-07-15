@@ -788,6 +788,11 @@ body
 	margin-top: 140px;
 }
 
+#footer.footerAll.regFooter
+{
+	margin-top: 100px;
+}
+
 .realMenu a
 {
 	color: #63c399;
@@ -1550,6 +1555,11 @@ ul
 	margin: 0px;
 }
 
+.regularSubTopic.masterItem
+{
+	display: inline-block;
+}
+
 .prTopic
 {
 	margin-bottom: 7px;
@@ -1988,7 +1998,7 @@ ul
 
 .Reg2Top
 {
-	margin: 4px 5px;
+	margin: 4px 5px 4px 0px;
 	width: 230px;
 	display: inline-block;
 }
@@ -2913,13 +2923,13 @@ textarea:invalid
 		min-width: 320px;
 	}
 
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,.regularSubTopic.sml,#photoLaw
 	{
 		width: auto;
 		min-width: auto;
 	}
 
-	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,#photoLaw,.regularSubTopic.sml
 	{
 		height: auto;
 		min-height: auto;
@@ -3739,5 +3749,176 @@ textarea:invalid
 	.makeOrdColLeft
 	{
 		width: 100%;
+	}
+
+	.emailAligment
+	{
+		float: none;
+		margin-bottom: 15px;
+	}
+
+	#contRegContaioner .smallTopic.regC
+	{
+		margin-bottom: 20px;
+	}
+
+	.TRowReg1
+	{
+		width: 100%;
+	}
+
+	.usField.Reg1Right,.emailAligment .usField,.usField.reg1Left
+	{
+		width: 94%;
+		margin-left: 2%;
+		padding: 1%;
+	}
+
+	#step1Reg .usLab
+	{
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	#step1Reg .yellowButton.sml
+	{
+		display: block;
+		margin: 30px auto 15px;
+		float: none;
+	}
+
+	#step1Reg .infoUser
+	{
+		display: block;
+		margin: 15px auto;
+		float: none;
+		text-align: center;
+	}
+
+	#footer.footerAll.regFooter
+	{
+		margin-top: 40px;
+	}
+
+	.reg2row1 .allField,.reg2row2 .allField
+	{
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.reg2row1 .allField label
+	{
+		margin-left: 15px;
+	}
+
+	.reg2row2 .allField label
+	{
+		width: 90%;
+		text-align: left;
+		display: inline-block;
+		line-height: 25px;
+		margin: 0px 0px 0px 15px;
+	}
+
+	.usField.Reg2Top,.reg2row2 .usField
+	{
+		width: 94%;
+		margin: 2%;
+		padding: 1%;
+		display: block;
+		clear: both;
+	}
+
+	#workForm .usLab
+	{
+		margin-left: 15px;
+	}
+	
+	#workForm
+	{
+		width: 100%;
+	}
+
+	.oneWorkForm
+	{
+		display: block;
+		width: 60%;
+		clear: both;
+		text-align: left;
+		margin-left: 15px;
+		font-size: 18px;
+	}
+
+	#step2Reg #avatarUpl
+	{
+		margin-top: 160px;
+	}
+
+	#step2Reg #avatarUpl .usLab
+	{
+		margin-left: 15px;
+	}
+
+	.uplCont
+	{
+		left: 50%;
+		margin-left: -70px;
+	}
+
+	.fileBtnMaster
+	{
+		right: 0px;
+		left: 0px;
+		width: 100%;
+		top: 180px;
+	}
+
+	.uploadText
+	{
+		right: 0px;
+		left: 50%;
+		margin-left: -80px;
+		width: 160px;
+		top: 200px;
+	}
+
+	#photoLaw
+	{
+		margin-top: 50px;
+		width: 96%;
+		padding-left: 2%;
+	}
+
+	.usLab.specCh
+	{
+		margin-top: 340px;
+		text-align: center;
+	}
+
+	.typeJob.left
+	{
+		margin: 5px 5%;
+	}
+
+	.yellowButton.sml
+	{
+		display: block;
+		float: none;
+		margin: 20px auto;
+	}
+
+	.infoUser
+	{
+		margin: 0px auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	.userError
+	{
+		width: 96%;
+		padding: 25px 2% 5px;
+		text-align: center;
 	}
 }

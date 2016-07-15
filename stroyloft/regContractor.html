@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
@@ -10,16 +11,23 @@
 	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
-	<style>
-		#footer
-		{
-			margin-top: 100px;
-		}
-	</style>
 	<script src="js/platform.js"></script>
 	<script>
 		$(document).ready(function()
 		{
+			$(window).resize(function()
+			{
+				if (($("#step1Reg").css("display") != "none") && $(window).width()>1024)
+				{
+					var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
+					if(hgh < 100)
+						hgh = 100
+
+
+					$("#footer").css("marginTop",hgh)
+				}
+			})
+
 			$(".fileBtnMaster").hover(function()
 			{
 				$(".greyLink").css("textDecoration", "underline")
@@ -73,7 +81,7 @@
 				
 			})
 
-			if ($("#step1Reg").css("display") != "none")
+			if (($("#step1Reg").css("display") != "none") && $(window).width()>1024)
 			{
 				var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
 				if(hgh < 100)
@@ -85,14 +93,32 @@
 
 			$(window).resize(function()
 			{
-				if ($("#step1Reg").css("display") != "none")
+				if($(window).width()>1024)
 				{
-					var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
-					if(hgh < 100)
-						hgh = 100
+					if ($("#step1Reg").css("display") != "none")
+					{
+						var hgh = $(window).height() - ( $("#contRegContaioner").height()+295 )
+						if(hgh < 100)
+							hgh = 100
 
 
-					$("#footer").css("marginTop",hgh)
+						$("#footer").css("marginTop",hgh)
+					}
+					else
+					{
+						$("#footer").css("marginTop", "170px")
+					}
+				}
+				else
+				{
+					if ($("#step1Reg").css("display") != "none")
+					{
+						$("#footer").css("marginTop", "40px")
+					}
+					else
+					{
+						$("#footer").css("marginTop", "70px")
+					}
 				}
 			})
 
@@ -101,7 +127,11 @@
 				$("#step1Reg").hide();
 				$("#step2Reg").show();
 
-				$("#footer").css("marginTop", "170px")
+				if($(window).width()>1024)
+					$("#footer").css("marginTop", "170px")
+				else
+					$("#footer").css("marginTop", "70px")
+
 				//Когда изображение загружено
 				if( $(".uplCont").find("img").height() >= $(".uplCont").find("img").width() )
 				{
@@ -122,6 +152,7 @@
 <div id="navbar" class = "shd">
 	<div id = "navUni">
 		<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+		<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
 		<ul id="navlist">
 			<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
 			<li class="navmenu"><a href = "masters.html">Все исполнители</a></li>
@@ -167,41 +198,41 @@
 
 			<div class = "allField" style = "margin-left: 0px;">
 				<label for = "contactorNameField" class = "usLab">Напишите Ваше имя:</label><br>
-				<input type = "text" id = "contactorNameField" name = "contactorNameField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorNameField" name = "contactorNameField" class = "usField Reg2Top" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 
 			<div class = "allField">
 				<label for = "contactorDadField" class = "usLab">Напишите Ваше Отчество:</label><br>
-				<input type = "text" id = "contactorDadField" name = "contactorDadField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorDadField" name = "contactorDadField" class = "usField Reg2Top" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 
 			<div class = "allField">
 				<label for = "contactorSnField" class = "usLab">Напишите Вашу фамилию:</label><br>
-				<input type = "text" id = "contactorSnField" name = "contactorSnField" class = "usField Reg2Top" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorSnField" name = "contactorSnField" class = "usField Reg2Top" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 		</div>
 
 		<div class="reg2row2">
 			<div class = "allField row2">
 				<label for = "contactorCityField" class = "usLab">В каком городе или области вы работаете:</label><br>
-				<input type = "text" id = "contactorCityField" name = "contactorCityField" class = "usField" style = "margin-left:0px;" pattern = "^[А-Яа-яЁё]+$" required>
+				<input type = "text" id = "contactorCityField" name = "contactorCityField" class = "usField" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
 		</div>
 
 		<div id="workForm">
 			<div class = "usLab">Форма работы:</div>
 			<div class="oneWorkForm" width = "150px">
-				<label for = "mastWork" class = "regularSubTopic" style = "display: inline-block">Частный мастер</label>
+				<label for = "mastWork" class = "regularSubTopic masterItem">Частный мастер</label>
 				<input type = "radio" id = "mastWork" name = "Master" required>
 			</div>
 
 			<div class="oneWorkForm" width = "100px">
-				<label for = "comWork" class = "regularSubTopic" style = "display: inline-block">Компания</label>
+				<label for = "comWork" class = "regularSubTopic">Компания</label>
 				<input type = "radio" id = "comWork" name = "Master" required>
 			</div>
 
 			<div class="oneWorkForm" width = "140px">
-				<label for = "brigWork" class = "regularSubTopic" style = "display: inline-block">Своя бригада</label>
+				<label for = "brigWork" class = "regularSubTopic">Своя бригада</label>
 				<input type = "radio" id = "brigWork" name = "Master" required>
 			</div>
 
@@ -273,10 +304,10 @@
 
 </div>
 
-<div id = "footer" class = "footerAll">
+<div id = "footer" class = "footerAll regFooter">
 	<div id="allfooters">
 		<div id="footerLeft">
-			<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+			<a href = "#"><img src = "images/logo_white.png" class = "whiteLogo"></a>
 			<p class = "copy">Все права защищены 2016</p>
 		</div>
 
@@ -300,10 +331,12 @@
 			<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
 			<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
 
-			<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+			<a href = "#" id = "dart"></a>
 			<img src = "images/DARTwhite.png" class = "onePx">
 		</div>
+		<div style = "clear:both"></div>
 	</div>
+	<div style = "clear: both;"></div>
 </div>
 </body>
 </html>
