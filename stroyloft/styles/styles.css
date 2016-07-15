@@ -3901,11 +3901,11 @@ textarea:invalid
 		margin: 5px 5%;
 	}
 
-	.yellowButton.sml
+	.yellowButton.sml.endRed
 	{
 		display: block;
 		float: none;
-		margin: 20px auto;
+		margin: 0px auto 20px;
 	}
 
 	.infoUser
@@ -3918,7 +3918,8 @@ textarea:invalid
 	.userError
 	{
 		width: 96%;
-		padding: 25px 2% 5px;
+		padding: 0px 2% 5px;
 		text-align: center;
+		margin-top: 0px;
 	}
 }
