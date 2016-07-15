@@ -783,6 +783,11 @@ body
 	background: #414141;
 }
 
+#footer.footerAll.createList
+{
+	margin-top: 140px;
+}
+
 .realMenu a
 {
 	color: #63c399;
@@ -2908,13 +2913,13 @@ textarea:invalid
 		min-width: 320px;
 	}
 
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight
 	{
 		width: auto;
 		min-width: auto;
 	}
 
-	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight
 	{
 		height: auto;
 		min-height: auto;
@@ -3637,5 +3642,102 @@ textarea:invalid
 		clear: both;
 		width: 50%;
 		text-align: center;
+	}
+
+	.usFieldMed.addOrd,.usFieldMedHalf.addOrd
+	{
+		width: auto;
+		display: block;
+	}
+
+	.makeOrdColRight
+	{
+		float: none;
+	}
+
+	.smallTopic.regC
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.regHr
+	{
+		width: 100%;
+	}
+
+	.regHr .redLine.regC
+	{
+		margin: 35px auto;
+	}
+
+	#addOrdForm
+	{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 0px;
+	}
+
+	.usLab
+	{
+		font-size: 18px;
+	}
+
+	.usFieldMed.addOrd
+	{
+		width: 98%;
+		padding: 1%;
+	}
+
+	.financeOrder .regularSubTopic
+	{
+		font-size: 16px;
+		line-height: 20px;
+		display: inline-block;
+		margin-bottom: 10px;
+		float: none;
+		text-align: center;
+		width: 96%;
+		margin-left: 2%;
+	}
+
+	.greenLinkRegUnd.photo
+	{
+		right: 155px;
+	}
+
+	.financeOrder input
+	{
+		margin-bottom: 0px;
+		display: block;
+		margin: 25px auto 0px;
+	}
+
+	.usFieldMedHalf.addOrd
+	{
+		width: 98%;
+		padding: 1%;
+	}
+
+	.regularSubTopic[for="Iagree"]
+	{
+		font-size: 16px;
+	}
+
+	.yellowButton.sml.createList
+	{
+		float: none;
+		margin: 40px auto;
+		display: block;
+	}
+
+	#footer.footerAll.createList
+	{
+		margin-top: 50px;
+	}
+
+	.makeOrdColLeft
+	{
+		width: 100%;
 	}
 }
