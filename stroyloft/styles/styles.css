@@ -3915,7 +3915,7 @@ textarea:invalid
 	{
 		display: block;
 		float: none;
-		margin: 0px auto 20px;
+		margin: 0px auto 10px;
 	}
 
 	.infoUser
