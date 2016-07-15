@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/styles.css">
 	<link rel="stylesheet" href="../styles/fonts.css">
 	<link rel="stylesheet" href="../styles/font-awesome.min.css">
@@ -33,9 +34,10 @@
 
 	<div id="hideAll"></div>
 
-	<div id="navbar">
+	<div id="navbar" class = "shd">
 		<div id = "navUni">
 			<a href = "index.html"><img id="mainlogo" src = "../images/logo.png"></a>
+			<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
 			<ul id="navlist">
 				<li class="navmenu"><a href = "../orders.html">Все заказы</a></li>
 				<li class="navmenu realMenu"><div class = "navDot"></div><a href = "../masters.html">Все исполнители</a></li>
@@ -53,14 +55,14 @@
 
 		<div id="leftCab">
 			<a href = "index.html" class = "leftItem rlPage">Общая информация</a>
-			<a href = "portfolio.html" class = "leftItem" style = "margin: 4px 0px;">Примеры работ</a>
+			<a href = "portfolio.html" class = "leftItem cenItemPortf">Примеры работ</a>
 			<a href = "reviews.html" class = "leftItem">Отзывы клиентов</a>
 		</div>
 		<div id="rightCab">
 
 			<div class = "masterMainInf">
-				<a href = "#" class = "blueButton masterInf">Предложить работу</a>
-				<a href = "#" class = "masterPhoto" style = "margin-left: 0px;border-radius: 5px;" alt = "Мастер"><img src = "../images/master2.jpg"></a>
+				<a href = "#" class = "blueButton masterInf giveWork">Предложить работу</a>
+				<a href = "#" class = "masterPhoto portfPhoto" alt = "Мастер"><img src = "../images/master2.jpg"></a>
 
 				<div class="masterInf">
 					<div class = "rightPhotoTopic">Пётр Васильевич Маминов</div>
@@ -147,7 +149,7 @@
 				</div>
 			</div>
 		</div>
-		<div style = "clear:both;height:150px;"></div>
+		<div style = "clear:both" class = "cbPrt"></div>
 	</div>
 
 	<div id = "footer" class = "footerAll">
@@ -177,11 +179,13 @@
 				<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
 				<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
 
-				<a href = "#" id = "dart" style = "margin: 25px 0px 0px 80px;"></a>
+				<a href = "#" id = "dart"></a>
 				<img src = "../images/DARTwhite.png" class = "onePx">
 			</div>
+			<div style = "clear:both"></div>
 		</div>
 	</div>
+	<div style = "clear:both"></div>
 	<img src = "../images/trShd.png" class = "onePx">
 </body>
 </html>
