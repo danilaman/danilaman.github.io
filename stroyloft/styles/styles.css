@@ -3774,6 +3774,11 @@ textarea:invalid
 		padding: 1%;
 	}
 
+	.usField.Reg1Right,#contactorEmailField,#contactorPhoneField
+	{
+		margin-top: -12px;
+	}
+
 	#step1Reg .usLab
 	{
 		width: 100%;
@@ -3858,6 +3863,11 @@ textarea:invalid
 	#step2Reg #avatarUpl .usLab
 	{
 		margin-left: 15px;
+	}
+
+	#step2Reg
+	{
+		margin-top: -30px;
 	}
 
 	.uplCont
