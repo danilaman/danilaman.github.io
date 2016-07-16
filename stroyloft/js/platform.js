@@ -172,6 +172,8 @@ $(document).ready(function()
 
 	$( window ).resize(function()
 	{
+		roomsAligment()
+
 		if($(document).width()>1024)
 			$("#pageNav").width($(".navNum").length*62);
 		else
