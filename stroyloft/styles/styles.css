@@ -1690,6 +1690,11 @@ ul
 	height: 150px;
 }
 
+.cbPrt.zeroPt
+{
+	height: 10px;
+}
+
 .craftName
 {
 	position: absolute;
@@ -2383,6 +2388,11 @@ textarea:invalid
 	margin: 35px auto 25px;
 }
 
+#cabMain.cabMainInfo
+{
+	height: auto;
+}
+
 .fullAccess
 {
 	background: #63c399;
@@ -3025,6 +3035,11 @@ textarea:invalid
 .masterInf .rightPhotoTopic
 {
 	margin: 0px 8px;
+}
+
+.rightPhotoTopic.eduTopic
+{
+	margin-top: 45px;
 }
 
 .masterMainInf .voteMaster
