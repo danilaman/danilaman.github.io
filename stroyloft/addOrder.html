@@ -65,18 +65,18 @@
 		" required></textarea>
 
 		<div class="addfilesLink">
-			<input type = "file" id = "docFile" style = "left: 0;" class = "fileHideOrd">
-			<input type = "file" id = "PhotoFile" style = "right: 0;" class = "fileHideOrd">
+			<input type = "file" id = "docFile" class = "fileHideOrd">
+			<input type = "file" id = "PhotoFile" class = "fileHideOrd">
 
 			<div class = "greenLinkRegUnd photo" id = "docFileText"><i class="fa fa-file greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите смету</span></div>
 
-			<div style = "right: 0px;" id = "PhotoFileText" class = "greenLinkRegUnd photo" ><i class="fa fa-camera greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите фото</span></div>
+			<div id = "PhotoFileText" class = "greenLinkRegUnd photo" ><i class="fa fa-camera greenLinkFa" aria-hidden="true"></i> <span class = "regUnd">Прикрепите фото</span></div>
 		</div>
 
-		<div style = "clear:both;"></div>
+		<div class = "clearBoth"></div>
 
 		<div class = "financeOrder">
-			<label class = "usLab" style = "display: block; margin: 28px 0px 20px;">Укажите бюджет заказа</label>
+			<label class = "usLab moneyLab">Укажите бюджет заказа</label>
 			<input type = "radio" name = "moneyOrder" value = "mCat1" id = "mCat1">
 			<label for = "mCat1" class = "regularSubTopic">Мелкий заказ (несколько тысяч рублей)</label><br>
 
@@ -112,12 +112,12 @@
 			<input type = "email" id = "chiefEmail" class = "usFieldMedHalf addOrd" required>
 		</div>
 
-		<div style = "clear:both;"></div>
+		<div class = "clearBoth"></div>
 
-		<input id="Iagree" name="Iagree" required style="box-shadow:none;margin: 15px 0px;" type="radio">
+		<input id="Iagree" name="Iagree" class = "noneShd agrF2" required type="radio">
 		<label for="Iagree" class="regularSubTopic">Я согласен с правилами <a href="#" class="greenLinkReg Label">Стройлофт.ру</a></label>
 
-		<div style = "clear:both;"></div>
+		<div class = "clearBoth"></div>
 
 		<div class="g-recaptcha" data-sitekey="6LfObiMTAAAAAFUpotlhafgWEGstm9IrxsTvAoVJ"></div>
 
@@ -130,7 +130,7 @@
 <div id = "footer" class = "footerAll createList">
 	<div id="allfooters">
 		<div id="footerLeft">
-			<a href = "#" style = "margin-top: 30px;"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+			<a href = "#" class = "btnLogo"><img src = "images/logo_white.png" class = "whiteLogo"></a>
 			<p class = "copy">Все права защищены 2016</p>
 		</div>
 
@@ -157,9 +157,9 @@
 			<a href = "#" id = "dart"></a>
 			<img src = "images/DARTwhite.png" class = "onePx">
 		</div>
-		<div style = "clear: both"></div>
+		<div class = "clearBoth"></div>
 	</div>
-	<div style = "clear: both"></div>
+	<div class = "clearBoth"></div>
 </div>
 </body>
 </html>

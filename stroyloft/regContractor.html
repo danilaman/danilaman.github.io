@@ -185,7 +185,7 @@
 			<input type = "tel" id = "contactorPhoneField" name = "contactorPhoneField" class = "usField reg1Left" required>
 
 		</div>
-		<input type = "radio" id = "Iagree" name = "Iagree" required style = "box-shadow:none;">
+		<input type = "radio" id = "Iagree" class = "noneShd" name = "Iagree" required>
 		<label for = "Iagree" class = "regularSubTopic">Я согласен с правилами <a href = "#" class = "greenLinkReg Label">Стройлофт.ру</a></label>
 
 		<br>
@@ -196,7 +196,7 @@
 	<form id = "step2Reg" action="#" method="post" enctype="multipart/form-data">
 		<div class="reg2row1">
 
-			<div class = "allField" style = "margin-left: 0px;">
+			<div class = "allField firstFieldReg">
 				<label for = "contactorNameField" class = "usLab">Напишите Ваше имя:</label><br>
 				<input type = "text" id = "contactorNameField" name = "contactorNameField" class = "usField Reg2Top" pattern = "^[А-Яа-яЁё]+$" required>
 			</div>
@@ -251,7 +251,7 @@
 				<span class="regularSubTopic sml">- Фото должно быть хорошего качества</span><br>
 				<span class="regularSubTopic sml">- На фото должны быть Вы и лицо должно быть хорошо видно</span>
 				<input type = "file" class = "fileBtnMaster">
-				<span class = "uploadText greyLink"><i class="fa fa-camera" style = "color: #4c4740; margin-right: 8px;" aria-hidden="true"></i>Загрузить фото</span>
+				<span class = "uploadText uplLink greyLink"><i class="fa fa-camera" aria-hidden="true"></i>Загрузить фото</span>
 			</div>
 		</div>
 
@@ -334,9 +334,9 @@
 			<a href = "#" id = "dart"></a>
 			<img src = "images/DARTwhite.png" class = "onePx">
 		</div>
-		<div style = "clear:both"></div>
+		<div class = "clearBoth"></div>
 	</div>
-	<div style = "clear: both;"></div>
+	<div class = "clearBoth"></div>
 </div>
 </body>
 </html>

@@ -122,6 +122,31 @@ body
 	margin-top: 30px;
 }
 
+.popServ.blackTopic
+{
+	padding-top: 20px;
+}
+
+.popServ.subBlackTopic
+{
+	margin-bottom: 40px
+}
+
+.seeBetter.subBlackTopic
+{
+	margin-bottom: 50px;
+}
+
+.subBlackTopic.lastOrdLine
+{
+	margin-bottom: 50px;
+}
+
+.lastOrdersTopic.blackTopic
+{
+	margin-top: 20px;
+}
+
 .subBlackTopic
 {
 	font-family: OpenSans;
@@ -309,6 +334,13 @@ body
 	font-weight: 700;
 }
 
+#SendApp.yellowButton.fullArc
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 24px;
+}
+
 #freeapp
 {
 	width: 253px;
@@ -320,6 +352,11 @@ body
 {
 	width: 545px;
 	margin-top: 7px;
+}
+
+#sendapp.masterApp
+{
+	width: 550px;
 }
 
 .freeDesc.masterDesc
@@ -334,6 +371,11 @@ body
 	color: #ffb837;
 	font-size: 24px;
 	font-weight: 700;
+}
+
+.freeTopic.masterFree
+{
+	margin-left: 20px;
 }
 
 .freeDesc
@@ -387,6 +429,13 @@ body
 	background-size: cover;
 }
 
+#arc.fullArc
+{
+	left: 245px;
+	top: 70px;
+	width: 150px;
+}
+
 #HowFast
 {
 	width: 1170px;
@@ -399,6 +448,11 @@ body
 	width: 65px;
 	size: 2px;
 	margin: 15px auto;
+}
+
+.redLine.lastOrdLine
+{
+	margin: 20px auto;
 }
 
 #rowVan
@@ -704,6 +758,11 @@ body
 	transition: 0.3s;
 }
 
+.greenLink.lineLink
+{
+	display: inline;
+}
+
 .greenLinkFa
 {
 	color: #63c399;
@@ -778,6 +837,11 @@ body
 	min-width: 1025px;
 }
 
+#footer.footerIndex
+{
+	margin-top: 15px;
+}
+
 #footer.cabftr
 {
 	background: #414141;
@@ -827,6 +891,11 @@ body
 .whiteLogo
 {
 	width: 260px;
+	margin-top: 30px;
+}
+
+.btnLogo
+{
 	margin-top: 30px;
 }
 
@@ -1045,6 +1114,11 @@ ul
 	margin-top: 50px;
 }
 
+#listMasters .blackTopic.masterCatalog
+{
+	margin-top: -10px;
+}
+
 #userReviews
 {
 	width: 1170px;
@@ -1168,6 +1242,11 @@ ul
 	line-height: 12px;
 }
 
+.orderWidth.orderDots
+{
+	width: 921.828px;
+}
+
 .yellowBigBtn
 {
 	color: #feba40;
@@ -1259,6 +1338,16 @@ ul
 #NavPadding.prtNP
 {
 	margin: 40px auto 60px;
+}
+
+#NavPadding.NPmas
+{
+	margin: 40px auto 80px;
+}
+
+#NavPadding.NPex
+{
+	margin: 100px auto;
 }
 
 .orderPrice .fa.fa-rub
@@ -1867,6 +1956,12 @@ ul
 	margin: 0px;
 }
 
+.usLab.moneyLab
+{
+	display: block;
+	margin: 28px 0px 20px;
+}
+
 .usField
 {
 	width: 280px;
@@ -2027,6 +2122,11 @@ ul
 	float: left;
 }
 
+.reg2row1 .allField.firstFieldReg
+{
+	margin-left: 0px;
+}
+
 .reg2row2
 {
 	margin-top: 15px;
@@ -2128,6 +2228,11 @@ ul
 	left: 160px;
 }
 
+.uploadText.uplLink.greyLink .fa.fa-camera
+{
+	color: #4c4740; margin-right: 8px;
+}
+
 #jobBlocks.reg
 {
 	display: block;
@@ -2195,6 +2300,16 @@ textarea:invalid
 	opacity: 0;
 	z-index: 14;
 	cursor: pointer;
+}
+
+#docFile.fileHideOrd
+{
+	left: 0px;
+}
+
+#PhotoFile.fileHideOrd,#PhotoFileText.greenLinkRegUnd.photo
+{
+	right: 0px;
 }
 
 .financeOrder
@@ -2396,6 +2511,21 @@ textarea:invalid
 	z-index: 11;
 }
 
+.noneDec
+{
+	text-decoration: none;
+}
+
+.noneShd
+{
+	box-shadow:none;
+}
+
+.clearBoth
+{
+	clear: both;
+}
+
 #hideAll
 {
 	width: 100%;
@@ -2539,6 +2669,11 @@ textarea:invalid
 	position: absolute;
 	top: 140px;
 	left: 200px;
+}
+
+#Iagree.agrF2
+{
+	margin: 15px 0px;
 }
 
 .preUplPhotoCab
@@ -2944,16 +3079,34 @@ textarea:invalid
 		min-width: 320px;
 	}
 
-	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,.regularSubTopic.sml,#photoLaw,#cabMain,#leftCab,#rightCab,.masterCraft.infCraft,.cabinetRev,.cabinetRev .revText
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,#connectHeader,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.randomReview,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,#masterPslider,.masterApp .sendapp,.rev,.aboutClient,.masterInf,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,.regularSubTopic.sml,#photoLaw,#cabMain,#leftCab,#rightCab,.masterCraft.infCraft,.cabinetRev,.cabinetRev .revText,#sendapp.masterApp
 	{
 		width: auto;
 		min-width: auto;
 	}
 
-	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,#photoLaw,.regularSubTopic.sml,#cabMain,#leftCab,#rightCab,.masterCraft.infCraft,.cabinetRev,.cabinetRev .revText
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review,.oneMaster,.masterMain,.randomReview,.orderLocation.masterLocation,.topRandRev,.masterPricelist,.mastersContainer,.masterCraft,.rev,#freeapp,#addOrdForm,#addOrderContainer,.financeOrder,.makeOrdColLeft,.makeOrdColRight,#contRegContaioner,#step1Reg,#step2Reg,.reg2row1,.reg2row1 .allField,#avatarUpl,#photoLaw,.regularSubTopic.sml,#cabMain,#leftCab,#rightCab,.masterCraft.infCraft,.cabinetRev,.cabinetRev .revText,#sendapp.masterApp
 	{
 		height: auto;
 		min-height: auto;
+	}
+
+	.mastersContainer
+	{
+		margin-top: 30px;
+	}
+
+	#sendapp.masterApp,#SendApp.yellowButton.fullArc
+	{
+		margin-bottom: 0px;
+	}
+
+	#sendapp.masterApp
+	{
+		left: 50%;
+		width: 310px;
+		margin-left: -155px;
+		float: left;
 	}
 
 	#leftCab
@@ -3241,6 +3394,11 @@ textarea:invalid
 	.catTopicWord.blackTopic
 	{
 		margin-top: 40px;
+	}
+
+	.exWorksTopic.blackTopic
+	{
+		margin-top: 0px;
 	}
 
 	#tryThis.whiteButton
@@ -3705,6 +3863,16 @@ textarea:invalid
 	.regHr .redLine.regC
 	{
 		margin: 35px auto;
+	}
+
+	.redLine.redLnIndex
+	{
+		margin-top: 10px;
+	}
+
+	.redLine.redLnOrder
+	{
+		margin-top: 20px;
 	}
 
 	#addOrdForm
