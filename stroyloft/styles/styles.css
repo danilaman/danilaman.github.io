@@ -4110,4 +4110,9 @@ textarea:invalid
 		width: 70%;
 		float: right;
 	}
+
+	#leftCab
+	{
+		width: 100%;
+	}
 }
