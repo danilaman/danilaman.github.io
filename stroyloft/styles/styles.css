@@ -2618,6 +2618,11 @@ textarea:invalid
 	display: block;
 }
 
+.firstUserCab.strUserCab
+{
+	margin-top: 200px;
+}
+
 .leftStrCab
 {
 	float: left;
@@ -2679,6 +2684,12 @@ textarea:invalid
 	position: absolute;
 	top: 140px;
 	left: 200px;
+}
+
+.uploadTextCab.greyLink .fa.fa-camera
+{
+	color: #4c4740;
+	margin-right: 8px;
 }
 
 #Iagree.agrF2
@@ -2951,6 +2962,11 @@ textarea:invalid
 	float: left;
 }
 
+.hvAccessLeft.balanceLeft
+{
+	margin-top: 0px;
+}
+
 .greenLink.hvAcc
 {
 	font-size: 16px;
@@ -2979,6 +2995,21 @@ textarea:invalid
 	font-family: RalewayRegular;
 	float: right;
 	margin: 12px 14px;
+}
+
+.redLink.hvAcc.fullPosLink i
+{
+	margin-right: 6px;
+}
+
+.yLine.editLine
+{
+	margin-top: 60px;
+}
+
+.yLine.editLineRev
+{
+	margin: 60px 0px 25px;
 }
 
 .trForPn.hvAcc
