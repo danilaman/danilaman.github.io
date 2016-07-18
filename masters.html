@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/mob_styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="js/platform.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function()
+		{
+			var nextArrow = '<i class="fa fa-angle-right fa-4x nextArrow" aria-hidden="true"></i>'
+			
+			$(".mSlider").slick({
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				centerMode: true,
+				variableWidth: true,
+				nextArrow: nextArrow,
+				prevArrow: '<i class="fa fa-angle-left fa-4x lastArrow" aria-hidden="true"></i>'
+			})
+
+			if($(document).width()>1024)
+			{	
+				$(".fa.fa-angle-right.fa-4x.nextArrow").show()
+			}
+			else
+			{
+				$(".fa.fa-angle-right.fa-4x.nextArrow").hide()
+			}
+
+			$(window).resize(function()
+			{
+				if($(window).width()>1024)
+				{	
+					$(".fa.fa-angle-right.fa-4x.nextArrow").show()
+				}
+				else
+				{
+					$(".fa.fa-angle-right.fa-4x.nextArrow").hide()
+				}
+			})
+		})
+	</script>
+	<title>Все исполнители</title>
+</head>
+<body>
+
+	<div id="navbar">
+		<div id = "navUni">
+			<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+			<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
+			<ul id="navlist">
+				<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
+				<li class="navmenu realMenu"><div class = "navDot"></div><a href = "masters.html">Все исполнители</a></li>
+				<li class="navmenu"><a href = "working.html">Примеры работ</a></li>
+				<li class="navmenu"><a href = "reviews.html">Отзывы</a></li>
+				<li class="navmenu"><a href = "#">Войти/Регистрация</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="header">
+		<p class="whiteTopic masterTop">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
+		<form action="index.html" method="post" enctype="multipart/form-data">
+			<div id="connectHeader">
+				<div id = "whatDo">Что требуется сделать?</div>
+				<div class="formspanel">
+					<span class = "formlab">Напишите ваш номер телефона:</span>
+					<input type = "text" name = "phoneNumber" class = "textField" placeholder = "В формате: +7(000)000-00-00">
+
+					<span class = "formlab">Заголовок заказа:</span>
+					<input type = "text" name = "orderTopic" class = "textField" placeholder = "Например, ремонт ванной, стяжка пола, укладка ламината и т.д.">
+
+					<span class = "formlab">Максимально подробно опишите ваш заказ:</span>
+					<textarea id = "orderDescription" class = "textField" placeholder = "Например, объём работ, материалы, когда нужно приступить/закончить работу, и т.п.
+					"></textarea>
+				</div>
+
+				<a href = "#" class = "noneDec"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
+
+				<a href = "#" class = "noneDec"><input type = "button" value = "Вакансии" class = "yButton ySubFun"></a>
+
+				<a href = "#" class = "noneDec"><input type = "button" value = "Найти товар" class = "yButton ySubFun srcGood"></a>
+
+				<div id="sendapp" class = "masterApp" >
+					<div id="freeapp">
+						<span class="freeTopic masterFree">Бесплатно!</span>
+						<p class="freeDesc masterDesc">Отправка заявки бесплатна и ни к чему вас не обязывает</p>
+					</div>
+					<div id = "arc" class = "fullArc"></div>
+					<input type = "submit" value = "Оставить заявку" class = "yellowButton fullArc" id = "SendApp">
+				</div>
+			</div>
+		</form>
+		<div class = "clearBoth"></div>
+	</div>
+
+	<div id="jobCateg">
+		<p class = "blackTopic catTopicWord">Категории работ</p>
+		<hr class = "redLine redLnOrder" color = "#ffb837">
+		<p class="subBlackTopic">Выберите нужную вам категорию работ и вы найдете профессионалов по этому направлению</p>
+
+		<div id="jobBlocks">
+			<ul class="JobRow">
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Мелкие бытовые услуги</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Комплексные работы</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Строительно-монтажные работы</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Инжененрые системы</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Отделочные работы</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="JobRow">
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Благоустройство территорий</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Проектирование и дизайн</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Интерьер</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+				<li class="typeJob"><a href = "#" class = "jobTypeLink">Обслуживание объектов</a>
+					<div class = "ThSpace"></div>
+					<ul class="hoverMenu">
+						<li><a href = "#">Мастер на час</a></li>
+						<li><a href = "#">Установка бытовой техники</a></li>
+						<li><a href = "#">Уборка помещений</a></li>
+						<li><a href = "#">Установка и вскрытие замков</a></li>
+						<li><a href = "#">Чехлы и покрывала</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="listMasters">
+		<p class = "blackTopic masterCatalog">Каталог мастеров и компаний</p>
+		<hr class = "redLine redLnOrder" color = "#ffb837">
+		<p class="subBlackTopic">Выбирайте из сотен мастеров</p>
+
+		<div class="mastersContainer">
+
+			<div class="oneMaster">
+
+				<a href = "personalMaster/reviews.html" class = "greenLinkReg wVallRevs">Смотреть все отзывы</a>
+				<a href = "#" class = "blueButton master">Предложить работу</a>
+				<div class="masterMain">
+					<a href = "personalMaster/index.html" class = "masterPhoto" alt = "Мастер"><img src = "images/master1.png"></a>
+
+					<div class="masterInf">
+						<a href = "personalMaster/index.html" class = "masterName">Пётр Васильевич Маминов</a>
+						<div class = "onlineDot"></div><p class = "masterOnline">На сайте</p>
+						<p class = "masterPost">Частный мастер</p>
+					</div>
+
+					<div class="orderLocation masterLocation"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Санкт-Петербург</div>
+
+					<div class="masterPricelist">
+						<p class = "blodSubTopic prTopic">Расценки</p>
+						
+						<div class="masterCraft">
+							<div class="regularSubTopic craftName">Алмазная резка</div>
+							<div class="mastDots">..............................................</div>
+							<div class="regularSubTopic craftPrice">от 1600 Р (м/п)</div>
+						</div>
+						<div class="masterCraft">
+							<div class="regularSubTopic craftName">Алмазное сверление</div>
+							<div class="mastDots">..............................................</div>
+							<div class="regularSubTopic craftPrice">от 3000 Р (см)</div>
+						</div>
+						<div class="masterCraft">
+							<div class="regularSubTopic craftName">Штукатурка стен</div>
+							<div class="mastDots">..............................................</div>
+							<div class="regularSubTopic craftPrice">от 560 Р (м2)</div>
+						</div>
+						<div class="masterCraft">
+							<div class="regularSubTopic craftName">Проведение электричества</div>
+							<div class="mastDots">..............................................</div>
+							<div class="regularSubTopic craftPrice">от 120 Р (м)</div>
+						</div>
+					</div>
+
+
+					<div class="voteMaster">
+						<a href = "#"><div class="bad">0</div></a>
+						<a href = "#"><div class="good">20</div></a>
+						<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+					</div>
+
+					<div class="masterPhotos">
+						<div class="blodSubTopic roomMasterPhoto">Фото работ</div>
+						<div id="masterPslider" class = "mSlider">
+
+							<a href = "#" class="workOne masterWork">
+								<img src = "images/room1.png" class = "roomPhoto">
+								<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+							</a>
+
+							<a href = "#" class="workOne masterWork">
+								<img src = "images/room2.jpg" class = "roomPhoto">
+								<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+							</a>
+
+							<a href = "#" class="workOne masterWork">
+								<img src = "images/room1.png" class = "roomPhoto">
+								<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+							</a>
+
+							<a href = "#" class="workOne masterWork">
+								<img src = "images/room1.png" class = "roomPhoto">
+								<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+							</a>
+
+							<a href = "#" class="workOne masterWork">
+								<img src = "images/room1.png" class = "roomPhoto">
+								<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="randomReview">
+					<div class="rrevCont">
+						<div class="topRandRev"><span>Случайный отзыв</span></div>
+
+						<div class="randReviewText regularSubTopic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra porttitor nunc sed eleifend. Proin lobortis pellentesque justo at faucibus. Praesent aliquam, est ut semper fringilla, massa nibh ultrices massa, nec mollis nisi lectus a risus. Curabitur sollicitudin ante in risus mollis dictum. Nam ac venenatis mi. Suspendisse felis mi, fringilla in pellentesque id, efficitur ut turpis. Donec feugiat, arcu eu pellentesque dignissim, ligula lorem pretium turpis, et scelerisque orci diam sit amet ante. Quisque egestas ac dolor sit amet tincidunt. Suspendisse ut ex id nunc imperdiet dapibus at at nulla. Aenean consectetur nulla massa, eu imperdiet ipsum sollicitudin ac. Suspendisse id massa eget dui fermentum sollicitudin. Suspendisse efficitur mattis enim ac interdum. Quisque tempor lectus tincidunt elit eleifend, et condimentum nulla laoreet. Aenean lobortis blandit ipsum, aliquam maximus sem semper a. Suspendisse potenti.
+
+							Mauris ut lorem semper, condimentum quam sit amet, feugiat nunc. Etiam hendrerit ex diam, non dignissim elit ornare vitae. In hac habitasse platea dictumst. Sed feugiat, nibh eu interdum varius, mi enim vulputate tortor, vel volutpat ipsum eros nec nibh. Pellentesque ac magna imperdiet ante tincidunt pretium id et diam. Sed tempus justo in ipsum faucibus finibus. Nam ac orci ligula. In dictum erat sapien, sit amet lobortis sapien molestie eget. Quisque lorem enim, fermentum et nisl nec, ullamcorper efficitur arcu. Fusce efficitur massa fringilla lacus dapibus, non commodo leo tempus. Nunc vestibulum, risus id volutpat condimentum, velit metus congue erat, et lacinia enim nunc eget arcu. Pellentesque viverra vel justo sodales sagittis.</div>
+
+							<a href = "#" class="redLink randomViewLink">Просмотреть<br>заказ</a>
+
+							<div class="authorRandomRev blodSubTopic"><nobr>Наталья</nobr></div>
+							<div class="dateRandomRev regularSubTopic">25.06.2016</div>
+
+						</div>
+					</div>
+					<div class = "clearBoth"></div>
+				</div>
+
+
+
+				<div class="oneMaster">
+
+					<a href = "personalMaster/reviews.html" class = "greenLinkReg wVallRevs">Смотреть все отзывы</a>
+					<a href = "#" class = "blueButton master">Предложить работу</a>
+					<div class="masterMain">
+						<a href = "personalMaster/index.html" class = "masterPhoto" alt = "Мастер"><img src = "images/master1.png"></a>
+
+						<div class="masterInf">
+							<a href = "personalMaster/index.html" class = "masterName">Пётр Васильевич Маминов</a>
+							<div class = "onlineDot"></div><p class = "masterOnline">На сайте</p>
+							<p class = "masterPost">Частный мастер</p>
+						</div>
+
+						<div class="orderLocation masterLocation"><i class="fa fa-map-marker" aria-hidden="true"></i> Санкт-Петербург</div>
+
+						<div class="masterPricelist">
+							<p class = "blodSubTopic prTopic">Расценки</p>
+							
+							<div class="masterCraft">
+								<div class="regularSubTopic craftName">Алмазная резка</div>
+								<div class="mastDots">..............................................</div>
+								<div class="regularSubTopic craftPrice">от 1600 Р (м/п)</div>
+							</div>
+							<div class="masterCraft">
+								<div class="regularSubTopic craftName">Алмазное сверление</div>
+								<div class="mastDots">..............................................</div>
+								<div class="regularSubTopic craftPrice">от 3000 Р (см)</div>
+							</div>
+							<div class="masterCraft">
+								<div class="regularSubTopic craftName">Штукатурка стен</div>
+								<div class="mastDots">..............................................</div>
+								<div class="regularSubTopic craftPrice">от 560 Р (м2)</div>
+							</div>
+							<div class="masterCraft">
+								<div class="regularSubTopic craftName">Проведение электричества</div>
+								<div class="mastDots">..............................................</div>
+								<div class="regularSubTopic craftPrice">от 120 Р (м)</div>
+							</div>
+						</div>
+
+
+						<div class="voteMaster">
+							<a href = "#"><div class="bad">0</div></a>
+							<a href = "#"><div class="good">20</div></a>
+							<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+						</div>
+
+						<div class="masterPhotos">
+							<div class="blodSubTopic roomMasterPhoto">Фото работ</div>
+							<div id="masterPslider" class = "mSlider">
+
+								<a href = "#" class="workOne masterWork">
+									<img src = "images/room1.png" class = "roomPhoto">
+									<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+								</a>
+
+								<a href = "#" class="workOne masterWork">
+									<img src = "images/room2.jpg" class = "roomPhoto">
+									<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+								</a>
+
+								<a href = "#" class="workOne masterWork">
+									<img src = "images/room1.png" class = "roomPhoto">
+									<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+								</a>
+
+								<a href = "#" class="workOne masterWork">
+									<img src = "images/room1.png" class = "roomPhoto">
+									<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+								</a>
+
+								<a href = "#" class="workOne masterWork">
+									<img src = "images/room1.png" class = "roomPhoto">
+									<div class="greenPhoto"><span class = "phC">5 фото</span></div>
+								</a>
+
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="randomReview">
+						<div class="rrevCont">
+							<div class="topRandRev"><span>Случайный отзыв</span></div>
+
+							<div class="randReviewText regularSubTopic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra porttitor nunc sed eleifend. Proin lobortis pellentesque justo at faucibus. Praesent aliquam, est ut semper fringilla, massa nibh ultrices massa, nec mollis nisi lectus a risus. Curabitur sollicitudin ante in risus mollis dictum. Nam ac venenatis mi. Suspendisse felis mi, fringilla in pellentesque id, efficitur ut turpis. Donec feugiat, arcu eu pellentesque dignissim, ligula lorem pretium turpis, et scelerisque orci diam sit amet ante. Quisque egestas ac dolor sit amet tincidunt. Suspendisse ut ex id nunc imperdiet dapibus at at nulla. Aenean consectetur nulla massa, eu imperdiet ipsum sollicitudin ac. Suspendisse id massa eget dui fermentum sollicitudin. Suspendisse efficitur mattis enim ac interdum. Quisque tempor lectus tincidunt elit eleifend, et condimentum nulla laoreet. Aenean lobortis blandit ipsum, aliquam maximus sem semper a. Suspendisse potenti.
+
+								Mauris ut lorem semper, condimentum quam sit amet, feugiat nunc. Etiam hendrerit ex diam, non dignissim elit ornare vitae. In hac habitasse platea dictumst. Sed feugiat, nibh eu interdum varius, mi enim vulputate tortor, vel volutpat ipsum eros nec nibh. Pellentesque ac magna imperdiet ante tincidunt pretium id et diam. Sed tempus justo in ipsum faucibus finibus. Nam ac orci ligula. In dictum erat sapien, sit amet lobortis sapien molestie eget. Quisque lorem enim, fermentum et nisl nec, ullamcorper efficitur arcu. Fusce efficitur massa fringilla lacus dapibus, non commodo leo tempus. Nunc vestibulum, risus id volutpat condimentum, velit metus congue erat, et lacinia enim nunc eget arcu. Pellentesque viverra vel justo sodales sagittis.</div>
+
+								<a href = "#" class="redLink randomViewLink">Просмотреть<br>заказ</a>
+
+								<div class="authorRandomRev blodSubTopic"><nobr>Наталья</nobr></div>
+								<div class="dateRandomRev regularSubTopic">25.06.2016</div>
+
+							</div>
+						</div>
+						<div class = "clearBoth"></div>
+					</div>
+				</div>
+				
+				<div id="NavPadding NPmas">
+					<div id="pageNav">
+						<a href = "#"><i class="fa fa-long-arrow-left fa-2x leftArrow" aria-hidden="true"></i></a>
+						<a href = "#" class="navNum realNum">1</a>
+						<a href = "#" class="navNum">2</a>
+						<a href = "#" class="navNum">3</a>
+						<a href = "#" class="navNum">4</a>
+						<a href = "#" class="navNum">5</a>
+						<a href = "#" class="navNum">6</a>
+						<a href = "#" class="navNum">7</a>
+						<a href = "#" class="navNum">8</a>
+						<a href = "#" class="navNum">9</a>
+
+						<a href = "#"><i class="fa fa-long-arrow-right fa-2x rightArrow" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div id = "footer" class = "footerAll">
+					<div id="allfooters">
+						<div id="footerLeft">
+							<a href = "#" class = "btnLogo"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+							<p class = "copy">Все права защищены 2016</p>
+						</div>
+
+						<div id="footerSecond">
+							<a href = "#" class = "whiteLink">- Заказы</a>
+							<a href = "#" class = "whiteLink">- Исполнители</a>
+							<a href = "#" class = "whiteLink">- Блог</a>
+							<a href = "#" class = "whiteLink">- Как это работает?</a>
+						</div>
+
+						<div id="footerThird">
+							<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+							<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+							<a href = "#" class = "whiteLink">- О нас</a>
+							<a href = "#" class = "whiteLink">- Поддержка</a>
+						</div>
+
+						<div id="footerFourth">
+							<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+							<a href = "#" id = "dart"></a>
+							<img src = "images/DARTwhite.png" class = "onePx">
+						</div>
+						<div class = "clearBoth"></div>
+					</div>
+					<div class = "clearBoth"></div>
+				</div>
+			</body>
+			</html>

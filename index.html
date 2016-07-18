@@ -1,30 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Danila Manturov site</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href = "css/pagestyle.css" rel = "stylesheet">
-  </head>
-  <body>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-2 col-md-offset-2">test</div>
-              <div class="col-md-4"></div>
-              <div class="col-md-4"></div>
-            </div>
-          </div>
-          <div class="col-md-4 visible-xs">test</div>
-        </div>
-      </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport"  content = "width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/mob_styles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.6.0/slick/slick-theme.css"/>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="plugins/slick-1.6.0/slick/slick.min.js"></script>
+	<script type = "text/javascript" src = "js/platform.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function()
+		{
+			$('.oneService').each(function(){
+				$(this).find(".serviceimg").attr("realPhoto", $(this).find(".serviceimg").css("backgroundImage"))
+			})
 
-    </script>
-  </body>
-</html>
+			if($(document).width()<=1024)
+			{
+				$('.oneService').each(function(){
+					var bw = $(this).find(".serviceimg").css("backgroundImage")
+					var cl = $(this).find(".serviceimg").attr("servicePhoto")
+
+					window.bw = bw
+					window.cl = cl
+
+					$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "250px"
+					})
+
+					$(this).find(".examplesGreen").slideToggle(300)
+				})
+			}
+
+			$(window).resize(function()
+			{
+				if($(document).width()>1024)
+				{
+					$('.oneService').each(function(){
+						$(this).find(".serviceimg").css({"background": $(this).find(".serviceimg").attr("realPhoto") + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+							"background-size": "cover", "height": "220px"
+						})
+						$(this).find(".examplesGreen").hide(300)
+					})
+				}
+				else
+				{
+					$('.oneService').each(function(){
+						var bw = $(this).find(".serviceimg").css("backgroundImage")
+						var cl = $(this).find(".serviceimg").attr("servicePhoto")
+
+						$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+							"background-size": "cover", "height": "250px"
+						})
+
+						$(this).find(".examplesGreen").show(300)
+					})
+				}
+			})
+
+			$('.oneService').hover(function(){
+				if($(document).width()>1024)
+				{
+					var bw = $(this).find(".serviceimg").css("backgroundImage")
+					var cl = $(this).find(".serviceimg").attr("servicePhoto")
+
+					window.bw = bw
+					window.cl = cl
+
+					$(this).find(".serviceimg").css({"background": "url(./images/"+cl+") no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "250px"
+					})
+
+					$(this).find(".examplesGreen").slideToggle(300)
+				}
+			},
+			function()
+			{
+				if($(document).width()>1024)
+				{
+					$(this).find(".serviceimg").css({"background": bw + "no-repeat center center", "transition": "0.5s", "-moz-background-size": "cover",
+						"background-size": "cover", "height": "220px"
+					})
+					$(this).find(".examplesGreen").slideToggle(300)
+				}
+			})
+
+
+			$('.reviewsString').slick({
+				dots: true,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				centerMode: true,
+				variableWidth: true,
+				nextArrow: "",
+				autoplaySpeed: 3000,
+				autoplay: false,
+			})
+		})
+	</script>
+	<title>Стройлофт</title>
+</head>
+<body>
+
+	<div id="navbar">
+		<div id = "navUni">
+			<a href = "index.html"><img id="mainlogo" src = "images/logo.png"></a>
+			<i class="bars fa fa-bars fa-3x" aria-hidden="true"></i> 
+			<ul id="navlist">
+				<li class="navmenu"><a href = "orders.html">Все заказы</a></li>
+				<li class="navmenu"><a href = "masters.html">Все исполнители</a></li>
+				<li class="navmenu"><a href = "working.html">Примеры работ</a></li>
+				<li class="navmenu"><a href = "reviews.html">Отзывы</a></li>
+				<li class="navmenu"><a href = "#">Войти/Регистрация</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="header">
+		<p class="whiteTopic firstTp">Просматривать сотни объявлений больше не нужно, с вами свяжутся сами исполнители</p>
+		<form action="index.html" method="post" enctype="multipart/form-data">
+			<div id="connectHeader">
+				<div id = "whatDo">Что требуется сделать?</div>
+				<div class="formspanel">
+					<span class = "formlab">Напишите ваш номер телефона:</span>
+					<input type = "text" name = "phoneNumber" class = "textField" placeholder = "В формате: +7(000)000-00-00">
+
+					<span class = "formlab">Заголовок заказа:</span>
+					<input type = "text" name = "orderTopic" class = "textField" placeholder = "Например, ремонт ванной, стяжка пола, укладка ламината и т.д.">
+
+					<span class = "formlab">Максимально подробно опишите ваш заказ:</span>
+					<textarea id = "orderDescription" class = "textField" placeholder = "Например, объём работ, материалы, когда нужно приступить/закончить работу, и т.п.
+					"></textarea>
+				</div>
+
+				<a href = "#" class = "noneDec"><input type = "button" value = "Как это работает" class = "whiteButton" id = "HowWorks"></a>
+
+				<div id="sendapp">
+					<div id="freeapp">
+						<span class="freeTopic">Бесплатно!</span>
+						<p class="freeDesc">Отправка заявки бесплатна и ни к чему вас не обязывает</p>
+					</div>
+					<div id = "arc"></div>
+					<input type = "submit" value = "Оставить заявку" class = "yellowButton" id = "SendApp">
+				</div>
+			</div>
+		</form>
+		<div class = "clearBoth"></div>
+	</div>
+
+	<div id="HowFast">
+		<p class = "blackTopic">Вы оставляете заявку - вас находят</p>
+		<hr class = "redLine" color = "#ffb837">
+		<p class="subBlackTopic">Среднее время ожидания отклика на заявку составляет 10-15 минут</p>
+
+		<div id="rowVan">
+			<div class="vantage">
+				<img src = "images/emptyicon.png" class="roundIcon">
+				<p class="medTopic">Просто</p>
+				<hr class = "redLine redLnIndex" color = "#ffb837">
+				<p class="vSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+					elit. Aenean euismod bibendum</p>
+				</div>
+
+				<div class="vantage vanCen">
+					<img src = "images/emptyicon.png" class="roundIcon">
+					<p class="medTopic">Быстро</p>
+					<hr class = "redLine redLnIndex" color = "#ffb837">
+					<p class="vSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+						elit. Aenean euismod bibendum</p>
+					</div>
+
+					<div class="vantage vanRight">
+						<img src = "images/emptyicon.png" class="roundIcon">
+						<p class="medTopic">Удобно</p>
+						<hr class = "redLine redLnIndex" color = "#ffb837">
+						<p class="vSubtext">Lorem ipsum dolor sit amet, consectetur adipiscing 
+							elit. Aenean euismod bibendum</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="services">
+					<p class = "blackTopic popServ">Популярные виды услуг</p>
+					<hr class = "redLine" color = "#ffb837">
+					<p class="subBlackTopic popServ">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+					<div class="servRow">
+						<a href = "#" class="oneService leftServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Сантехника</p>
+							<img src = "images/men_cl.png" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService cenServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService rightServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+					</div>
+					<div class = "clearBoth"></div>
+
+					<div class="servRow leftServ">
+						<a href = "#" class="oneService leftServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Сантехника</p>
+							<img src = "images/men_cl.png" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService cenServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService rightServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+
+					</div>
+					<div class = "clearBoth"></div>
+
+					<div class="servRow">
+						<a href = "#" class="oneService leftServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "plumper" servicePhoto = "men_cl.png"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Сантехника</p>
+							<img src = "images/men_cl.png" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService cenServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+
+						<a href = "#" class="oneService rightServ">
+							<div class="frameServ">
+								<div class="serviceimg" id = "contactor" servicePhoto = "contractor_cl.jpg"></div>
+								<div class = "examplesGreen">Примеры работ</div>
+							</div>
+							<p class = "servicename">Подрядчик</p>
+							<img src = "images/contractor_cl.jpg" class = "onePx">
+						</a>
+					</div>
+					<div class = "clearBoth"></div>
+				</div>
+
+				<div id = "trythis">
+					<p class="whiteTopic easyFast">Убедитесь сами насколько это просто и быстро</p>
+					<hr class="redLine" color="#fff">
+					<p class="subtextWhite">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+					<a href = "#" class = "noneDec"><input type = "button" value = "Попробовать" class = "whiteButton" id = "tryThis"></a>
+				</div>
+
+				<div id="reviews">
+					<p class = "blackTopic">Что говорят наши пользователи</p>
+					<hr class = "redLine" color = "#ffb837">
+					<p class="subBlackTopic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<div class="reviewsString">
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+						<div class="oneReview">
+							<img src = "images/Petr.png" class="clientPhoto">
+							<div class="aboutClient">
+								<div class="clientName">Петр Васильев</div>
+								<div class="clientsProf">Частный мастер</div>
+							</div>
+							<div class = "clearBoth"></div>
+							<div class="rev">
+								Первый раз пользовался вашими услугами! Больше чем очень понравилось! Буду обращаться ещё и ещё! Спасибо вам за прекрасную работу!
+							</div>
+							<div class="vote">
+								<a href = "#"><div class="bad">0</div></a>
+								<a href = "#"><div class="good">20</div></a>
+								<a href = "#"><div class="cool"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></div></a>
+							</div>
+							<a href = "#" class = "noneDec"><input type = "button" value = "Предложить работу" class = "blueButton" id = "offer"></a>
+						</div>
+					</div>
+					<div class = "clearBoth"></div>
+
+					<a href = "#" class = "greenLink">Смотреть все отзывы</a>
+				</div>
+
+				<div id = "footer" class = "footerIndex">
+					<div id="allfooters">
+						<div id="footerLeft">
+							<a href = "#" class = "btnLogo"><img src = "images/logo_white.png" class = "whiteLogo"></a>
+							<p class = "copy">Все права защищены 2016</p>
+						</div>
+
+						<div id="footerSecond">
+							<a href = "#" class = "whiteLink">- Заказы</a>
+							<a href = "#" class = "whiteLink">- Исполнители</a>
+							<a href = "#" class = "whiteLink">- Блог</a>
+							<a href = "#" class = "whiteLink">- Как это работает?</a>
+						</div>
+
+						<div id="footerThird">
+							<a href = "#" class = "whiteLink">- Стать исполнителем</a>
+							<a href = "#" class = "whiteLink"><nobr>- Пользовательское соглашение</nobr></a>
+							<a href = "#" class = "whiteLink">- О нас</a>
+							<a href = "#" class = "whiteLink">- Поддержка</a>
+						</div>
+
+						<div id="footerFourth">
+							<a href = "#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+							<a href = "#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+
+							<a href = "#" id = "dart"></a>
+							<img src = "images/DARTwhite.png" class = "onePx">
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+					<div class="clearBoth"></div>
+				</div>
+			</body>
+			</html>
