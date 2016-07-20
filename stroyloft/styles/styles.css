@@ -49,7 +49,6 @@ body
 	font-family: RalewaySemibold;
 	line-height: 90px;
 	margin: 0px 15px;
-	font-size: 16px;
 }
 
 .navmenu a
@@ -89,11 +88,6 @@ body
 	font-size: 31px;
 }
 
-.masterTop.whiteTopic
-{
-	font-size: 31px;
-}
-
 .whiteTopic.easyFast
 {
 	padding-top: 60px;
@@ -121,31 +115,6 @@ body
 	margin-top:0px;
 	font-weight: 700;
 	margin-top: 30px;
-}
-
-.popServ.blackTopic
-{
-	padding-top: 20px;
-}
-
-.popServ.subBlackTopic
-{
-	margin-bottom: 40px
-}
-
-.seeBetter.subBlackTopic
-{
-	margin-bottom: 50px;
-}
-
-.subBlackTopic.lastOrdLine
-{
-	margin-bottom: 50px;
-}
-
-.lastOrdersTopic.blackTopic
-{
-	margin-top: 20px;
 }
 
 .subBlackTopic
@@ -302,26 +271,15 @@ body
 	color: #fff;
 }
 
-.yButton.ySubFun.srcGood
-{
-	margin-right: 0px;
-}
-
 #HowWorks
 {
 	margin: 30px 0px;
 	display: inline-block;
 }
 
-#HowWorks.whiteButton
-{
-	margin-right: 8px;
-}
-
 .ySubFun
 {
 	margin: 30px 8px;
-	display: inline-block;
 }
 
 #sendapp
@@ -335,35 +293,11 @@ body
 	font-weight: 700;
 }
 
-#SendApp.yellowButton.fullArc
-{
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: 24px;
-}
-
 #freeapp
 {
 	width: 253px;
 	height: 70px;
 	margin-top: 10px;
-}
-
-.masterApp
-{
-	width: 545px;
-	margin-top: 7px;
-}
-
-#sendapp.masterApp
-{
-	width: 550px;
-}
-
-.freeDesc.masterDesc
-{
-	margin-left: 20px;
-	width: 250px;
 }
 
 .freeTopic
@@ -374,11 +308,6 @@ body
 	font-weight: 700;
 }
 
-.freeTopic.masterFree
-{
-	margin-left: 20px;
-}
-
 .freeDesc
 {
 	margin: 0px;
@@ -386,7 +315,6 @@ body
 	font-family: RalewayRegular;
 	letter-spacing: 1px;
 	font-weight: 200;
-	font-size: 16px;
 }
 
 .yellowButton
@@ -431,13 +359,6 @@ body
 	background-size: cover;
 }
 
-#arc.fullArc
-{
-	left: 245px;
-	top: 70px;
-	width: 150px;
-}
-
 #HowFast
 {
 	width: 1170px;
@@ -450,11 +371,6 @@ body
 	width: 65px;
 	size: 2px;
 	margin: 15px auto;
-}
-
-.redLine.lastOrdLine
-{
-	margin: 20px auto;
 }
 
 #rowVan
@@ -545,12 +461,11 @@ body
 {
 	width: 220px;
 	height: 40px;
-	line-height: 30px;
+	line-height: 40px;
 	font-family: OpenSansBold;
 	color: #414141;
 	text-align: center;
 	margin: 0px;
-	font-size: 16px;
 }
 
 .serviceimg[servicePhoto="men_cl.png"]
@@ -761,11 +676,6 @@ body
 	transition: 0.3s;
 }
 
-.greenLink.lineLink
-{
-	display: inline;
-}
-
 .greenLinkFa
 {
 	color: #63c399;
@@ -840,24 +750,9 @@ body
 	min-width: 1025px;
 }
 
-#footer.footerIndex
-{
-	margin-top: 15px;
-}
-
 #footer.cabftr
 {
 	background: #414141;
-}
-
-#footer.footerAll.createList
-{
-	margin-top: 140px;
-}
-
-#footer.footerAll.regFooter
-{
-	margin-top: 100px;
 }
 
 .realMenu a
@@ -894,11 +789,6 @@ body
 .whiteLogo
 {
 	width: 260px;
-	margin-top: 30px;
-}
-
-.btnLogo
-{
 	margin-top: 30px;
 }
 
@@ -949,21 +839,10 @@ body
 	transition: 0.3s;
 }
 
-#footerFourth a .fa-2x
-{
-	font-size: 30px;
-}
-
-
 #footerFourth a:hover
 {
 	color: rgba(255, 255, 255, 1);
 	margin: 0px 10px;
-}
-
-#footerFourth a#dart
-{
-	margin: 25px 0px 0px 65px;
 }
 
 #dart
@@ -976,7 +855,6 @@ body
 	display: inline-block;
 	transition: 0.4s;
 	opacity: 0.6;
-	margin: 25px 0px 0px 80px;
 }
 
 #dart:hover
@@ -987,9 +865,11 @@ body
 #allfooters
 {
 	height: 180px;
-	width: 1170px;
+	max-width: 1130px;
 	margin: 0px auto;
 }
+
+/*orders*/
 
 #ordHeader
 {
@@ -1120,11 +1000,6 @@ ul
 	margin-top: 50px;
 }
 
-#listMasters .blackTopic.masterCatalog
-{
-	margin-top: -10px;
-}
-
 #userReviews
 {
 	width: 1170px;
@@ -1189,7 +1064,6 @@ ul
 	background: #63c399;
 	color: #fff;
 	border-radius: 7px;
-	line-height: 15px;
 }
 
 .orderLocation
@@ -1225,8 +1099,8 @@ ul
 	color: #414141;
 	font-family: RalewayBold;
 	font-size: 16px;
-	margin: 0px 16px 16px 0px;
-	float: right;
+	margin: 0px 25px 0px 0px;
+	float:right;
 	display: inline-block;
 }
 
@@ -1247,11 +1121,6 @@ ul
 	margin: 0px 5px;
 	font-size: 18px;
 	line-height: 12px;
-}
-
-.orderWidth.orderDots
-{
-	width: 921.828px;
 }
 
 .yellowBigBtn
@@ -1282,7 +1151,6 @@ ul
 	height: 37px;
 	margin: 60px auto;
 	position: relative;
-	text-align: center;
 }
 
 .navNum
@@ -1331,11 +1199,6 @@ ul
 	transition: 0.3s;
 }
 
-.fa.fa-2x.leftArrow,.fa.fa-2x.rightArrow
-{
-	font-size: 32px;
-}
-
 .leftArrow:hover, .rightArrow:hover
 {
 	color: #9c9c9c;
@@ -1348,27 +1211,13 @@ ul
 	margin: 60px auto;
 }
 
-#NavPadding.prtNP
-{
-	margin: 40px auto 60px;
-}
-
-#NavPadding.NPmas
-{
-	margin: 40px auto 80px;
-}
-
-#NavPadding.NPex
-{
-	margin: 100px auto;
-}
-
 .orderPrice .fa.fa-rub
 {
 	position: relative;
 	top: -2px;
-	font-size: 18px;
 }
+
+/*reviews*/
 
 #userReviews
 {
@@ -1482,9 +1331,11 @@ ul
 	color: #f4f4f4;
 }
 
+/*working*/
+
 .workString
 {
-	width: 1175px;
+	width: 1170px;
 	height: 300px;
 	margin: 60px auto;
 }
@@ -1522,6 +1373,7 @@ ul
 	color: #fff;
 }
 
+/*masters*/
 
 .mastersContainer
 {
@@ -1563,12 +1415,6 @@ ul
 	border-radius: 5px;
 	margin: 28px 20px 15px 28px;
 	float: left;
-}
-
-.masterPhoto.portfPhoto
-{
-	margin-left: 0px;
-	border-radius: 5px;
 }
 
 .masterPhoto img
@@ -1664,11 +1510,6 @@ ul
 	margin: 0px;
 }
 
-.regularSubTopic.masterItem
-{
-	display: inline-block;
-}
-
 .prTopic
 {
 	margin-bottom: 7px;
@@ -1692,16 +1533,6 @@ ul
 {
 	width: 150px;
 	right: 0px;
-}
-
-.cbPrt
-{
-	height: 150px;
-}
-
-.cbPrt.zeroPt
-{
-	height: 10px;
 }
 
 .craftName
@@ -1766,11 +1597,6 @@ ul
 	width: 700px;
 	height: 175px;
 	margin: 0px auto;
-}
-
-#masterPslider.mSlider .fa.fa-4x
-{
-	font-size: 64px;
 }
 
 #masterPslider .masterWork
@@ -1915,6 +1741,8 @@ ul
 	margin: 10px 0px 5px 0px;
 }
 
+/*regisrt*/
+
 #contRegContaioner
 {
 	width: 1000px;
@@ -1971,12 +1799,6 @@ ul
 	font-family: RalewayBold;
 	color: #414141;
 	margin: 0px;
-}
-
-.usLab.moneyLab
-{
-	display: block;
-	margin: 28px 0px 20px;
 }
 
 .usField
@@ -2126,7 +1948,7 @@ ul
 
 .Reg2Top
 {
-	margin: 4px 5px 4px 0px;
+	margin: 4px 5px;
 	width: 230px;
 	display: inline-block;
 }
@@ -2137,11 +1959,6 @@ ul
 	height: 62px;
 	display: inline-block;
 	float: left;
-}
-
-.reg2row1 .allField.firstFieldReg
-{
-	margin-left: 0px;
 }
 
 .reg2row2
@@ -2245,11 +2062,6 @@ ul
 	left: 160px;
 }
 
-.uploadText.uplLink.greyLink .fa.fa-camera
-{
-	color: #4c4740; margin-right: 8px;
-}
-
 #jobBlocks.reg
 {
 	display: block;
@@ -2319,16 +2131,6 @@ textarea:invalid
 	cursor: pointer;
 }
 
-#docFile.fileHideOrd
-{
-	left: 0px;
-}
-
-#PhotoFile.fileHideOrd,#PhotoFileText.greenLinkRegUnd.photo
-{
-	right: 0px;
-}
-
 .financeOrder
 {
 	display: block;
@@ -2352,6 +2154,8 @@ textarea:invalid
 	width: 440px;
 	float: right;
 }
+
+/*navbar cab*/
 
 #navbarCab
 {
@@ -2384,7 +2188,6 @@ textarea:invalid
 	font-family: RalewaySemibold;
 	line-height: 90px;
 	margin: 0px 15px;
-	font-size: 16px;
 }
 
 #navbarCab.shd
@@ -2396,12 +2199,7 @@ textarea:invalid
 {
 	height: 800px;
 	width: 1070px;
-	margin: 35px auto 25px;
-}
-
-#cabMain.cabMainInfo
-{
-	height: auto;
+	margin: 25px auto;
 }
 
 .fullAccess
@@ -2436,7 +2234,6 @@ textarea:invalid
 	float: right;
 	font-family: RalewaySemibold;
 	color: #414141;
-	font-size: 16px;
 }
 
 .cabinetTopUser span i
@@ -2533,21 +2330,6 @@ textarea:invalid
 	z-index: 11;
 }
 
-.noneDec
-{
-	text-decoration: none;
-}
-
-.noneShd
-{
-	box-shadow:none;
-}
-
-.clearBoth
-{
-	clear: both;
-}
-
 #hideAll
 {
 	width: 100%;
@@ -2577,7 +2359,6 @@ textarea:invalid
 	display: inline-block;
 	transition: 0.2s;
 	padding-left: 40px;
-	font-size: 16px;
 }
 
 .leftItem:hover, .leftItem.rlPage
@@ -2585,21 +2366,11 @@ textarea:invalid
 	background: #e6e6e6;
 }
 
-.leftItem,cenItemPortf
-{
-	margin: 4px;
-}
-
 #rightCab
 {
 	width: 700px;
 	float: right;
 	margin-top: -8px;
-}
-
-#rightCab.portfolioPhotos
-{
-	width: 704px;
 }
 
 .smallTopic.myPg
@@ -2636,11 +2407,6 @@ textarea:invalid
 	display: block;
 }
 
-.firstUserCab.strUserCab
-{
-	margin-top: 200px;
-}
-
 .leftStrCab
 {
 	float: left;
@@ -2658,17 +2424,6 @@ textarea:invalid
 {
 	width: 700px;
 	position: relative;
-}
-
-#avatarUplCab #photoLawCab .regularSubTopic.md:first-of-type
-{
-	margin-bottom: 15px;
-	display: inline-block;
-}
-
-#avatarUplCab #photoLawCab .regularSubTopic.md:nth-of-type(3)
-{
-	white-space: pre;
 }
 
 .uplContCab
@@ -2715,17 +2470,6 @@ textarea:invalid
 	left: 200px;
 }
 
-.uploadTextCab.greyLink .fa.fa-camera
-{
-	color: #4c4740;
-	margin-right: 8px;
-}
-
-#Iagree.agrF2
-{
-	margin: 15px 0px;
-}
-
 .preUplPhotoCab
 {
 	position: absolute;
@@ -2746,7 +2490,6 @@ textarea:invalid
 {
 	position: absolute;
 	color: #fff;
-	font-size: 16px;
 }
 
 .typeJob.categCab
@@ -2786,11 +2529,6 @@ textarea:invalid
 	line-height: 40px;
 }
 
-#rightCab.albm
-{
-	width: 704px;
-}
-
 #rightCab.albm .masterWorkCab:nth-of-type(3n+3), .masterSubInfo .masterWorkCab:nth-of-type(3n+2)
 {
 	margin-left: 45px;
@@ -2818,7 +2556,6 @@ textarea:invalid
 	top: 50%;
 	margin-top: -44px;
 	margin-left: -25px;
-	font-size: 50px;
 }
 
 .greySmlLink
@@ -2928,7 +2665,6 @@ textarea:invalid
 	top: 0px;
 	z-index: 11;
 	background: #f4f4f4;
-	padding-left: 4px;
 }
 
 .cabinetRev .smallCast .dotsSml
@@ -2975,7 +2711,6 @@ textarea:invalid
 	position: absolute;
 	top: -24px;
 	right: -50px;
-	font-size: 28px;
 }
 
 #FullAccessPn
@@ -2998,11 +2733,6 @@ textarea:invalid
 	font-size: 16px;
 	margin: 14px 14px 0px 14px;
 	float: left;
-}
-
-.hvAccessLeft.balanceLeft
-{
-	margin-top: 0px;
 }
 
 .greenLink.hvAcc
@@ -3033,21 +2763,6 @@ textarea:invalid
 	font-family: RalewayRegular;
 	float: right;
 	margin: 12px 14px;
-}
-
-.redLink.hvAcc.fullPosLink i
-{
-	margin-right: 6px;
-}
-
-.yLine.editLine
-{
-	margin-top: 60px;
-}
-
-.yLine.editLineRev
-{
-	margin: 60px 0px 25px;
 }
 
 .trForPn.hvAcc
@@ -3083,7 +2798,6 @@ textarea:invalid
 	position: absolute;
 	top: -15px;
 	transition: 0.3s;
-	font-size: 32px;
 }
 
 .masterMainInf
@@ -3105,11 +2819,6 @@ textarea:invalid
 .masterInf .rightPhotoTopic
 {
 	margin: 0px 8px;
-}
-
-.rightPhotoTopic.eduTopic
-{
-	margin-top: 45px;
 }
 
 .masterMainInf .voteMaster
@@ -3149,11 +2858,407 @@ textarea:invalid
 
 .voteMaster.infMas
 {
-	width: 144px;
+	width: 140px;
 	left: 0px;
 }
 
 .good.central
 {
 	margin: 0px 13px; 
+}
+
+@media screen and (max-width: 1170px) {
+	
+	#navUni,#footer,#allfooters,#navbar,#allfooters,#HowFast,#navbar,#connectHeader,#whatDo,#freeapp,#sendapp,#rowVan,.servRow,.formspanel,#trythis,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
+	{
+		width: auto;
+		min-width: auto;
+	}
+
+	#rowVan,#HowFast,#services,.servRow,#footer,#allfooters,.formspanel,#trythis,#ordHeader,#ShowOrdTopic,.JobRow,.oneOrder,.orderInf,.yellowBigBtn,.typeJob,#jobBlocks,#ShowRevTopic,#revHeader,.workString, #userReviews,.userRev,.revText,.c1Review
+	{
+		height: auto;
+		min-height: auto;
+	}
+
+	#navbar
+	{
+		box-shadow: 0 10px 20px rgba(210,210,210,0.19), 0 6px 6px rgba(210,210,210,0.23);
+	}
+
+	#mainlogo
+	{
+		margin: 25px 0px 25px 15px;
+		height: 40px;
+	}
+	
+	.whiteTopic.firstTp
+	{
+		padding-top: 25px;
+	}
+
+	#navUni #navlist .navmenu
+	{
+		display: block;
+		clear: both;
+	}
+
+	.navmenu
+	{
+		border-bottom: 1px solid #7a7a7a;
+	}
+
+	#navlist
+	{
+		display: block;
+		clear: both;
+		width: 100%;
+		height: 0px;
+		overflow: hidden;
+		transition: 0.5s;
+		background: #fff;
+	}
+
+	#navUni #navlist
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#header
+	{
+		background: none;
+		margin-top: 25px;
+	}
+
+	.whiteTopic
+	{
+		color: #414141;
+		width: auto;
+		line-height: 40px;
+	}
+
+	#header
+	{
+		display: block;
+		clear: both;
+	}
+
+	.bars.fa
+	{
+		display: inline-block;
+		float: right;
+		color: #414141;
+		margin: 20px;
+	}
+
+	.formspanel
+	{
+		margin: 0px;
+		width: 95%;
+		margin: 25px auto;
+	}
+
+	.textField[type="text"]
+	{
+		width: auto;
+		position: relative;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 0px;
+	}
+
+	.textField
+	{
+		width: auto;
+		position: relative;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 2px;
+	}
+
+	.formlab
+	{
+		font-size: 16px;
+	}
+
+	.whiteButton
+	{
+		border-color: #a5a5a5;
+		color: #a5a5a5;
+	}
+
+	#HowWorks.whiteButton
+	{
+		display: block;
+		clear: both;
+		margin: 65px auto 15px;
+	}
+
+	.connectHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	#arc
+	{
+		display: none;
+	}
+
+
+	.freeDesc
+	{
+		color: #414141;
+		display: block;
+		width: 50%;
+	}
+
+	#sendapp
+	{
+		margin: 10px;
+	}
+
+	.vantage
+	{
+		display: block;
+		clear: both;
+		margin: 10px auto;
+	}
+
+	.vantage.vanCen
+	{
+		padding: 0px;
+	}
+
+	.vantage.vanRight
+	{
+		float: none;
+	}
+
+	.leftServ.oneService
+	{
+		padding: 0px;
+	}
+
+	.cenServ.oneService
+	{
+		padding: 0px;
+	}
+
+	.rightServ.oneService
+	{
+		padding: 0px;
+		float: none;
+	}
+
+	.oneService
+	{
+		display: block;
+		clear: both;
+		margin: 60px auto;
+	}
+
+	.oneService:nth-of-type(1)
+	{
+		margin-top: 45px;
+	}
+
+	#services
+	{
+		background: none;
+	}
+
+	.whiteTopic.easyFast
+	{
+		color: #ccc;
+	}
+
+	#footerLeft
+	{
+		display: block;
+		clear: both;
+		height: 160px;
+	}
+
+	.whiteLogo
+	{
+		margin-left: 40px;
+	}
+
+	.copy
+	{
+		position: absolute;
+		margin-left: 40px;
+	}
+
+	#footerSecond, #footerThird
+	{
+		margin-left: 45px;
+		padding: 0px;
+		height: auto;
+		display: block;
+		float: none;
+	}
+
+	#footerFourth
+	{
+		float: right;
+		margin-right: 45px;
+	}
+
+	.blackTopic,.subBlackTopic
+	{
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	#tryThis.whiteButton
+	{
+		display: block;
+		clear: both;
+		margin: 25px auto;
+	}
+
+	div#trythis
+	{
+		padding-bottom: 1px;
+	}
+
+	li.realMenu .navDot
+	{
+		display: none;
+	}
+
+	#ordHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	#ShowOrdTopic
+	{
+		color: #fff;
+		padding: 50px 0px;
+	}
+
+	.typeJob
+	{
+		display: block;
+		clear: both;
+		width: 150px;
+	}
+
+	.orderTime
+	{
+		margin: 15px;
+		display: block;
+	}
+
+	.typeBuild
+	{
+		margin: 5px 25px;
+	}
+
+	.orderPrice
+	{
+		margin-left: 25px;
+	}
+
+	.orderLocation
+	{
+		float: right;
+		width: 50%;
+		text-align: right;
+		margin-top: 0px;
+	}
+
+	.aboutCustomer
+	{
+		margin-bottom: 5px;
+	}
+
+	.navNum
+	{
+		display: none;
+
+	}
+
+	.realNum
+	{
+		display: block;
+	}
+
+	#NavPadding,#pageNav
+	{
+		width: 120px;
+		max-width: auto;
+		clear: both;
+	}
+
+	.realNum
+	{
+		margin: 0px auto;
+	}
+
+	.typeJob
+	{
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	#ShowRevTopic
+	{
+		color: #fff;
+		padding: 50px 0px;
+	}
+
+	#revHeader
+	{
+		display: block;
+		clear: both;
+	}
+
+	.workOne
+	{
+		clear: both;
+		margin-bottom: 25px;
+	}
+
+	.workString
+	{
+		margin: 0px auto;
+		display: block;
+		text-align: center;
+	}
+
+	.c1Review
+	{
+		width: auto;
+		margin-left: 0px;
+	}
+
+	.c2Review
+	{
+		width: auto;
+		margin-right: 0px;
+	}
+
+	.smallCast .dotsSmall
+	{
+		display: none;
+	}
+
+	.reviewTime
+	{
+		margin-left: 10px;
+	}
+
+	.contLoader
+	{
+		height: 150px;
+		line-height: 120px;
+	}
 }

@@ -1,20 +1,17 @@
 $(document).ready(function()
-{
-	if($(document).width()>1024)
-	{
+{	
 		$(".typeJob").hover(function()
 		{
 			if($(document).width()>1024)
-				$(this).find(".hoverMenu").toggle()
+				$(this).find(".hoverMenu").show()
 		},
 		function()
 		{
 			if($(document).width()>1024)
-				$(this).find(".hoverMenu").toggle()
+				$(this).find(".hoverMenu").hide()
 		})
+	$("#pageNav").width($(".navNum").length*62.4);
 
-		$("#pageNav").width($(".navNum").length*62);
-	}
 
 	function dots()
 	{
@@ -26,6 +23,8 @@ $(document).ready(function()
 	}
 	setTimeout(dots, 500);
 	
+	if($("#pageNav").css("clear")!="both")
+		$("#pageNav").width($(".navNum").length*62.4);
 
 	function smallDots()
 	{
@@ -104,6 +103,7 @@ $(document).ready(function()
 			if(e == 2)
 			{
 				if($(document).width()>1024)
+				if($(this).css("clear")!="both")
 				{
 					$(this).css({"marginLeft":"56px",
 						"marginRight":"56px"})
@@ -175,7 +175,7 @@ $(document).ready(function()
 		roomsAligment()
 
 		if($(document).width()>1024)
-			$("#pageNav").width($(".navNum").length*62);
+			$("#pageNav").width($(".navNum").length*62.4);
 		else
 			$("#pageNav").width("120px")
 
